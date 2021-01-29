@@ -1,10 +1,13 @@
+.. _topics-models:
 
-*****
-VEmodels
-*****
+=================
+Vision Eval Models
+=================
 
 
 VisionEval Overview
+==========================
+
 VisionEval (http://visioneval.org) is a collaborative project funded by a federal pooled funds initiative led by FHWA to integrate the [GreenSTEP family of models](https://github.com/ORScenPlg/VETechWiki/wiki/History-of-Strategic-Models) for performance-based transportation planning into a single open-source programming framework. The common framework shared between VisionEval models enables new features to be added in a ‘plug-and-play’ fashion so they can be easily shared among models.
 
 Three models are currently available in the VisionEval framework: VE-RSPM, VE-RPAT, and VE-State. The VE-RSPM and VE-RSPM models are functionally the same as the RSPM and RPAT models, respectively.  VE-State is the newest addition to the VisionEval project. 
@@ -17,7 +20,8 @@ Three models are currently available in the VisionEval framework: VE-RSPM, VE-RP
 
 [insert picture of VisionEval Handout, or link handout directly in sidebar]
 
-# VisionEval Modeling Framework
+VisionEval Modeling Framework
+===============================
 
 All VisionEval models share a common framework composed of eight modeling steps. Each step includes several calculations, each determined through the statistical analysis of several data sources such as the National Household Travel Survey and the Census, that operate on the input data and the results of the previous calculation step. The steps define households and associated policies, characterize vehicle ownership of those households, calculate vehicle miles traveled (VMT) and emissions, balance VMT with travel costs, and finally estimate non-household travel and emissions (e.g., from commercial trucks or rail).
 

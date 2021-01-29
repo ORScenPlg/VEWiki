@@ -11,8 +11,8 @@ This wiki focuses on the VisionEval Regional Strategic Planning Model (VE-RSPM),
 
 More information on the VisionEval project can be accessed at the following links:
 
-Documentation of the Pooled Funds VE Development https://github.com/VisionEval/VisionEval/wiki
-Development of VisionEval: https://github.com/VisionEval/VisionEval-Dev
+_Documentation of the Pooled Funds VE Development https://github.com/VisionEval/VisionEval/wiki
+_Development of VisionEval: https://github.com/VisionEval/VisionEval-Dev
 The VisionEval project website: https://visioneval.org/
 The current binary release of VisionEval available for download: https://visioneval.org/category/download.html
 This wiki is intended to sit between the detailed information on the VisionEval GitHub site and the planning level documents which discuss the benefits and reasoning for using a strategic model.
@@ -42,7 +42,8 @@ Basic concepts
    :caption: Basic concepts
    :hidden:
 
-   planning/commands
+   planning/inputs
+   planning/ve_models
    tech/rspm_validation
 
 
