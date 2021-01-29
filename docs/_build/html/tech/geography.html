@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Geography of VE Models &mdash; VEWiki 0.01 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Vision Eval Models" href="../planning/ve_models.html" />
+    <link rel="prev" title="Inputs" href="../planning/inputs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> VEWiki
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/overview.html">VE Wiki at a glance</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Scenario Planning</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../planning/inputs.html">Inputs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developing a Model</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Geography of VE Models</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#region">Region</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mareas">Mareas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../planning/ve_models.html">Vision Eval Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rspm_validation.html">RSPM Validation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/support_resources.html">Support and Additional Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">VEWiki</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Geography of VE Models</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/tech/geography.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="geography-of-ve-models">
+<span id="tech-geography"></span><h1>Geography of VE Models<a class="headerlink" href="#geography-of-ve-models" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Deciding the study area and the analysis years are critical to the initial development of any model, let alone a strategic model. The initial decision is to determine the model geography, or study area. Users set the model geography to match reporting regions and desired policy sensitivity.</p>
+<p>VisionEval models all use the same nested geographic units, which are designed to largely align with US Census tracts and MPO boundaries. VE-RSPM operates with a zonal geography, using zones or districts at the most granular level. Note that the VE-State geography is similar to VE-RSPM, albeit at different scales. Essentially, VE-State is the state version of VE-RSPM with the primary zone structure being typically a county.</p>
+<p>The VisionEval geography is comprised of several levels, detailed below.</p>
+<img alt="https://github.com/ORScenPlg/VETechWiki/media/VE_Geography.jpgVEGeography" src="https://github.com/ORScenPlg/VETechWiki/media/VE_Geography.jpgVEGeography" />
+<div class="section" id="region">
+<h3>Region<a class="headerlink" href="#region" title="Permalink to this headline">¶</a></h3>
+<p>The region is the entire model study area, which varies by model. For example, for VE-State the region is the state. For VE-RSPM, the region can be as small as the MPO boundary or may add additional areas where the region might expand to accommodate growth by the future model year. Note that when choosing a region for VE-RSPM, the area should break along Census boundaries (typically a metropolitan classification). Large-scale characteristics that do not vary across the region are specified at the region level. Examples include fuel prices and the carbon intensities of fuels.
+### Azones
+Azones are large subdivisions of the region. In VE-State, counties are most typically used as the Azone level. Azones in VE-RSPM are optional and should be used to distinguish areas which may have different land use and transportation policies. For this reason, metropolitan boundaries are most commonly used as the Azone level in VE-RSPM. Note that in VE-RSPM, Azones should be relatively large, containing populations that are similar in size to those of counties or Census Public Use Microdata Areas (PUMA) (e.g., population greater than 50,000).
+* Azones are used to represent population and economic characteristics that vary across the region such as demographic forecasts of persons by age group and average per capita income.
+* Azones are the only level of geography that is required to represent actual geographic areas and may not be simulated.
+Bzones
+———
+Bzones are subdivisions of Azones and the smallest unit of geography in VisionEval. Bzones are used to represent neighborhood characteristics and policies that may be applied differently by neighborhood, such as population density. Bzones may correspond to actual geographic areas or may be simulated.</p>
+<ul class="simple">
+<li><p>In VE-RSPM, Bzones are ordinarily defined according to Census Tract boundaries (or Census Block Groups depending on data availability).</p></li>
+<li><p>In VE-State and VE-RPAT, Bzones are simulated. Bzone simulation greatly reduces model data requirements while still enabling the modeling of land-use-related policies and the effects of land use on various aspects of travel behavior. In rural areas, Bzones can be used to distinguish small cities from unincorporated areas.</p></li>
+</ul>
+</div>
+<div class="section" id="mareas">
+<h3>Mareas<a class="headerlink" href="#mareas" title="Permalink to this headline">¶</a></h3>
+<p>Mareas are collections of Azones associated with an urbanized area either because a portion of the urbanized area is located in the Azone or because a substantial proportion of the workers residing in the Azone work at jobs located in the urbanized area. Metropolitan models typically only have one assigned Marea whereas state models may have several. The model system requires that each Azone may be associated with only one Marea.</p>
+<p>It is also required that all Azones be associated with an Marea. A special Marea named ‘None’ is used to apply to Azones that are not associated with any urbanized area. Mareas are used to specify and model urbanized area transportation characteristics such as overall transportation supply (transit, highways) and congestion. They are also used to specify large scale land-use-related characteristics and policies in models that use Bzone synthesis. Mareas are typically equivalent to a Census Urbanized Area.</p>
+<p>Geographical relationships for a model are described in the “geography.csv” file contained in the “defs” directory. This file tabulates the names of each geographic unit (except for Region) and the relationships between them. Each row shows a unique relationship. Where a unit of geography is not explicitly defined (i.e., it will be simulated), “NA” values are placed in the table. It should be noted that there are no naming conventions for individual zones. The user is free to choose what conventions they will use.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../planning/ve_models.html" class="btn btn-neutral float-right" title="Vision Eval Models" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../planning/inputs.html" class="btn btn-neutral float-left" title="Inputs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, RSG,Jacobs,ODOT.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

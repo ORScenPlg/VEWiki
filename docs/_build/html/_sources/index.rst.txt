@@ -53,9 +53,37 @@ Vision Eval - Developing a Model
    :maxdepth: 2
    :hidden:
 
+   tech/geography
    planning/ve_models
    tech/rspm_validation
 
+
+Reporting and Implementing
+===================================
+
+.. toctree::
+   :caption: Reporting and Implementing
+   :maxdepth: 2
+   :hidden:
+
+Case Studies
+===================================
+
+.. toctree::
+   :caption: Case Studies
+   :maxdepth: 2
+   :hidden:
+
+
+Support and Resources
+===================================
+
+.. toctree::
+   :caption: Additional Resources
+   :maxdepth: 2
+   :hidden:
+   
+   intro/support_resources
 
 Indices and tables
 ====================
