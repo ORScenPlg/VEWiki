@@ -24,7 +24,8 @@ Introduction
 ==================
 
 .. toctree::
-   :caption: First steps
+   :caption: Introduction
+   :maxdepth: 2
    :hidden:
 
    intro/overview
@@ -38,7 +39,8 @@ Scenario Planning Process
 =============================
 
 .. toctree::
-   :caption: Basic concepts
+   :caption: Scenario Planning
+   :maxdepth: 2   
    :hidden:
 
    planning/inputs
@@ -47,9 +49,9 @@ Vision Eval - Developing a Model
 ===================================
 
 .. toctree::
-   :caption: Basic concepts
+   :caption: Developing a Model
+   :maxdepth: 2
    :hidden:
-
 
    planning/ve_models
    tech/rspm_validation
