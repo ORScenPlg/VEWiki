@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSPM Validation &#8212; VEWiki 0.01 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Commands" href="../planning/commands.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="rspm-validation">
+<span id="topics-validation"></span><h1>RSPM Validation<a class="headerlink" href="#rspm-validation" title="Permalink to this headline">¶</a></h1>
+<p>Regional Validation Targets: Local datasets can provide further validation targets to check VE model results. To better match these targets, relevant outputs should be checked against the target, and additional changes made as needed to inputs to improve alignment. Other key outputs of the model should be confirmed and/or checked for reasonableness, even if not specific regional target is available. The validation targets should be checked in the order listed, as changes to earlier items will affect outputs of items further down the list.</p>
+<ul class="simple">
+<li><p>Population &amp; Households: Confirm VE outputs match MPO total population inputs (bzone_household_pop_by_age.csv, bzone_group_quarters_pop_by_age.csv). Population by Location Types (Metropolitan, Town, Rural) should match official Oregon Population Resource Center forecasts (except for Portland Metro) for the Urban Growth Boundary (loctype=”metropolitan”) and overall County. VisionEval models create households from input population, with households assigned to certain districts based on the dwelling unit inputs. Inputs on dwelling units and household size can be adjusted (bzone_dwelling_units.csv, azone_hhsize_targets.csv).</p></li>
+<li><p>Household Income: MPO Per Capita Income is an important driver of travel. Confirm outputs match inputs (azone_per_cap_inc.csv), developed as instructed using statewide income growth forecasts. Note that outputs are in baseyear dollars and may need to be converted to other year be make comparable (/defs/deflators.csv).</p></li>
+<li><p>Density: Activity density is an important driver of travel. Outputs should be checked for reasonableness, and can be roughly compared to EPA’s 2010  [Smart Location Database](<a class="reference external" href="https://www.epa.gov/smartgrowth/smart-location-mapping#SLD">https://www.epa.gov/smartgrowth/smart-location-mapping#SLD</a>) block group data,”D1D” density variable. Adjustments can be made to inputs for population, dwelling units, workers, as well as unprotected acres. Note that UGBs often contain areas that can’t be developed such as water bodies and large parks. ODOT has guidance for removing these undevelopable areas with GIS methods, as part of its instructions for building Oregon Place Types from TAZ data.</p></li>
+<li><p>Vehicle Miles Travelled (VMT): HPMS provides MPO-level vehicle miles traveled for historic years. Note HPMS definition of VMT differs from that of VE. VE reports on all household travel regardless of where it occurs, and adds Commercial vehicle and Heavy Duty Truck and Bus travel on MPO roads. HPMS reports vehicular travel of all modes on roads within the MPO boundary. The best comparison is at the statewide level.</p></li>
+</ul>
+<p>o       See example from Albany MPO</p>
+<ul class="simple">
+<li><p>MPG: Overall fuel efficiency of light duty passenger and Commercial Service, as well as transit and heavy trucks are output by the model. The combined fuel efficiencies of registered passenger and commercial service can be obtained from DMV data and used to check for reasonableness in the base year.</p></li>
+<li><p>&gt; &gt; See example from Albany MPO</p></li>
+<li><p>Statewide Fuel consumed: Fuel sales are rarely tracked at the sub-state level, but may be available if there is a local gas tax. Even if available, the purchase location is not an accurate indicator of where fuel was used. So use caution when comparing.</p></li>
+<li><p>Total Emissions: The overall GHG emissions is an important output. Of particular interest may be its use in GHG reduction targets, such as:</p></li>
+<li><p>&gt; &gt; Statewide mandate of 75% Total GHG reduction 1990-2050</p></li>
+<li><p>&gt; &gt; MPO mandate of Percent Total LDV GHG reduction 2005-20XX, beyond vehicles and fuels per OAR 660.044 (see SPG Tech Appendix p.110+ for calculation method and ODOT provided example calculation XLS)</p></li>
+<li><p>&gt; &gt; Note: GHG emission rates reported in the Oregon MPO GHG Target Rule (OAR 660.044 grams per mile by year), reflect emissions prior to DEQ re-baselining of fuel carbon intensity. As such, emission rates using the provided “TargetRule fileset” differ from those in more current Oregon scenarios.</p></li>
+<li><p>&gt; &gt; Local jurisdictions may have their own climate mandates and definitions</p></li>
+<li><p>Sensitivity Testing: Sensitivity tests should be performed to evaluate the reasonableness (eg. correct direction and magnitude) of the VE-RSPM output estimates. More or less ambitious policy actions can be tested, and the change in various output metrics reviewed for reasonableness. These tests are a standard part of the Oregon MPO Strategic Assessment process, and running many scenarios is built into VisionEval.</p></li>
+<li><p>Comparable communities: VE output results can be compared to prior VE scenario results in the same or other Oregon locations. Reports for all Oregon Strategic Assessment/Scenario Planning efforts can be found on this OSTI website. CAMPO &amp; RVMPO Strategic Assessment reports include Reference Case (typically early report table) and sensitivity test results (typically in appendices) that provide good comparable estimates</p></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">VEWiki</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">First steps</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/overview.html">VE Wiki at a glance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basic concepts</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../planning/commands.html">Commands</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">RSPM Validation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../planning/commands.html" title="previous chapter">Commands</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, RSG,Jacobs,ODOT.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/tech/rspm_validation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

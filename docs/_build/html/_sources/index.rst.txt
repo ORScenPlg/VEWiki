@@ -1,15 +1,39 @@
-.. VEWiki documentation master file, created by
-   sphinx-quickstart on Wed Jan 27 22:18:04 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. _topics-index:
+
+==============================
+VE Wiki documentation
+==============================
+
+VE is a blah blah.
 
 Welcome to VEWiki's documentation!
 ==================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
 
+First steps
+===========
+
+.. toctree::
+   :caption: First steps
+   :hidden:
+
+   intro/overview
+   faq
+
+
+:doc:`intro/overview`
+    Understand what Vision Is and how it can help you.
+
+
+Basic concepts
+==============
+
+.. toctree::
+   :caption: Basic concepts
+   :hidden:
+
+   planning/commands
+   tech/rspm_validation
 
 
 Indices and tables

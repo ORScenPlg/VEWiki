@@ -1,3 +1,8 @@
+*****
+Home
+*****
+
+
 The purpose of this wiki is to provide an in-depth technical resource for those developing strategic travel models in Oregon built on the VisionEval (VE) platform. Oregon specific policies and data inputs are used throughout.
 
 This wiki focuses on the VisionEval Regional Strategic Planning Model (VE-RSPM), intended for metropolitan planning organizations (MPO) staff, statewide planners, local planners, and other decision makers interested in regional scenario planning to assess the impacts of different transportation and land use policies.
