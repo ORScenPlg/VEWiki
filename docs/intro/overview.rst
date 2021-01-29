@@ -14,8 +14,12 @@ Strategic models are a key component of ODOT’s S-T-O-RM Analysis Toolkit, deta
 Strategic models differ from other travel demand models that support planning in most urban areas. Strategic models are less detailed but consider a wider range of potential policies and outcomes.  
 
 FIGURE 1. ODOT’S S-T-O-RM ANALYSIS TOOLKIT
-![Oregon STORM framework](https://github.com/ORScenPlg/VETechWiki/blob/main/media/OR_STORM.jpg)
-Source: ODOT
+.._STORM_image:
+.. image:: https://github.com/ORScenPlg/VEWiki/tree/main/media/OR_STORM.JPG
+:align:center
+  
+  Oregon STORM framework. source: ODOT
+
 
 Oregon MPOs can use strategic models to support the Oregon Sustainable Transportation Initiative (OSTI), an integrated statewide effort to reduce greenhouse gas, or GHG, emissions from transportation. The initiative was developed to support the state-mandated goal of achieving GHG levels that are 75% below 1990 levels by 2050. 
 

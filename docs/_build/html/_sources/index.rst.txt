@@ -20,35 +20,43 @@ This VE Primer is the introduction to the detailed tool information which will b
 
 
 
-First steps
-===========
+Introduction
+==================
 
 .. toctree::
    :caption: First steps
    :hidden:
 
    intro/overview
-   faq
 
 
 :doc:`intro/overview`
     Understand what Vision Is and how it can help you.
 
 
-Basic concepts
-==============
+Scenario Planning Process
+=============================
 
 .. toctree::
    :caption: Basic concepts
    :hidden:
 
    planning/inputs
+
+Vision Eval - Developing a Model
+===================================
+
+.. toctree::
+   :caption: Basic concepts
+   :hidden:
+
+
    planning/ve_models
    tech/rspm_validation
 
 
 Indices and tables
-==================
+====================
 
 * :ref:`genindex`
 * :ref:`modindex`
