@@ -172,6 +172,8 @@ Reporting and Implementing
    :caption: Reporting and Implementing
    :maxdepth: 2
    :hidden:
+   
+   using/index
 
 Case Studies
 ===================================
@@ -180,7 +182,10 @@ Case Studies
    :caption: Case Studies
    :maxdepth: 2
    :hidden:
+   
+   examples/index
 
+	
 
 Support and Resources
 ===================================
