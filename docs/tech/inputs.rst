@@ -1,6 +1,6 @@
 .. _header-n2:
 
-Inputs {#topics-inputs}
+Inputs
 =======================
 
 VE-RSPM inputs can be grouped into two categories, reflecting the
@@ -80,38 +80,41 @@ https://github.com/VisionEval/VisionEval-Dev/blob/readme-dev/docs/tutorials/vers
 
 RSPM DEMOGRAPHIC AND LAND USE INPUTS
 
-+--------------------------------------------+----------------------------------+-----------------------------------------------------------------------+
-|                                            |                                  |                                                                       |
-| Population by age                          | azone_hh_pop_by_age.csv          | Number of   Household persons within 6 age groups by year by Azone    |
-| (HH & non-institutional Group Quarters)    |                                  |                                                                       |
-+============================================+==================================+=======================================================================+
-|                                            |                                  |                                                                       |
-|                                            | azone_gq_pop_by_age.csv          | Number of Non-Institutional Group Quarters                            |
-|                                            |                                  | persons by 6 age groups by year by Azone                              |
-+--------------------------------------------+----------------------------------+-----------------------------------------------------------------------+
-|                                            |                                  |                                                                       |
-|                                            | azone_hhsize_targets.csv         | Average household   size & share of 1-person                          |
-| Average Household size,                    |                                  | households by year by Azone                                           |
-| %1-person households                       |                                  |                                                                       |
-|                                            |                                  |                                                                       |
-+--------------------------------------------+----------------------------------+-----------------------------------------------------------------------+
-|                                            |                                  |                                                                       |
-|                                            | region_hh_driver_adjust_prop.csv | Licensed share of   driving age persons in 5 age groups               |
-| Licensure drivers rate (optional)          |                                  | relative to model estimation year (2001   NHTS) by year               |
-|                                            |                                  |                                                                       |
-|                                            |                                  |                                                                       |
-+--------------------------------------------+----------------------------------+-----------------------------------------------------------------------+
-|                                            |                                  |                                                                       |
-|                                            | azone_per_cap_inc.csv            | Annual Per Capita                                                     |
-| Average Per Capita Income                  |                                  | Income by type (HH, GQ) by Year by Azone                              |
-|                                            |                                  |                                                                       |
-|                                            |                                  |                                                                       |
-+--------------------------------------------+----------------------------------+-----------------------------------------------------------------------+
-|                                            |                                  |                                                                       |
-|                                            | azone_relative_employment.csv    | (optional) Employed   share of Household workers in 5 age             |
-| Employed share of HH workers               |                                  | groups relative to model estimation year                              |
-|                                            |                                  | (2001 NHTS) by year by Azone                                          |
-+--------------------------------------------+----------------------------------+-----------------------------------------------------------------------+
++--------------------------------------------+----------------------------------+----------------------------------------------------+
+| Demographics                               | File                             | Description                                        |
++============================================+==================================+====================================================+
+|                                            |                                  |                                                    |
+| Population by age                          | azone_hh_pop_by_age.csv          | Number of   Household persons within 6 age groups  |
+| (HH & non-institutional Group Quarters)    |                                  | by year by Azone                                   |
++--------------------------------------------+----------------------------------+----------------------------------------------------+
+|                                            |                                  |                                                    |
+|                                            | azone_gq_pop_by_age.csv          | Number of Non-Institutional Group Quarters         |
+|                                            |                                  |  persons by 6 age groups by year by Azone          |
++--------------------------------------------+----------------------------------+----------------------------------------------------+
+|                                            |                                  |                                                    |
+|                                            | azone_hhsize_targets.csv         | Average household size & share of 1-person         |
+| Average Household size,                    |                                  |  households by year by Azone                       |
+| %1-person households                       |                                  |                                                    |
+|                                            |                                  |                                                    |
++--------------------------------------------+----------------------------------+----------------------------------------------------+
+|                                            |                                  |                                                    |
+|                                            |                                  | Licensed share of   driving age persons in 5 age   |
+|                                            | region_hh_driver_adjust_prop.csv | groups relative to model estimation year           |
+| Licensure drivers rate (optional)          |                                  | (2001 NHTS) by year                                |
+|                                            |                                  |                                                    |
+|                                            |                                  |                                                    |
++--------------------------------------------+----------------------------------+----------------------------------------------------+
+|                                            |                                  |                                                    |
+|                                            | azone_per_cap_inc.csv            | Annual Per Capita                                  |
+| Average Per Capita Income                  |                                  | Income by type (HH, GQ) by Year by Azone           |
+|                                            |                                  |                                                    |
+|                                            |                                  |                                                    |
++--------------------------------------------+----------------------------------+----------------------------------------------------+
+|                                            |                                  |                                                    |
+|                                            | azone_relative_employment.csv    | (optional) Employed share of Household workers     |
+| Employed share of HH workers               |                                  | in 5 age groups relative to model estimation year  |
+|                                            |                                  | (2001 NHTS) by year by Azone                       |
++--------------------------------------------+----------------------------------+----------------------------------------------------+
 
 
 Land Use Inputs
