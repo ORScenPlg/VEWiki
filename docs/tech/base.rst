@@ -1,9 +1,11 @@
 .. _tech-basemodel:
 
-============================
-Setting up the Base Model
-============================
 
+Setting up the Base Model
+******************************
+
+Geography
+==============
 
 Deciding the study area and the analysis years are critical to the initial development of any model, let alone a strategic model. The initial decision is to determine the model geography, or study area. Users set the model geography to match reporting regions and desired policy sensitivity.
 
@@ -13,7 +15,6 @@ The VisionEval geography is comprised of several levels, detailed below.
 
 
 .. figure:: ../media/VE_Geography.jpg
-
 
 
 Region
@@ -43,7 +44,7 @@ It is also required that all Azones be associated with an Marea. A special Marea
 Geographical relationships for a model are described in the "geography.csv" file contained in the "defs" directory. This file tabulates the names of each geographic unit (except for Region) and the relationships between them. Each row shows a unique relationship. Where a unit of geography is not explicitly defined (i.e., it will be simulated), "NA" values are placed in the table. It should be noted that there are no naming conventions for individual zones. The user is free to choose what conventions they will use.
 
 
-=========================
+
 Model Analysis Years
 =========================
 Overview text
