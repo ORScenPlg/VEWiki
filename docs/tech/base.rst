@@ -81,4 +81,3 @@ strategic assessments in Oregon:
 -  2050 – the date associated with statutory GHG reduction goals in the
    STS. The longer time frame enables consideration of more visionary
    changes that will take longer than the RTP time frame to occur
-
