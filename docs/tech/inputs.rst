@@ -129,13 +129,34 @@ Land Use Inputs
 
 
 
+
+azone_per_cap_inc.csv
+
+Used in the PredictIncome step of the VESimHouseholds module.
+This file contains information on regional average per capita household (HHIncomePC) and group quarters (GQIncomePC) income by forecast year in year 2010 dollars. The data can be obtained from the U.S. Department of Commerce Bureau of Economic Analysis for the current year or from regional or state sources for forecast years. In order to use current year dollars just replace 2010 in column labels with current year. For example, if the data is obtained in year 2015 dollars then the column labels in the file shown below will become HHIncomePC.2015 and GQIncomePC.2015.
+
+AZONE_PER_CAP_INC.CSV Layout
+
++----------+---------+--------------------+--------------------+
+|          |         |                    |                    |
+| Geo      | Year    | HHIncomePC.2010    | GQIncomePC.2010    |
++==========+=========+====================+====================+
+|          |         |                    |                    |
+| RVMPO    | 2010    | 32164              | 7500               |
++----------+---------+--------------------+--------------------+
+|          |         |                    |                    |
+| RVMPO    | 2038    | 43334              | 10000              |
++----------+---------+--------------------+--------------------+
+
+
+
 OREGON Income Index
-~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++
+The Oregon VE-State model assumed per capita income by county. For Oregon MPO RSPM models, locals estimate base year per capita income by MPO using census data. Forecast percent improvement is the same regardless of starting value.
 
 Below table is the statewide income growth index to convert the input
 values for "azone\ *per*\ cap_inc.csv", based on their base year
 calculated values.
-
 
 
 +------------------------------------------------+
