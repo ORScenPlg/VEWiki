@@ -14,7 +14,7 @@ VisionEval models all use the same nested geographic units, which are designed t
 The VisionEval geography is comprised of several levels, detailed below.
 
 
-.. figure:: ../media/VE_Geography.jpg
+  .. image:: /media/VE_Geography.jpg
 
 
 Region
