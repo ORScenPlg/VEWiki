@@ -165,6 +165,7 @@ Vision Eval - Developing a Model
    tech/base
    tech/inputs
    tech/rspm_validation
+   tech/analysisviz
 
 
 Reporting and Implementing
