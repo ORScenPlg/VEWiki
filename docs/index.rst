@@ -176,7 +176,7 @@ Reporting and Implementing
    :maxdepth: 2
    :hidden:
    
-   using/index
+   implementing/index
 
 Case Studies
 ===================================
