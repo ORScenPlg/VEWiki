@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Analyzing &amp; Visualizing Outputs &mdash; VEWiki 0.01 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Reporting and Implementing" href="../implementing/index.html" />
+    <link rel="prev" title="Calibation &amp; Validation" href="rspm_validation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> VEWiki
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/overview.html">VE Wiki at a glance</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Scenario Planning</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../planning/planningoverview.html">Scenario Planning Overview</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developing a Model</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="base.html">Setting up the Base Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inputs.html">Inputs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rspm_validation.html">Calibation &amp; Validation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Analyzing &amp; Visualizing Outputs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#example-verpat-scenario-viewer">Example - VERPAT Scenario Viewer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inputs"><strong>Inputs</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#outputs">Outputs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Reporting and Implementing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../implementing/index.html">Reporting and Implementing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/support_resources.html">Support and Additional Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">VEWiki</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Analyzing &amp; Visualizing Outputs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/tech/analysisviz.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="analyzing-visualizing-outputs">
+<h1>Analyzing &amp; Visualizing Outputs<a class="headerlink" href="#analyzing-visualizing-outputs" title="Permalink to this headline">¶</a></h1>
+<p>Both RSPM and VE-RPAT have the built-in scenario viewers, which allows
+for assessing a large numbers of future scenarios, each with a different
+combination of prioritizations, policy decisions, and constraints. The
+VEScenarios module provides the capability to quickly set up, run, and
+visualize large numbers of VE-RPAT and RSPM scenarios using a baseline
+scenario combined with multiple changes to model inputs. VE-State does
+not yet compatible with the VEScenarios module but it is a goal of
+future work on VisionEval project.</p>
+<p>The scenario viewer will open automatically after a multi-scenario run
+of RSPM or VE-RPAT is complete. The scenario viewer can also be opened
+manually once the scenarios have been run, by opening the VE-RPAT.html
+file in a web browser.</p>
+<p>Each directory is essentially a copy of RSPM or VE-RPAT base model, with
+inputs modified as specified in the scenario_inputs directory. Each
+scenario directory contains the results of a model run with its own
+inputs, datastore, and log file.</p>
+<div class="section" id="example-verpat-scenario-viewer">
+<span id="header-n6"></span><h2>Example - VERPAT Scenario Viewer<a class="headerlink" href="#example-verpat-scenario-viewer" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default">
+<img alt="" src="https://github.com/ORScenPlg/VETechWiki/blob/main/media/VERPAT_ScenarioViewer.jpg" />
+</div>
+<p>The Viewer is broken into three parts - the Inputs (vertical bar charts)
+along the top row. The Outputs (vertical bar charts) just under the
+inputs, and the scenario data table is at the very bottom.</p>
+</div>
+<div class="section" id="inputs">
+<span id="header-n9"></span><h2><strong>Inputs</strong><a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+<p>The top of the scenario viewer shows scenario input levels by
+categories. Categories combine changes to multiple input files to help
+simplify a large number of scenarios. Categories can be defined by the
+user in the “category_config.json” file. [ screen shot of the folder
+structure] The default categories are the following:</p>
+<p><strong>Policy Factors:</strong> These categories represent factors within local and
+state control.</p>
+<ul class="simple">
+<li><p>Community Design Policies that seek to enable shorter trips and
+alternate modes such as promotion of mixed use land use, transit
+service, bicycling, and parking management.</p></li>
+<li><p>Marketing &amp; Incentives Policies that improve driving efficiency such
+as ecodriving,and Intelligent Transportation System efforts, as well
+as programs that reduce auto demand such as carsharing, and home or
+work-based transportation demand management.</p></li>
+<li><p>Pricing Policies that move towards true cost pricing such as road
+user fees to pay for the cost of operating, maintaining and improving
+roads, pay-as-you-drive (PAYD) insurance, and environmental impact
+fees such as a carbon tax.</p></li>
+<li><p>Vehicles &amp; Fuels Factors representing the anticipated changes to
+future vehicles and fuels, in addition to those resulting from
+existing federal and state laws, including market changes such as the
+shift to electric vehicles or more fuel efficient vehicles, reduced
+carbon intensity of fuels, pace of vehicle turnover, and the light
+truck share of vehicles. Since these shifts would primarily result
+from additional federal and state policies promoting market changes,
+these scenarios assume supportive local actions that advocate for
+more ambitious policies along with local efforts, such as installing
+charging stations and using landfill captured gases (renewable
+natural gas) to fuel buses.</p></li>
+</ul>
+<p><strong>Context Factors:</strong> These categories represent factors outside our
+control, but help evaluate the robustness of policies in the face of
+uncertain future conditions.</p>
+<ul class="simple">
+<li><p>Fuel Price The assumed market price of gasoline and other fuels
+(exclusive of fuel taxes).</p></li>
+<li><p>Income Growth The assumed growth of average per capita income,
+representing the health of the economy.</p></li>
+</ul>
+<p>The default settings for the scenario viewer define several levels for
+each of the categories. These levels are numbered to indicate the amount
+of change from a reference case which represents the continuation of
+adopted local plans, policies and trends.</p>
+<ul class="simple">
+<li><p>Level 1: Corresponds to the reference case.</p></li>
+<li><p>Level 0: Is often used to represents a retreat from current plans
+(such as lower parking fees or less bicycling than anticipated), or
+lower context forecasts (i.e., lower fuel price or lower income).</p></li>
+<li><p>Levels 2-3: Representing more ambitious policies or higher context
+forecasts (i.e., higher fuel price or higher income).</p></li>
+</ul>
+<p>The levels are displayed in category bar charts, one for each Category.
+Note that the scenario viewer is also interactive. The user can select
+on or multiple of the scenario input levels to filter out their
+corresponding scenarios and data.</p>
+<div class="section" id="outputs">
+<span id="header-n36"></span><h3>Outputs<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h3>
+<p>Given the chosen category inputs, the web page also shows future year
+outcomes for the several performance measures. Unlike the scenario level
+inputs, these performance measures are hard-coded into the scenario
+viewer and cannot be easily changed. The performance measures in the
+scenario viewer are the following:</p>
+<ul class="simple">
+<li><p>GHG Target Reduction: 2005-2038 percentage reduction in light-duty
+vehicle GHG emissions (beyond what is anticipated to occur due to
+baseline assumptions regarding improvements to vehicles and fuels).
+RVMPO has a 2005 - 2035 state-set GHG reduction target of 19%</p></li>
+<li><p>DVMT Per Capita: daily vehicle miles of travel of residents divided
+by population.</p></li>
+<li><p>Bike Travel Per Capita: annual miles of resident bike travel (not
+including recreational travel) divided by population.</p></li>
+<li><p>Walk Travel Per Capita: annual residents’ walk trips (not including
+recreation or walk to transit) divided by population.</p></li>
+<li><p>Air Pollution Emissions: daily metric tons of pollutants emitted from
+all light-duty vehicle travel (including hydrocarbons, carbon
+monoxide, nitrogen dioxide, and particulates).</p></li>
+<li><p>Annual Fuel Use: annual million gallons of gasoline and other fuels
+consumed by all light-duty vehicle travel.</p></li>
+<li><p>Annual Household Vehicle Cost: average annual household cost
+(thousand dollars) for owning and operating light-duty vehicles
+(including gas, taxes, parking, registration, depreciation,
+maintenance, and financing).</p></li>
+<li><p>Truck Delay: daily vehicle-hours of delay for heavy truck travel on
+area roads.</p></li>
+</ul>
+<p>Each performance measure is illustrated in a bar chart showing the range
+of outcome values for the selected scenarios. The bar height indicates
+the number of selected scenarios with that outcome value.</p>
+<p>The model output bar charts are also interactive, and the user can
+select a range of values within one performance measure to see which
+policy choices and land use inputs result in desired outcomes. Figure 10
+2 shows how a selection of the low end of the GHG emissions updates how
+many scenarios result in this outcome, as well as the respective
+categories of those scenarios.</p>
+<p>The scenario data table at the bottom (not shown) also updates to show
+only the scenarios resulting in the selected outcome.</p>
+<div class="figure align-default">
+<img alt="" src="https://github.com/ORScenPlg/VETechWiki/blob/main/media/VERPAT_ScenarioViewer_selectoutput.jpg" />
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../implementing/index.html" class="btn btn-neutral float-right" title="Reporting and Implementing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="rspm_validation.html" class="btn btn-neutral float-left" title="Calibation &amp; Validation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, RSG,Jacobs,ODOT.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

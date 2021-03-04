@@ -150,7 +150,8 @@ Scenario Planning Process
    :maxdepth: 2   
    :hidden:
 
-   planning/inputs
+   planning/planningoverview
+
 
 Vision Eval - Developing a Model
 ===================================
@@ -160,9 +161,11 @@ Vision Eval - Developing a Model
    :maxdepth: 2
    :hidden:
 
-   tech/geography
    planning/ve_models
+   tech/base
+   tech/inputs
    tech/rspm_validation
+   tech/analysisviz
 
 
 Reporting and Implementing
@@ -172,6 +175,8 @@ Reporting and Implementing
    :caption: Reporting and Implementing
    :maxdepth: 2
    :hidden:
+   
+   implementing/index
 
 Case Studies
 ===================================
@@ -180,7 +185,10 @@ Case Studies
    :caption: Case Studies
    :maxdepth: 2
    :hidden:
+   
+   examples/index
 
+	
 
 Support and Resources
 ===================================

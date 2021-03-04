@@ -15,7 +15,7 @@ Strategic models differ from other travel demand models that support planning in
 
 FIGURE 1. ODOT’S S-T-O-RM ANALYSIS TOOLKIT
 .._STORM_image:
-.. image:: https://github.com/ORScenPlg/VEWiki/tree/main/media/OR_STORM.JPG
+.. image:: https://github.com/ORScenPlg/VEWiki/media/OR_STORM.JPG
 :align:center
   
   Oregon STORM framework. source: ODOT
