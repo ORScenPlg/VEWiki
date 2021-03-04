@@ -12,17 +12,20 @@ VisionEval models all use the same nested geographic units, which are designed t
 The VisionEval geography is comprised of several levels, detailed below.
 
 
-.. figure:: /media/VE_Geography.jpg
+.. figure:: ../media/VE_Geography.jpg
 
 
 
 Region
 ----------
 The region is the entire model study area, which varies by model. For example, for VE-State the region is the state. For VE-RSPM, the region can be as small as the MPO boundary or may add additional areas where the region might expand to accommodate growth by the future model year. Note that when choosing a region for VE-RSPM, the area should break along Census boundaries (typically a metropolitan classification). Large-scale characteristics that do not vary across the region are specified at the region level. Examples include fuel prices and the carbon intensities of fuels.
-### Azones
+
+Azones
+-----------
 Azones are large subdivisions of the region. In VE-State, counties are most typically used as the Azone level. Azones in VE-RSPM are optional and should be used to distinguish areas which may have different land use and transportation policies. For this reason, metropolitan boundaries are most commonly used as the Azone level in VE-RSPM. Note that in VE-RSPM, Azones should be relatively large, containing populations that are similar in size to those of counties or Census Public Use Microdata Areas (PUMA) (e.g., population greater than 50,000). 
 * Azones are used to represent population and economic characteristics that vary across the region such as demographic forecasts of persons by age group and average per capita income. 
 * Azones are the only level of geography that is required to represent actual geographic areas and may not be simulated.
+
 Bzones
 ---------
 Bzones are subdivisions of Azones and the smallest unit of geography in VisionEval. Bzones are used to represent neighborhood characteristics and policies that may be applied differently by neighborhood, such as population density. Bzones may correspond to actual geographic areas or may be simulated.
