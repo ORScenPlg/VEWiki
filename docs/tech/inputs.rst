@@ -46,39 +46,13 @@ Summary](https://github.com/ORScenPlg/VETechWiki/raw/main/resources/VE-RSPM_File
 
 .. _header-n12:
 
-OREGON Income Index
-~~~~~~~~~~~~~~~~~~~
 
-Below table is the statewide income growth index to convert the input
-values for "azone\ *per*\ cap_inc.csv", based on their base year
-calculated values.
-
---------------
-
-
-
-+-------------------------------------------+
-|Index relative to 2010 for use in VE-RSPM  |
-+====================+======================+
-|2010                |1                     |
-+--------------------+----------------------+
-|2020                |1                     |
-+--------------------+----------------------+
-|2025                |1                     |
-+--------------------+----------------------+
-|2030                |1                     |
-+--------------------+----------------------+
-|2035                |1                     |
-+--------------------+----------------------+
-
-#+------------------------------------+ #
-#+====================================+ #File #:------- # \| \|
-#azone\ *hh*\ pop\ *by*\ age.csv
 
 see
 https://github.com/VisionEval/VisionEval-Dev/blob/readme-dev/docs/tutorials/verspm/Inputs_and_Parameters.md#input-files
 
 RSPM DEMOGRAPHIC AND LAND USE INPUTS
+-----------------------------------------
 
 +--------------------------------------------+----------------------------------+----------------------------------------------------+
 | Demographics                               | File                             | Description                                        |
@@ -118,7 +92,7 @@ RSPM DEMOGRAPHIC AND LAND USE INPUTS
 
 
 Land Use Inputs
-
+++++++++++++++++++++
 
 +------------------------------------------------------------+--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
 |                                                            |                                |                                                                                                                          |
@@ -155,6 +129,14 @@ Land Use Inputs
 
 
 
+OREGON Income Index
+~~~~~~~~~~~~~~~~~~~
+
+Below table is the statewide income growth index to convert the input
+values for "azone\ *per*\ cap_inc.csv", based on their base year
+calculated values.
+
+
 
 +------------------------------------------------+
 |                                                |
@@ -187,6 +169,16 @@ Land Use Inputs
 |                      |                         |
 | 2050                 | 1.460142                |
 +----------------------+-------------------------+
+
+Oregon Specific information:
+These updated values should be used in the MPO Reference scenario.
+ - Manual changes to replace 2010 Transit & Design Ds from EPA SLD.
+ - Unprotected acres from Place Type input file (PlaceType_Acreage.xlsx).
+ - Income growth should be calculated to match statewide assumptions per Appendix A.
+
+
+
+
 
 
 .. _header-n21:
