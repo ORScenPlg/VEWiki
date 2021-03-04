@@ -1,8 +1,38 @@
 .. _topics-models:
 
-=================
+
 Vision Eval Models
-=================
+***********************
+
+Scenario Planning Process.
+
+2.1. Establish Scenario Planning Framework.
+
+2.1.1. Stakeholders.
+
+2.1.2. Data and projects that inform the models.
+
+2.1.3. Principles, issues and outcomes (this is about framing the discussion around issues and strategies people are most interested in).
+
+2.1.4. Strategies for GHG reductions. (This is describing “levers” and the info/data we require to code them; a non-exhaustive list may include: TDM, Vehicle technologies and powertrains, Land Use, Transportation System, ITS, Transit).
+
+2.2. Develop Evaluation Criteria.
+
+2.3. Set Up Scenario Modeling
+
+2.3.1. Base Year (link to section 3.3)
+
+2.3.2. Future Baseline Reference Scenario (link to section 3.5)
+
+2.3.3. Develop and Evaluate Alternative Scenarios (link to section 3.7)
+
+2.4. Develop and Select a Preferred Scenario (link to 3.7 and set up 4.0)
+
+2.4.1. Sensitivity Testing
+
+2.4.2. Key Paths
+
+
 
 
 VisionEval Overview

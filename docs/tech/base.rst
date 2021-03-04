@@ -72,7 +72,7 @@ strategic assessments in Oregon:
 
 -  2005 – back-cast to match the MPO GHG reduction target base year.
 
--  2010 Base Year – basis for data collection, calibration, and other
+-  2010 - Base Year – basis for data collection, calibration, and other
    runs.
 
 -  2035 – the date associated with MPO GHG reduction targets and is near
