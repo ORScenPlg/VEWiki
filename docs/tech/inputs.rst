@@ -1,13 +1,19 @@
 .. _topics-inputs:
 
-=================
+
 Inputs
-=================
+*****************
 
 
 VE-RSPM inputs can be grouped into two categories, reflecting the timeline when the data is required:
+ - Land Use Inputs
+ - Transportation Inputs
 
-* **Local land use inputs** – These include data based on the geography and the base and future year demographics and community design data used to establish the basic households, their location and attributes, otherwise known as the socio-economic data (SED). This data is needed early in the process to set-up the model framework. 
+
+Land Use Inputs
+====================
+
+These include data based on the geography and the base and future year demographics and community design data used to establish the basic households, their location and attributes, otherwise known as the socio-economic data (SED). This data is needed early in the process to set-up the model framework. 
 
 Other assumptions and transportation inputs for the base and future year reflecting existing conditions and adopted local plans respectively.
 These inputs require a mix of data and decisions by the metropolitan area. 
@@ -60,4 +66,10 @@ Below table is the statewide income growth index to convert the input values for
 #|Demographics  |        |      | 
 #|Population by age (HH & non-institutional Group Quarters)|azone_hh_pop_by_age.csv|Number of Household persons within 6 age groups by year by Azone|
 
-[VE Pooled Funds Input List - GitHub site](https://github.com/VisionEval/VisionEval-Dev/blob/readme-dev/docs/tutorials/verspm/Inputs_and_Parameters.md#input-files)
+see
+https://github.com/VisionEval/VisionEval-Dev/blob/readme-dev/docs/tutorials/verspm/Inputs_and_Parameters.md#input-files
+
+
+Transportation Inputs
+========================
+

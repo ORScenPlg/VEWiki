@@ -150,6 +150,7 @@ Scenario Planning Process
    :maxdepth: 2   
    :hidden:
 
+   intro/overview
    planning/inputs
 
 Vision Eval - Developing a Model
@@ -162,6 +163,7 @@ Vision Eval - Developing a Model
 
    planning/ve_models
    tech/base
+   tech/inputs
    tech/rspm_validation
 
 
