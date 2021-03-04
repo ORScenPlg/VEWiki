@@ -160,7 +160,7 @@ Vision Eval - Developing a Model
    :maxdepth: 2
    :hidden:
 
-   tech/geography
+   tech/base
    planning/ve_models
    tech/rspm_validation
 
