@@ -1,7 +1,7 @@
 .. _tech-basemodel:
 
 ============================
-Setting up the Bsae Model
+Setting up the Base Model
 ============================
 
 
@@ -12,7 +12,7 @@ VisionEval models all use the same nested geographic units, which are designed t
 The VisionEval geography is comprised of several levels, detailed below.
 
 
-.. figure:: https://github.com/ORScenPlg/VEWiki/blob/main/media/VE_Geography.jpg
+.. figure:: /media/VE_Geography.jpg
 
 
 
