@@ -1,7 +1,7 @@
 .. _topics-validation:
 
 
-Calibation & Validation
+Calibration & Validation
 ***************************
 
 Regional Validation Targets 
