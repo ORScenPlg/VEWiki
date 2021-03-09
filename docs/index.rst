@@ -177,7 +177,7 @@ Reporting and Implementing
    :hidden:
    
    implementing/index
-   implementing/vestate_hh_out.md
+   implementing/vestate_hh_out
 
 Case Studies
 ===================================
