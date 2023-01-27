@@ -1,4 +1,0 @@
-Help
-=====
-
-This file is a help file that will have some info.
