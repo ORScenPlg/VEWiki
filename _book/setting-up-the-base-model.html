@@ -5,14 +5,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>3 Setting up the Base Model | VEWiki</title>
-<meta name="generator" content="bookdown 0.28 with bs4_book()">
+<meta name="author" content="">
+<meta name="generator" content="bookdown 0.35 with bs4_book()">
 <meta property="og:title" content="3 Setting up the Base Model | VEWiki">
 <meta property="og:type" content="book">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="3 Setting up the Base Model | VEWiki">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.1/transition.js"></script><script src="libs/bs3compat-0.5.1/tabs.js"></script><script src="libs/bs3compat-0.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -52,7 +53,7 @@
 </ul>
 
         <div class="book-extra">
-          <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
+          
         </div>
       </nav>
 </div>
@@ -183,7 +184,7 @@ Summary</a></p>
 <h4>
 <span class="header-section-number">3.3.1.1</span> RSPM DEMOGRAPHIC AND LAND USE INPUTS<a class="anchor" aria-label="anchor" href="#rspm-demographic-and-land-use-inputs"><i class="fas fa-link"></i></a>
 </h4>
-<div class="inline-table"><table class="table table-sm">
+<div class="inline-table"><table style="width:99%;" class="table table-sm">
 <colgroup>
 <col width="33%">
 <col width="26%">
@@ -242,9 +243,9 @@ in 5 age groups relative to model estimation year
 <h4>
 <span class="header-section-number">3.3.1.2</span> Land Use Inputs<a class="anchor" aria-label="anchor" href="#land-use-inputs-1"><i class="fas fa-link"></i></a>
 </h4>
-<div class="inline-table"><table class="table table-sm">
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
 <colgroup>
-<col width="28%">
+<col width="27%">
 <col width="15%">
 <col width="56%">
 </colgroup>
@@ -325,39 +326,52 @@ The Oregon VE-State model assumed per capita income by county. For Oregon MPO RS
 values for “azone <em>per</em> cap_inc.csv”, based on their base year
 calculated values.</p>
 <div class="inline-table"><table style="width:68%;" class="table table-sm">
-<colgroup><col width="68%"></colgroup>
-<tbody><tr class="odd">
-<td>Index relative to 2010 for use in VE-RSPM</td>
-</tr></tbody>
+<colgroup>
+<col width="31%">
+<col width="36%">
+</colgroup>
+<thead><tr class="header">
+<th colspan="2">Index relative to 2010 for use in VE-RSPM</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>2010</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>2015</td>
+<td>1.057915</td>
+</tr>
+<tr class="odd">
+<td>2020</td>
+<td>1.107752</td>
+</tr>
+<tr class="even">
+<td>2025</td>
+<td>1.159942</td>
+</tr>
+<tr class="odd">
+<td>2030</td>
+<td>1.214563</td>
+</tr>
+<tr class="even">
+<td>2035</td>
+<td>1.271811</td>
+</tr>
+<tr class="odd">
+<td>2040</td>
+<td>1.331726</td>
+</tr>
+<tr class="even">
+<td>2045</td>
+<td>1.394463</td>
+</tr>
+<tr class="odd">
+<td>2050</td>
+<td>1.460142</td>
+</tr>
+</tbody>
 </table></div>
-<p>+======================+=========================+
-| | |
-| 2010 | 1 |
-+———————-+————————-+
-| | |
-| 2015 | 1.057915 |
-+———————-+————————-+
-| | |
-| 2020 | 1.107752 |
-+———————-+————————-+
-| | |
-| 2025 | 1.159942 |
-+———————-+————————-+
-| | |
-| 2030 | 1.214563 |
-+———————-+————————-+
-| | |
-| 2035 | 1.271811 |
-+———————-+————————-+
-| | |
-| 2040 | 1.331726 |
-+———————-+————————-+
-| | |
-| 2045 | 1.394463 |
-+———————-+————————-+
-| | |
-| 2050 | 1.460142 |
-+———————-+————————-+</p>
 <p>Oregon Specific information:
 These updated values should be used in the MPO Reference scenario.
 - Manual changes to replace 2010 Transit &amp; Design Ds from EPA SLD.
@@ -370,89 +384,233 @@ These updated values should be used in the MPO Reference scenario.
 <h3>
 <span class="header-section-number">3.3.2</span> Transportation Inputs<a class="anchor" aria-label="anchor" href="#transportation-inputs"><i class="fas fa-link"></i></a>
 </h3>
-<div class="inline-table"><table class="table table-sm">
-<colgroup><col width="100%"></colgroup>
-<tbody><tr class="odd">
-<td>Actions</td>
-</tr></tbody>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="19%">
+<col width="21%">
+<col width="58%">
+</colgroup>
+<thead><tr class="header">
+<th colspan="3">Actions</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Single occupancy vehicle (SOV) diversion</td>
+<td>azone_prop_sov_dvmt_diverted.csv</td>
+<td>Bike, Personal Electric Vehicle. Etc. diversion of Single Occupancy vehicle tours by year by Azone.[In VE-State, applies to “urban” and “town” but not “rural” loc types within the AZone]</td>
+</tr>
+<tr class="even">
+<td>Car service characteristics</td>
+<td>azone_carsvc_characteristics.csv</td>
+<td>Car Service Rate ($/mile) by level (high, low, ave), average Car service vehicle age, and limits on shifting to car service (LtTruck, Auto) by Year by Azone</td>
+</tr>
+<tr class="odd">
+<td>Car service availability</td>
+<td>
+<p>bzone_carsvc_availability.csv</p>
+<p>(azone_carsvc_availability.csv)</p>
+</td>
+<td>Car Service Level of service (High, Low) by Year by Bzone for RSPM (Azone by Area Type for VE-State)</td>
+</tr>
+<tr class="even">
+<td>Car service access times</td>
+<td>azone_vehicle_access_times.csv</td>
+<td>Minutes to call-up vehicles by type (owned, High/Low CarSvc) by year by Azone</td>
+</tr>
+<tr class="odd">
+<td>ITS operations</td>
+<td>marea_operations_deployment.csv</td>
+<td>Deployment (0-1,1=100%VMT coverage) of operations programs on Fwy (Ramp metering, Incident Response) and Arterials (Signal Coordination, Access Mgmt) programs by year by Marea</td>
+</tr>
+<tr class="even">
+<td>% VMT covered by Drivers in Eco-Drive programs</td>
+<td>marea_speed_smooth_ecodrive.csv</td>
+<td>Deployment (0-1,1=100%VMT coverage) of Speed Smoothing (Fwys, Arterials) and Eco-Driving (LDV, HD Trucks) programs by year by Marea</td>
+</tr>
+<tr class="odd">
+<td>ITS speed smoothing (Freeway ATM, Art Signal optimization) (optional)</td>
+<td>other_ops_effectiveness.csv</td>
+<td>Delay reduction (0-1) anticipated with full deployment of user-defined other operations program by road type (Fwy, Art), congestion type (Reoccurring, non-reoccuring) by 5 congestion levels by year by Azone</td>
+</tr>
+<tr class="even">
+<td>Parking restrictions</td>
+<td>
+<p>bzone_parking.csv</p>
+<p>(marea_parking-avail_by_area_type.csv and marea_parking-cost_by_area_type.csv)</p>
+</td>
+<td>Parking restrictions:Free spaces per dwelling unit type (SF, MF, GQ), share of workers paying for parking and in cashout program, and average parking fee by Year by Bzone (Marea by Area Type for VE-State)</td>
+</tr>
+<tr class="odd">
+<td>Road lane-miles</td>
+<td>marea_lane_miles.csv</td>
+<td>Freeway and arterial lane-miles by Year and metropolitan area</td>
+</tr>
+<tr class="even">
+<td>Demand management</td>
+<td>
+<p>bzone_travel_demand_mgt.csv</p>
+<p>(azone_travel_demand_mgt.csv and marea_travel_demand_mgt_by area_type.csv)</p>
+</td>
+<td>Share of participants in home Individualized Marketing programs (HHs) and work-based Transportation Demand Management programs (workers) by year by Bzone (Azone and Marea by Area Type for VE-State)</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Transit service</td>
+<td>marea_transit_service.csv</td>
+<td>Annual Transit Service revenue-miles by service mode (demand responsive, bus, rail, etcl) by year, and Marea.</td>
+</tr>
+<tr class="even">
+<td>
+<p>bzone_transit_service.csv</p>
+<p>(NA for VE-State)</p>
+</td>
+<td>Transit D (D4c, accessible hourly PM peak service frequency as defined by EPA Smart Location Database) by year and Bzone</td>
+</tr>
+<tr class="odd">
+<td rowspan="3">Transit fuels and powertrains</td>
+<td>marea_transit_fuel.csv</td>
+<td>Option 1(mix) 1of2: Fuel mix (share of GGE) for Transit Vehicles (Van, Bus, Rail) for ICE/HEV(diesel, gas, CNG – no rail CNG) by stock year</td>
+</tr>
+<tr class="even">
+<td>marea_transit_biofuel_mix.csv</td>
+<td>Option 1(mix) 2of2: Biofuels share of Transit fuels (ethanol, biodiesel, RNG) by stock year and Marea</td>
+</tr>
+<tr class="odd">
+<td>marea_transit_powertrain_prop.csv</td>
+<td>Powertrain mix (share of ICE, HEV, EV DVMT) for Transit Veh (Van, Bus, Rail) by stock year and Marea</td>
+</tr>
+<tr class="even">
+<td>Transit fuel carbon intensity</td>
+<td>marea_transit_ave_fuel_carbon_intensity.csv</td>
+<td>Option2(CI direct): Carbon Intensity of composite Transit Fuel (g/MJ) by stock year and marea</td>
+</tr>
+<tr class="odd">
+<td>Pricing</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Congestion charges</td>
+<td>marea_congestion_charges.csv</td>
+<td>Congestion Charges ($/mile) by road type (Fwy, Arterial) by 5 congestion levels by year by Marea</td>
+</tr>
+<tr class="odd">
+<td>Proportion of external costs paid</td>
+<td>region_prop_externalities_paid.csv</td>
+<td>Share of Social Externalities covered in household fees (carbon, other) by year modelwide</td>
+</tr>
+<tr class="even">
+<td>Carbon pricing (social recovery cost) (optional)</td>
+<td>region_co2e_costs.csv</td>
+<td>Environmental and social cost of CO2e emissions per metric ton carbon by year modelwide.</td>
+</tr>
+<tr class="odd">
+<td>PAYD insurance participation</td>
+<td>azone_payd_insurance_prop.csv</td>
+<td>Shareof HHs in Pay-as-you-Drive Auto Insurance programs by Year by Azone</td>
+</tr>
+<tr class="even">
+<td>Vehicle related taxes</td>
+<td>azone_hh_veh_own_taxes.csv</td>
+<td>Annual auto ownership fees (fixed and sales tax rate) by Year by Azone</td>
+</tr>
+<tr class="odd">
+<td>VMT tax or road usage charge</td>
+<td>azone_veh_use_taxes.csv</td>
+<td>Mileage Based Fee by type (fuel tax, VMT fee, Ev surcharge) by year by Azone</td>
+</tr>
+<tr class="even">
+<td>Retail costs for fuel</td>
+<td>azone_fuel_power_cost.csv</td>
+<td>Vehicle energy costs for fuel (<span class="math inline">\(/gallon), electricity (\)</span>/kwhr) by year by Azone (exclusive of taxes)</td>
+</tr>
+<tr class="odd">
+<td>Road costs</td>
+<td>region_road_cost.csv</td>
+<td>Infrastructure costs (BaseModernization, PreservationOpsMtncc, Other, Arteraial per LnMi, Fwy per LnMi) used to estimate LDV VMT fee to fully recover road costs.</td>
+</tr>
+<tr class="even">
+<td>Vehicles and Fuels</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Charging infrastructure</td>
+<td>azone_charging_availability.csv</td>
+<td>Availability (0-1) of vehicle charging by dwelling typ (SF, MF, GQ) by stock year by azone</td>
+</tr>
+<tr class="even">
+<td>Electricity carbon intensity</td>
+<td>azone_electricity_carbon_intensity.csv</td>
+<td>Carbon Intensity of Electricity (g/MJ) by stock year by azone</td>
+</tr>
+<tr class="odd">
+<td>Car service powertrains</td>
+<td>region_carsvc_powertrain_prop.csv</td>
+<td>LDV-Carservice Vehicle (Auto/LightTruck) powertrain (Ice/Hev/Phev/Bev) shares by stock year by marea.</td>
+</tr>
+<tr class="even">
+<td>Commercial service powertrains</td>
+<td>region_comsvc_powertrain_prop.csv</td>
+<td>LDV-ComSvc Vehicle (Auto/LightTruck) powertrain (Ice/Hev/Bev) shares by stock year by marea</td>
+</tr>
+<tr class="odd">
+<td>Heavy truck powertrains</td>
+<td>region_hvytrk_powertrain_prop.csv</td>
+<td>HD Truck powertrain (ICE, HEV, EV) shares by stock year</td>
+</tr>
+<tr class="even">
+<td>% of light trucks in household fleet</td>
+<td>azone_hh_lttrk_prop.csv</td>
+<td>Share of household LDV that are Light Trucksby year by Azone</td>
+</tr>
+<tr class="odd">
+<td>% of light trucks in car service fleet</td>
+<td>region_carsvc_lttrk_prop.csv</td>
+<td>Share of CarSvc LDV that are Light Trucksby year by Azone</td>
+</tr>
+<tr class="even">
+<td>% of light trucks in commercial service fleet</td>
+<td>region_comsvc_lttrk_prop.csv</td>
+<td>LDV-ComSvc share of vehicles that are Light Truck by stock year by Azone</td>
+</tr>
+<tr class="odd">
+<td>Mean age of household vehicles</td>
+<td>azone_hh_veh_mean_age.csv</td>
+<td>Mean Age of household vehicles by type (auto, light truck) by year by Azone.
+[NOTE: CarSvc age is in azone_carsvc_characteristics.csv]</td>
+</tr>
+<tr class="even">
+<td>Mean age of commercial service vehicles</td>
+<td>region_comsvc_veh_mean_age.csv</td>
+<td>Mean Age of household vehicles by type (auto, light truck) by year by Azone</td>
+</tr>
+<tr class="odd">
+<td>Avergae fuel carbon intensity</td>
+<td>region_ave_fuel_carbon_intensity.csv</td>
+<td>LDV (HH, CarSvc, ComSvc, Van) + HD (Truck, Bus, Rail) composite carbon Intensity of Fuel (g/MJ) by stock year by marea</td>
+</tr>
+<tr class="even">
+<td>Base year set up</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Base year urban VMT</td>
+<td>marea_base_year_dvmt.csv</td>
+<td>Marea DVMT by type (LDV, HD Truck) overwrite of base year 2010 Hwy Statistics default (NA recommended for VE-RSPM) and urbanized area name</td>
+</tr>
+<tr class="even">
+<td>Base year DVMT split by functional class</td>
+<td>marea_dvmt_split_by_road_class.csv</td>
+<td>Starting share of DVMT by type (LDV, HvyTrk, Bus) by road type (Fwy,Arterial, other), LDV share is adjusted by congestion model.</td>
+</tr>
+<tr class="odd">
+<td>Base year VMT</td>
+<td>region_base_year_dvmt.csv</td>
+<td>Region Freight Vehicle DVMT growth rates-basis (ComSvc-Pop or Inc, HHdvmt; HvyTrk-Pop or Inc) and overwrite of base year 2010 Hwy Statistics default of region Heavy Truck DVMT (NA recommended for VE-RSPM) and state name.</td>
+</tr>
+</tbody>
 </table></div>
-<p>+============================================================================+=====================================================================================+=======================================================================================================================================================================================================================================+
-| | | |
-| Single occupancy vehicle (SOV) diversion | azone_prop_sov_dvmt_diverted.csv | Bike, Personal Electric Vehicle. Etc. diversion of Single Occupancy vehicle tours by year by Azone.[In VE-State, applies to “urban” and “town” but not “rural” loc types within the AZone] |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Car service characteristics | azone_carsvc_characteristics.csv | Car Service Rate (<span class="math inline">\(/mile) by level (high, low, ave), average Car service vehicle age, and limits on shifting to car service (LtTruck, Auto) by Year by Azone | +----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | | bzone_carsvc_availability.csv | | | Car service availability | | Car Service Level of service (High, Low) by Year by Bzone for RSPM (Azone by Area Type for VE-State) | | | (azone_carsvc_availability.csv) | | +----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | Car service access times | azone_vehicle_access_times.csv | Minutes to call-up vehicles by type (owned, High/Low CarSvc) by year by Azone | +----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | ITS operations | marea_operations_deployment.csv | Deployment (0-1,1=100%VMT coverage) of operations programs on Fwy (Ramp metering, Incident Response) and Arterials (Signal Coordination, Access Mgmt) programs by year by Marea | +----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | | | | | | | | | | marea_speed_smooth_ecodrive.csv | Deployment (0-1,1=100%VMT coverage) of Speed Smoothing (Fwys, Arterials) and Eco-Driving (LDV, HD Trucks) programs by year by Marea | | | | | | % VMT covered by Drivers in Eco-Drive programs | | | +----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | | | | | | | | | | other_ops_effectiveness.csv | Delay reduction (0-1) anticipated with full deployment of user-defined other operations program by road type (Fwy, Art), congestion type (Reoccurring, non-reoccuring) by 5 congestion levels by year by Azone | | | | | | ITS speed smoothing (Freeway ATM, Art Signal optimization) (optional) | | | +----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | | bzone_parking.csv | | | Parking restrictions | | Parking restrictions:Free spaces per dwelling unit type (SF, MF, GQ), share of workers paying for parking and in cashout program, and average parking fee by Year by Bzone (Marea by Area Type for VE-State) | | | (marea_parking-avail_by_area_type.csv and marea_parking-cost_by_area_type.csv) | | +----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | Road lane-miles | marea_lane_miles.csv | Freeway and arterial lane-miles by Year and metropolitan area | +----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | | bzone_travel_demand_mgt.csv | | | Demand management | | Share of participants in home Individualized Marketing programs (HHs) and work-based Transportation Demand Management programs (workers) by year by Bzone (Azone and Marea by Area Type for VE-State) | | | (azone_travel_demand_mgt.csv and marea_travel_demand_mgt_by area_type.csv) | | +----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | | marea_transit_service.csv | Annual Transit Service revenue-miles by service mode (demand responsive, bus, rail, etcl) by year, and Marea. | | +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | Transit service | | | | | bzone_transit_service.csv | | | | | Transit D (D4c, accessible hourly PM peak service frequency as defined by EPA Smart Location Database) by year and Bzone | | | (NA for VE-State) | | +----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | | marea_transit_fuel.csv | Option 1(mix) 1of2: Fuel mix (share of GGE) for Transit Vehicles (Van, Bus, Rail) for ICE/HEV(diesel, gas, CNG -- no rail CNG) by stock year | | +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | Transit fuels and powertrains | marea_transit_biofuel_mix.csv | Option 1(mix) 2of2: Biofuels share of Transit fuels (ethanol, biodiesel, RNG) by stock year and Marea | | +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | | marea_transit_powertrain_prop.csv | Powertrain mix (share of ICE, HEV, EV DVMT) for Transit Veh (Van, Bus, Rail) by stock year and Marea | +----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | Transit fuel carbon intensity | marea_transit_ave_fuel_carbon_intensity.csv | Option2(CI direct): Carbon Intensity of composite Transit Fuel (g/MJ) by stock year and marea | +----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | Pricing | | | +----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | | | | | Congestion charges | marea_congestion_charges.csv | Congestion Charges (\)</span>/mile) by road type (Fwy, Arterial) by 5 congestion levels by year by Marea |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Proportion of external costs paid | region_prop_externalities_paid.csv | Share of Social Externalities covered in household fees (carbon, other) by year modelwide |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Carbon pricing (social recovery cost) (optional) | region_co2e_costs.csv | Environmental and social cost of CO2e emissions per metric ton carbon by year modelwide. |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| PAYD insurance participation | azone_payd_insurance_prop.csv | Shareof HHs in Pay-as-you-Drive Auto Insurance programs by Year by Azone |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Vehicle related taxes | azone_hh_veh_own_taxes.csv | Annual auto ownership fees (fixed and sales tax rate) by Year by Azone |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| VMT tax or road usage charge | azone_veh_use_taxes.csv | Mileage Based Fee by type (fuel tax, VMT fee, Ev surcharge) by year by Azone |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Retail costs for fuel | azone_fuel_power_cost.csv | Vehicle energy costs for fuel (<span class="math inline">\(/gallon), electricity (\)</span>/kwhr) by year by Azone (exclusive of taxes) |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Road costs | region_road_cost.csv | Infrastructure costs (BaseModernization, PreservationOpsMtncc, Other, Arteraial per LnMi, Fwy per LnMi) used to estimate LDV VMT fee to fully recover road costs. |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Vehicles and Fuels | | |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Charging infrastructure | azone_charging_availability.csv | Availability (0-1) of vehicle charging by dwelling typ (SF, MF, GQ) by stock year by azone |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Electricity carbon intensity | azone_electricity_carbon_intensity.csv | Carbon Intensity of Electricity (g/MJ) by stock year by azone |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Car service powertrains | region_carsvc_powertrain_prop.csv | LDV-Carservice Vehicle (Auto/LightTruck) powertrain (Ice/Hev/Phev/Bev) shares by stock year by marea. |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Commercial service powertrains | region_comsvc_powertrain_prop.csv | LDV-ComSvc Vehicle (Auto/LightTruck) powertrain (Ice/Hev/Bev) shares by stock year by marea |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Heavy truck powertrains | region_hvytrk_powertrain_prop.csv | HD Truck powertrain (ICE, HEV, EV) shares by stock year |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| % of light trucks in household fleet | azone_hh_lttrk_prop.csv | Share of household LDV that are Light Trucksby year by Azone |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| % of light trucks in car service fleet | region_carsvc_lttrk_prop.csv | Share of CarSvc LDV that are Light Trucksby year by Azone |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| % of light trucks in commercial service fleet | region_comsvc_lttrk_prop.csv | LDV-ComSvc share of vehicles that are Light Truck by stock year by Azone |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Mean age of household vehicles | azone_hh_veh_mean_age.csv | Mean Age of household vehicles by type (auto, light truck) by year by Azone. |
-| | | [NOTE: CarSvc age is in azone_carsvc_characteristics.csv] |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Mean age of commercial service vehicles | region_comsvc_veh_mean_age.csv | Mean Age of household vehicles by type (auto, light truck) by year by Azone |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Avergae fuel carbon intensity | region_ave_fuel_carbon_intensity.csv | LDV (HH, CarSvc, ComSvc, Van) + HD (Truck, Bus, Rail) composite carbon Intensity of Fuel (g/MJ) by stock year by marea |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Base year set up | | |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Base year urban VMT | marea_base_year_dvmt.csv | Marea DVMT by type (LDV, HD Truck) overwrite of base year 2010 Hwy Statistics default (NA recommended for VE-RSPM) and urbanized area name |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Base year DVMT split by functional class | marea_dvmt_split_by_road_class.csv | Starting share of DVMT by type (LDV, HvyTrk, Bus) by road type (Fwy,Arterial, other), LDV share is adjusted by congestion model. |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+
-| | | |
-| Base year VMT | region_base_year_dvmt.csv | Region Freight Vehicle DVMT growth rates-basis (ComSvc-Pop or Inc, HHdvmt; HvyTrk-Pop or Inc) and overwrite of base year 2010 Hwy Statistics default of region Heavy Truck DVMT (NA recommended for VE-RSPM) and state name. |
-+—————————————————————————-+————————————————————————————-+—————————————————————————————————————————————————————————————————————————————+</p>
 </div>
 </div>
 <div id="calibration-validation" class="section level2" number="3.4">
@@ -663,8 +821,7 @@ only the scenarios resulting in the selected outcome.</p>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/03-developing.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/03-developing.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+          
         </ul>
 </div>
     </nav>
