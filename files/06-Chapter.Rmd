@@ -24,7 +24,7 @@ While initiated at the federal and state level, these policies and programs are 
 
 Absent local support for these state-led actions, metropolitan areas are allowed to propose an alternative set of policy actions in an attempt to reach the target requirement.
 
-Files denoted by (TR) are target rule specific versions of the input file, reflecting model inputs assumed at the time the target was set, such as fuel price and income forecasts.. For tracking progress on the GHG target, the region is allowed to assume either current assumptions or these ”TR” model assumptions.
+Files denoted by (TR) are target rule specific versions of the input file, reflecting model inputs assumed at the time the target was set, such as fuel price and income forecasts. For tracking progress on the GHG target, the region is allowed to assume either current assumptions or these ”TR” model assumptions.
 
 **Table 14: VisionEval Input files of state-led policies and actions**
 

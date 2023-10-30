@@ -138,7 +138,7 @@ The scenario data table at the bottom (not shown) also updates to show only the 
 
 **Figure 21: Selecting Model OUtputs in the Scenario Viewer**
 
-![A picture containing graphical user interface Description automatically generated](../media/VERPAT_ScenarioViewer_selectoutput.jpg)
+![](../media/VERPAT_ScenarioViewer_selectoutput.jpg)
 
 ## Analyzing & Visualizing Outputs
 
