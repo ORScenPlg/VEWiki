@@ -30,7 +30,7 @@ The July 2022 publication, Transportation Planning for Uncertain Times: A Practi
 
 **Figure 17: Deep Uncertainty Using TMIP-EMAT and VisionEval**
 
-![](../media/ch7_tmipFramework.png)
+![](media/ch7_tmipFramework.png)
 
 
 
@@ -40,7 +40,7 @@ Figure 18 shows the connection between the VisionEval inputs and the scoping fil
 
 **Figure 18: TMIP-EMAT Approach**
 
-![](../media/ch7_tmipApproach.png)
+![](media/ch7_tmipApproach.png)
 
 The 500 runs can be referred to as ‘experiments’ that form the ‘design’ which TMIP-EMAT uses the EMA Workbench to analyze using machine learning algorithms. A metamodel is produced using a set of specified output measures, which can then be used to test changes in input values without needing to run the full VisionEval model. Metamodels are regression models that estimate the VisionEval model outputs that can run quickly (seconds vs a full model run of 15 minutes).
 
@@ -48,7 +48,7 @@ Figure 19 shows a conceptual arrangement where VisionEval is run across the vari
 
 **Figure 19: Concept TMIP-EMAT and VisionEval Metamodel**
 
-![](../media/ch7_tmipConcept.png)
+![](media/ch7_tmipConcept.png)
 
 The TMIP-EMAT / VisionEval process enables a unique approach to scenario planning that uses outcomes to guide the investment and input process. The quantitatively rich analysis allows a wide range of possible investments to be tested in thousands of unique combinations which would have been otherwise computationally impossible. The outputs from these combinations of inputs can be evaluated and queried to identify preferable futures (as well as futures to avoid) to better understand what investments are essential to reach our goals, as well as what investment decisions may jeopardize that possibility.
 
@@ -78,7 +78,7 @@ With the inputs set up as correctly, the model will create the specified combina
 
 **Figure 20: Visioneval Scenario Viewer**
 
-![](../media/verspm_scen_viewer.png)
+![](media/verspm_scen_viewer.png)
 
 ##### Scenario Input Levels
 
@@ -138,7 +138,7 @@ The scenario data table at the bottom (not shown) also updates to show only the 
 
 **Figure 21: Selecting Model OUtputs in the Scenario Viewer**
 
-![](../media/VERPAT_ScenarioViewer_selectoutput.jpg)
+![](media/VERPAT_ScenarioViewer_selectoutput.jpg)
 
 ## Analyzing & Visualizing Outputs
 
@@ -198,8 +198,8 @@ Outputs can be visualized with the help of a vision document that captures the c
 
 **Figure 22: Example Graphic of Scenario Evaluation Results**
 
-![](../media/ch7_scenEvalResults.png)
+![](media/ch7_scenEvalResults.png)
 
 **Figure 23: Example of Scenario Viewer**
 
-![](../media/ch7_scenViewExample.jpg)
+![](media/ch7_scenViewExample.jpg)

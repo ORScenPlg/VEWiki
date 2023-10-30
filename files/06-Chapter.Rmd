@@ -197,7 +197,7 @@ Figure 14 illustrates how the metropolitan area GHG reduction TARGET is calculat
 
 **Figure 14: Calculating Metropolitan Area Target from the Goal from all sources**
 
-![](../media/Chp6_TargetAreaMpo.png)
+![](media/Chp6_TargetAreaMpo.png)
 
 It uses the Portland Metro 2050 target reductions from Figure 16, as an example. The circle represents total metropolitan area per capita emissions from light duty vehicles in 2005 while the grey slice shows per capita emissions that still remain in 2050 after reductions.
 
@@ -253,12 +253,12 @@ In this example the region does not meet the 2050 target rule values of Figure 1
 
 **Figure 15: GHG Targets Over Time**
 
-![](../media/chp6_TargetsOverTime.jpg)
+![](media/chp6_TargetsOverTime.jpg)
 
 However local actions e.g., transit service and electric buses, bike diversion, CNG fueling options) and the region’s endorsement of state-led policies (e.g., PAYD insurance, carbon tax, VMT fee to cover road costs, ITS/Operations and eco-driving programs) are significant, as reflected in the reduction of daily VMT per capita from 24.6 to 20.0 between 2005 and 2050.
 
 **Figure 16: Example Target Rule Calculation**
 
-![](../media/chp6_SampleTRCalc.png)
+![](media/chp6_SampleTRCalc.png)
 
 Note: 1 metric ton = 1,000,000 grams of CO2e; 1 year = 365 days; LDV = Light Duty Vehicles (autos and light trucks less than 10,000 lbs); GHG = Caron Dioxide-equivalent (CO2e) emissions.

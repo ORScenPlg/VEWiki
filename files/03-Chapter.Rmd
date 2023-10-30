@@ -24,7 +24,7 @@ Figure 3 shows examples of the "geography.csv" file where only A-zones are speci
 
 **Figure 3: Geographic Levels**
 
-![](../media/ch3_ccrpc_zones.jpg)
+![](media/ch3_ccrpc_zones.jpg)
 
 ### Location Types
 
@@ -38,7 +38,7 @@ Location Type is not a geography level but a categorical level that identifies w
 
 **Figure 4: Land Development Types Example**
 
-![](../media/ch3_eugene.png)
+![](media/ch3_eugene.png)
 
 Geography is important in VisionEval and treated differently than in traditional urban travel models. Importantly, different model inputs are developed at different geography levels. A list of VE-RSPM inputs by geography level can be found on [GitHub](https://github.com/VisionEval/VisionEval/wiki/VERSPM-Training/VE-RSPM_Inputs_by_Geo.pdf). Geography is also a significant factor in how the model calculates travel supply and travel behavior or demand:
 
@@ -286,7 +286,7 @@ The table below shows the HPMS data available from ODOT (and from FHWA) with lin
 
 **Figure 5: HPMS VMT (miles of all modes on roads within MPO boundary)**
 
-![](../media/ch3_HPMSMiles_2016.png)
+![](media/ch3_HPMSMiles_2016.png)
 
 *<font size="1"> Source: 1999-2016 VMT\_Miles history.xlsx (\\\\s6000e\\6420only\\Statewide\\Tools\\GreenSTEP\\ModelBuild\\\_Data\\Local\_Plans\\Roads\\HPMS\_data)</font>*
 
@@ -307,19 +307,19 @@ The following data light duty vehicle data is collected from the DMV. Light Duty
 
 **Table 9: 2016 Oregon DMV Registered Vehicles by MPO**
 
-![](../media/ch3_DMVvehiclesbyMPO.png)
+![](media/ch3_DMVvehiclesbyMPO.png)
 
 **Table 10: 2016 Oregon DMV Registered Vehicle Average Age by MPO**
 
-![](../media/ch3_DVM_vehbyagebyMPO.png)
+![](media/ch3_DVM_vehbyagebyMPO.png)
 
 **Table 11: 2016 Oregon DMV Registered Vehicle Powertrains by MPO (All LDV)**
 
-![](../media/ch3_DMVvehiclesbypowertrainbyMPO.png)
+![](media/ch3_DMVvehiclesbypowertrainbyMPO.png)
 
 **Table 12: 2016 Oregon DMV Registered Vehicle MPG (Statewide, All LDV)**
 
-![](../media/ch3_vehicleMPG.png)
+![](media/ch3_vehicleMPG.png)
 
 #### Population & Households
 
@@ -327,7 +327,7 @@ VE outputs were confirmed to match MPO total population inputs (*bzone\_househol
 
 **Figure 6: VE-State Historic Validation – LDV fuel gallons**
 
-![](../media/Ch3_VE_fuelconsumption.png)
+![](media/Ch3_VE_fuelconsumption.png)
 
 ### Base Year Outputs
 

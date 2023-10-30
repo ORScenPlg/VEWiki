@@ -81,7 +81,7 @@
 <p>Geographical relationships for a model are described in the “geo.csv” file contained in the “defs” directory. This file tabulates the names of each geographic unit (except for Region) and the relationships between them. Each row shows a unique relationship. Where a unit of geography is not explicitly defined (i.e., it will be simulated), “NA” values are placed in the table.</p>
 <p>Figure 3 shows examples of the “geography.csv” file where only A-zones are specified and where A-zones and B-zones are specified. It should be noted that there are no naming conventions for individual zones. The user is free to choose what conventions they will use.</p>
 <p><strong>Figure 3: Geographic Levels</strong></p>
-<div class="inline-figure"><img src="../media/ch3_ccrpc_zones.jpg"></div>
+<div class="inline-figure"><img src="media/ch3_ccrpc_zones.jpg"></div>
 <div id="location-types" class="section level3">
 <h3>
 <span class="header-section-number">3.1.1</span> Location Types<a class="anchor" aria-label="anchor" href="#location-types"><i class="fas fa-link"></i></a>
@@ -93,7 +93,7 @@
 <li><p>The “rural” development type includes all remaining lands. These less developed lands located outside, often located outside of urban growth boundaries, ranging from resource lands to undeveloped urban land. “Fringe” area types are included in this category.</p></li>
 </ul>
 <p><strong>Figure 4: Land Development Types Example</strong></p>
-<div class="inline-figure"><img src="../media/ch3_eugene.png"></div>
+<div class="inline-figure"><img src="media/ch3_eugene.png"></div>
 <p>Geography is important in VisionEval and treated differently than in traditional urban travel models. Importantly, different model inputs are developed at different geography levels. A list of VE-RSPM inputs by geography level can be found on <a href="https://github.com/VisionEval/VisionEval/wiki/VERSPM-Training/VE-RSPM_Inputs_by_Geo.pdf">GitHub</a>. Geography is also a significant factor in how the model calculates travel supply and travel behavior or demand:</p>
 <ul>
 <li><p>VE-RSPM predicts household travel based on the characteristics of the geographic area where a household resides including population density and housing type(s).</p></li>
@@ -613,7 +613,7 @@
 </h4>
 <p>The table below shows the HPMS data available from ODOT (and from FHWA) with link volumes for the AAMPO metro region. Each metro region can be selected from the data to obtain a link by link analysis. Mindful that VE uses Freeway (Interstate, Other Freeways &amp; Expressways), and Arterials (Other Principal Arterial) as the key inputs. The other lane miles can be ignored in the VE model given the models were estimated only with those two inputs.</p>
 <p><strong>Figure 5: HPMS VMT (miles of all modes on roads within MPO boundary)</strong></p>
-<div class="inline-figure"><img src="../media/ch3_HPMSMiles_2016.png"></div>
+<div class="inline-figure"><img src="media/ch3_HPMSMiles_2016.png"></div>
 <p><em><font size="1"> Source: 1999-2016 VMT_Miles history.xlsx (\\s6000e\6420only\Statewide\Tools\GreenSTEP\ModelBuild\_Data\Local_Plans\Roads\HPMS_data)</font></em></p>
 </div>
 <div id="light-duty-vehicles" class="section level4">
@@ -658,13 +658,13 @@
 </table></div>
 <p><em><font size="1">Source: STS-Monitoring_DMV2016.xlsx\\s6000e\6420only\Statewide\Tools\GreenSTEP\ModelBuild\_Data\Vehicles_Fuels\DMV\</font></em></p>
 <p><strong>Table 9: 2016 Oregon DMV Registered Vehicles by MPO</strong></p>
-<div class="inline-figure"><img src="../media/ch3_DMVvehiclesbyMPO.png"></div>
+<div class="inline-figure"><img src="media/ch3_DMVvehiclesbyMPO.png"></div>
 <p><strong>Table 10: 2016 Oregon DMV Registered Vehicle Average Age by MPO</strong></p>
-<div class="inline-figure"><img src="../media/ch3_DVM_vehbyagebyMPO.png"></div>
+<div class="inline-figure"><img src="media/ch3_DVM_vehbyagebyMPO.png"></div>
 <p><strong>Table 11: 2016 Oregon DMV Registered Vehicle Powertrains by MPO (All LDV)</strong></p>
-<div class="inline-figure"><img src="../media/ch3_DMVvehiclesbypowertrainbyMPO.png"></div>
+<div class="inline-figure"><img src="media/ch3_DMVvehiclesbypowertrainbyMPO.png"></div>
 <p><strong>Table 12: 2016 Oregon DMV Registered Vehicle MPG (Statewide, All LDV)</strong></p>
-<div class="inline-figure"><img src="../media/ch3_vehicleMPG.png"></div>
+<div class="inline-figure"><img src="media/ch3_vehicleMPG.png"></div>
 </div>
 <div id="population-households" class="section level4">
 <h4>
@@ -672,7 +672,7 @@
 </h4>
 <p>VE outputs were confirmed to match MPO total population inputs (<em>bzone_household_pop_by_age.csv, bzone_group_quarters_pop_by_age.csv).</em> No Group Quarters were assumed. Population by Location Types (Metropolitan, Town, Rural) matches official forecasts (except for Portland Metro) for the Urban Growth Boundary and overall County. VisionEval models create households from input population, aided by input household size (<em>azone_hhsize_targets.csv</em>).</p>
 <p><strong>Figure 6: VE-State Historic Validation – LDV fuel gallons</strong></p>
-<div class="inline-figure"><img src="../media/Ch3_VE_fuelconsumption.png"></div>
+<div class="inline-figure"><img src="media/Ch3_VE_fuelconsumption.png"></div>
 </div>
 </div>
 <div id="base-year-outputs" class="section level3">

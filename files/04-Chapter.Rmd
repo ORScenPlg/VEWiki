@@ -22,11 +22,11 @@ These model inputs are provided by ODOT for use in regional VisionEval modeling 
 
 Therefore, while the total GHG reduction and grams per mile of CO2e will be included in any analysis, the emphasis on achieving *the* ‘target rule’ will be centered on VMT per capita reduction.
 
-The target rule accounts for vehicles owned or hired by the household and the overall ‘lightweight’ vehicles (less than 10,000 lbs.) within Oregon. That includes light-duty vehicle travel by metropolitan area households (and related light-duty commercial service vehicle travel). The light-duty household travel captures the average daily travel and transportation needs, whether physically traveled by the members of the household or deliveries and miscellaneous commercial travel to their home. 
+The target rule accounts for vehicles owned or hired by the household and the overall ‘lightweight’ vehicles (less than 10,000 lbs.) within Oregon. That includes light-duty vehicle travel by metropolitan area households (and related light-duty commercial service vehicle travel). The light-duty household travel captures the average daily travel and transportation needs, whether physically traveled by the members of the household or deliveries and miscellaneous commercial travel to their home.
 
 **Table 13: Metropolitan Target rule values**
 
-![](../media/Ch4_TargetRules.png)
+![](media/Ch4_TargetRules.png)
 
 *<font size="1">Source: 2017 LCDC Target Rules</font>*
 
