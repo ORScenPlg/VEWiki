@@ -9,9 +9,11 @@ language:
     chapter_name: ""
 rmd_files:
   - index.Rmd
-  - 01-planning.Rmd
-  - 02-concept-primer.Rmd
-  - 03-developing.Rmd
-  - 04-reporting.Rmd
-  - 05-support.Rmd
-  - 07-DLCD_TargetRule.Rmd
+  - 01-Introduction.Rmd
+  - 02-Chapter.Rmd
+  - 03-Chapter.Rmd
+  - 04-Chapter.Rmd
+  - 05-Chapter.Rmd
+  - 06-Chapter.Rmd
+  - 07-Chapter.Rmd
+  - 08-Chapter.Rmd

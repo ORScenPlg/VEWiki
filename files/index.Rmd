@@ -1,7 +1,7 @@
 ---
 title: "VEWiki"
 author: ""
-date: "2023-01-26"
+date: "2023-10-29"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
