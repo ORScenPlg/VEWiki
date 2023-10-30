@@ -1,4 +1,4 @@
-# Scenario Planning Process
+# Scenario Planning Process {#chapter2}
 
 Metropolitan land use and transportation scenario planning is a powerful process for better understanding the long-term impacts of today’s policy and investment decisions. Scenario planning allows a community to evaluate the likely outcomes of existing plans and to explore possible benefits and costs of alternative futures. Whether scenario planning is voluntary or mandatory for a metropolitan area, the process can help metropolitan areas make progress on a range of community goals, community needs and benefits, including GHG emission reduction. There is no one-size-fits-all prescription for scenario planning. Metropolitan areas are encouraged to design a scenario planning process that best addresses local conditions and builds on other concurrent or recent planning efforts.
 
@@ -74,7 +74,7 @@ A review of existing plans can uncover guiding principles, goals, objectives and
 
 It is important to describe scenario planning in terms of community benefits and outcomes. Many community goals – such as livable communities, health concerns, safety for children and others, walking and biking – have the additional benefit of also reducing GHG emissions. Oregon communities have been actively engaged in conversations about land use and transportation for many years. Many ongoing or recurrent planning efforts will likely gain new interest and excitement from using the scenario planning process, and then can also lend their credibility and constituency to scenario planning.
 
-### Strategies for GHG reductions 
+### Strategies for GHG reductions
 
 Strategies – or actions and investment methods – are employed at multiple levels to achieve specific outcomes. Strategies can be at any geographic scope or scale, such as overarching, targeted but general, or specific. For instance, an overarching strategy is regional, a targeted but general may be citywide and specific could refer to a neighborhood.
 
@@ -203,7 +203,7 @@ A key value of VisionEval is how it facilitates running many scenarios or possib
 
 -   Combination Scenarios (can be automated) – Changes in multiple input “categories,” all combinations can be automatically run. A large set of scenarios can be further exported and explored in the VisionEval Scenario Viewer, an on-line interactive tool. For more sophisticated scenario analysis, VisionEval can be connected to TMIP-EMAT, further described in Chapter 7.2. See <https://rosap.ntl.bts.gov/view/dot/64646/dot_64646_DS1.pdf> for additional information for Transportation Planning for Uncertain Times: A Practical Guide to Decision Making Under Deep Uncertainty for MPOs.
 
-### Develop and Evaluate Alternative Scenarios 
+### Develop and Evaluate Alternative Scenarios
 
 Although many alternative scenarios can be developed in a short time with VisionEval, too many scenarios may make the differences between each difficult to understand, and too few scenarios may not present sufficient options for stakeholders.
 
@@ -249,7 +249,7 @@ Sensitivity testing is done to inform the Preferred Scenario and evaluate how ch
 
 Each sensitivity test is represented by a small number of changes to reference case input files. Once the changes are made (e.g., changing the input regarding the proportion of households having pay-as-you-drive insurance). Automated procedures can be used to create scenarios that represent the possible combinations of inputs for testing (e.g. increasing transit service and improving travel demand management programs). The results of all these scenarios are then evaluated to show potential changes and synergies that can occur by combining various programs.
 
-## Develop and identify a Preferred Scenario 
+## Develop and identify a Preferred Scenario
 
 Developing and identifying a preferred scenario requires a combination of public and stakeholder input and the evaluation results. The timeline and resources of such an effort can be significantly higher than the exploration of scenarios in a Strategic Assessment. The public and elected officials are likely to play a much larger role. The preferred scenario is a package that includes a expected outcomes, a set of major programs, policies or general actions, and spatially distributed future housing and employment estimates. Once the public has weighed in on their preferred elements of each of the alternative scenarios, the next step is to synthesize that input and translate it into a preferred scenario.
 

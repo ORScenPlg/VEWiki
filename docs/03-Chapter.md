@@ -1,4 +1,4 @@
-# Visioneval – Developing a Model
+# Visioneval – Developing a Model {#chapter3}
 
 VisionEval is the preferred strategic planning model for scenario planning. It enables numerous scenarios with a broad range of inputs and uncertainties. The model was used to set the regional GHG targets, and is best suited to track progress towards those goals.
 
@@ -74,7 +74,7 @@ These inputs require a mix of data and decisions by the metropolitan area. Local
 
 This section covers the nature of the land development patterns that need to be entered into the models for all analysis years.
 
-### Socio-economic and Land Use 
+### Socio-economic and Land Use
 
 One of the strengths of VisionEval is the rich detail on individual households. This allows for household specific policies, travel behavior can respond to specific household costs and attributes, and outputs can be mined for differences by population groups. The approach of building on a synthesized set of households borrows from the state of the practice in activity-based travel demand models. The data includes:
 
@@ -197,7 +197,7 @@ Both the AP2022 and the STS packages are readily available and can be used simpl
 
 Appendix B includes additional information on these packages and updating inputs within them.
 
-## Model Calibration and Validation 
+## Model Calibration and Validation
 
 Once the model inputs are produced and the models can run using the correct packages and model parameters the model requires calibration to an observed base year and validation to other historical years. The calibration and validation of VisionEval is required ensure the model is reflecting expected or existing conditions in a way stakeholders will understand and use.
 

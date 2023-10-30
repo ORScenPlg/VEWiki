@@ -1,4 +1,4 @@
-# Future Models to Evaluate Progress to the region's GHG Reduction Target
+# Future Models to Evaluate Progress to the region's GHG Reduction Target {#chapter4}
 
 Scenario planning often requires the assessment of large numbers of future scenarios, each assessing a different combination of prioritizations, policy decisions, and constraints.
 
@@ -76,7 +76,7 @@ For example, if the 2005 VMT per capita were 16.5 then the Target in year 2045 (
 
 The Target Rule Scenario, also often referred to as the Preferred Scenario, represents the policy and investment strategies to implement that will get a metropolitan area to its GHG reduction target from 2005 levels (see Oregon Revised Statutes Chapter 660, Division 44 Metropolitan Greenhouse Gas Reduction Targets). The scenario must be measured and calibrated to meet or exceed the target. This could be the preferred scenario from previous planning processes. In tracking progress to the OAR’s GHG target, this scenario is allowed to assume state-led actions in the STS, such as vehicle-fuel regulations and pricing policies, along with model assumptions at the time the target was set (I.e. fuel price, income growth). These scenario changes have the effect of isolating the progress that is within local agency authority. As such, progress to the target is often characterized as household VMT/capita metric, rather than GHG. See Section 5 for more detail about the VisionEval assumptions when tracking progress to the OAR GHG target rule.
 
-### Alternative Scenarios 
+### Alternative Scenarios
 
 Example conditions to explore in scenarios include strong or weak economic growth, demographic shifts, or deployment of new technologies like app-based ridesharing (e.g., ride-hailing like Uber & Lyft). Model scenarios are defined in terms of combinations of individual model input parameters and policy choices. Combining all input values will result in 10,368 total scenarios, which would take days to run. A user usually does not need all the possible combinations of scenarios.
 

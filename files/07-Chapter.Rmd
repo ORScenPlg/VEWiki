@@ -1,4 +1,4 @@
-# Review Scenario Inputs and Outputs
+# Review Scenario Inputs and Outputs {#chapter7}
 
 ## Input Process
 
@@ -152,13 +152,13 @@ Figure : Selecting MOdel OUtputs in the Scenario Viewer
 
 ![A picture containing graphical user interface Description automatically generated](media/image5.png)
 
-## **Analyzing & Visualizing Outputs** 
+## **Analyzing & Visualizing Outputs**
 
 The alternative scenarios can be evaluated using the evaluation criteria, VisionEval model, as well as other tools if available. The recommended approach is to begin with the assessment using VisionEval, then link to other desired tools that may be of interest to the region. Each alternative scenario should be evaluated based on the same evaluation criteria used in the reference case evaluation for easy comparison.
 
 For the best results during an outreach campaign and to maximize participation it’s important to use a variety of engagement methods. Choosing strategies and elements from the alternative scenarios is an empowering activity for the public and stakeholders, and as a result, participation is likely to grow.
 
-### Comparing scenarios 
+### Comparing scenarios
 
 Through the early phase of the process decision-makers, stakeholders and the public will have been given an opportunity to explore and discuss the land use and transportation choices the community faces in addressing important issues over the next 20 years or more and test those choices in alternative scenarios.
 
