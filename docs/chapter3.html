@@ -6,22 +6,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>3 Visioneval – Developing a Model | VEWiki</title>
 <meta name="author" content="">
+<meta name="description" content="VisionEval is the preferred strategic planning model for scenario planning. It enables numerous scenarios with a broad range of inputs and uncertainties. The model was used to set the regional GHG...">
 <meta name="generator" content="bookdown 0.35 with bs4_book()">
 <meta property="og:title" content="3 Visioneval – Developing a Model | VEWiki">
 <meta property="og:type" content="book">
+<meta property="og:description" content="VisionEval is the preferred strategic planning model for scenario planning. It enables numerous scenarios with a broad range of inputs and uncertainties. The model was used to set the regional GHG...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="3 Visioneval – Developing a Model | VEWiki">
+<meta name="twitter:description" content="VisionEval is the preferred strategic planning model for scenario planning. It enables numerous scenarios with a broad range of inputs and uncertainties. The model was used to set the regional GHG...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.1/transition.js"></script><script src="libs/bs3compat-0.5.1/tabs.js"></script><script src="libs/bs3compat-0.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="bs4_style.css">
-<meta name="description" content="VisionEval is the preferred strategic planning model for scenario planning. It enables numerous scenarios with a broad range of inputs and uncertainties. The model was used to set the regional GHG...">
-<meta property="og:description" content="VisionEval is the preferred strategic planning model for scenario planning. It enables numerous scenarios with a broad range of inputs and uncertainties. The model was used to set the regional GHG...">
-<meta name="twitter:description" content="VisionEval is the preferred strategic planning model for scenario planning. It enables numerous scenarios with a broad range of inputs and uncertainties. The model was used to set the regional GHG...">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -51,6 +51,8 @@
 <li><a class="" href="chapter6.html"><span class="header-section-number">6</span> Future Scenario – Tracking progress to the GHG Target Rule</a></li>
 <li><a class="" href="chapter7.html"><span class="header-section-number">7</span> Review Scenario Inputs and Outputs</a></li>
 <li><a class="" href="chapter8.html"><span class="header-section-number">8</span> Implementing Results</a></li>
+<li><a class="" href="appendixA.html"><span class="header-section-number">9</span> Appendix A: VE-State Validation</a></li>
+<li><a class="" href="appendixB.html"><span class="header-section-number">10</span> Appendix B: Customizing VE Model Packages</a></li>
 </ul>
 
         <div class="book-extra">
@@ -58,17 +60,17 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="chapter3" class="section level1" number="3">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="chapter3" class="section level1">
 <h1>
 <span class="header-section-number">3</span> Visioneval – Developing a Model<a class="anchor" aria-label="anchor" href="#chapter3"><i class="fas fa-link"></i></a>
 </h1>
 <p>VisionEval is the preferred strategic planning model for scenario planning. It enables numerous scenarios with a broad range of inputs and uncertainties. The model was used to set the regional GHG targets, and is best suited to track progress towards those goals.</p>
-<div id="model-geography-and-inputs" class="section level2" number="3.1">
+<div id="model-geography-and-inputs" class="section level2">
 <h2>
 <span class="header-section-number">3.1</span> Model Geography and Inputs<a class="anchor" aria-label="anchor" href="#model-geography-and-inputs"><i class="fas fa-link"></i></a>
 </h2>
 <p>All VisionEval models share a standard geography framework. Although models are applied at different scales, sharing a common geographic definition enables modules to be more readily shared between models and will inform the required input data. The standard geography framework specifies levels of geographical units, their names, their relative sizes, and the hierarchical relationships between them. It is flexible in that it allows geographical boundaries to be determined by the user.</p>
-<p>VisionEval operates with a zonal geography, using zones or districts at the most granular level..</p>
+<p>VisionEval operates with a zonal geography, using zones or districts at the most granular level.</p>
 <p>Following is the definition of the geographic structure of the VisionEval model system:</p>
 <ul>
 <li><p><strong>Region level</strong> is the entire model area. Large-scale characteristics that do not vary across the region are specified at the region level. For example, the carbon intensities of vehicle fuels are defined at the region level since they tend not to vary widely across a large geographic area. When choosing a region for VisionEval, the area should break along Census boundaries (typically a metropolitan classification).</p></li>
@@ -78,10 +80,9 @@
 </ul>
 <p>Geographical relationships for a model are described in the “geo.csv” file contained in the “defs” directory. This file tabulates the names of each geographic unit (except for Region) and the relationships between them. Each row shows a unique relationship. Where a unit of geography is not explicitly defined (i.e., it will be simulated), “NA” values are placed in the table.</p>
 <p>Figure 3 shows examples of the “geography.csv” file where only A-zones are specified and where A-zones and B-zones are specified. It should be noted that there are no naming conventions for individual zones. The user is free to choose what conventions they will use.</p>
-<p>Figure : geographic levels</p>
-<div class="inline-figure"> <img src="images/ch3_ccrpc_zones.jpg" alt="A map of a neighborhood Description automatically generated">
-</div>
-<div id="location-types" class="section level3" number="3.1.1">
+<p><strong>Figure 3: Geographic Levels</strong></p>
+<div class="inline-figure"><img src="../media/ch3_ccrpc_zones.jpg"></div>
+<div id="location-types" class="section level3">
 <h3>
 <span class="header-section-number">3.1.1</span> Location Types<a class="anchor" aria-label="anchor" href="#location-types"><i class="fas fa-link"></i></a>
 </h3>
@@ -91,10 +92,8 @@
 <li><p>The “town” development type, is similar to the Metropolitan type, but outside the primary city (e.g. satellite communities). These also include “outer” are types or exurban areas. In Oregon these are typically cities with urban growth boundaries outside of Metropolitan Planning Areas.</p></li>
 <li><p>The “rural” development type includes all remaining lands. These less developed lands located outside, often located outside of urban growth boundaries, ranging from resource lands to undeveloped urban land. “Fringe” area types are included in this category.</p></li>
 </ul>
-<p>Figure : Land Development Types Example</p>
-<div class="float">
-<img src="images/ch3_eugene.png" alt="A map of a city Description automatically generated"><div class="figcaption">A map of a city Description automatically generated</div>
-</div>
+<p><strong>Figure 4: Land Development Types Example</strong></p>
+<div class="inline-figure"><img src="../media/ch3_eugene.png"></div>
 <p>Geography is important in VisionEval and treated differently than in traditional urban travel models. Importantly, different model inputs are developed at different geography levels. A list of VE-RSPM inputs by geography level can be found on <a href="https://github.com/VisionEval/VisionEval/wiki/VERSPM-Training/VE-RSPM_Inputs_by_Geo.pdf">GitHub</a>. Geography is also a significant factor in how the model calculates travel supply and travel behavior or demand:</p>
 <ul>
 <li><p>VE-RSPM predicts household travel based on the characteristics of the geographic area where a household resides including population density and housing type(s).</p></li>
@@ -103,15 +102,8 @@
 <li><p>By altering the mix of development types within a B-zone, the effects of different population and activity densities around the metropolitan area can be assessed in VisionEval. For example, modeling a scenario which allocates a larger proportion of households to lower density districts will produce higher VMT forecasts than modeling a scenario which allocates more households to higher density urban districts.</p></li>
 </ul>
 </div>
-<div id="place-types" class="section level3" number="3.1.2">
-<h3>
-<span class="header-section-number">3.1.2</span> Place Types<a class="anchor" aria-label="anchor" href="#place-types"><i class="fas fa-link"></i></a>
-</h3>
-<p><span class="math display">\[ placeholder for adding more information for the Oregon place types and the latest tool update \]</span></p>
-<p><span class="math display">\[ include instructions on how the Place Type tool can help inform elements of VisionEval models \]</span></p>
 </div>
-</div>
-<div id="set-up-base-model" class="section level2" number="3.2">
+<div id="set-up-base-model" class="section level2">
 <h2>
 <span class="header-section-number">3.2</span> Set up Base Model<a class="anchor" aria-label="anchor" href="#set-up-base-model"><i class="fas fa-link"></i></a>
 </h2>
@@ -125,7 +117,7 @@
 </ul>
 <p>These inputs require a mix of data and decisions by the metropolitan area. Local inputs are combined with statewide assumptions provided by others.</p>
 <p>This section covers the nature of the land development patterns that need to be entered into the models for all analysis years.</p>
-<div id="socio-economic-and-land-use" class="section level3" number="3.2.1">
+<div id="socio-economic-and-land-use" class="section level3">
 <h3>
 <span class="header-section-number">3.2.1</span> Socio-economic and Land Use<a class="anchor" aria-label="anchor" href="#socio-economic-and-land-use"><i class="fas fa-link"></i></a>
 </h3>
@@ -135,7 +127,7 @@
 <p>Household members who are workers are assigned a B-zone work location as a function of the distribution of jobs in the model area. Each home and work location is tied to a specific B-zone with its associated land use and employment attributes.</p>
 <p>A mixed use development or neighborhood is one that includes residential and non-residential land uses in close proximity to one another, allowing for pedestrian access to many desired goods and services. In VisionEval the proportion of each zone that is identified as “mixed use” is typically calculated by the program, where VisionEval randomly samples from an asserted distribution is used to define whether a household is in a mixed-use area. The share of household in mixed use areas can also be specified explicitly by the user to represent more ambitious policy actions.</p>
 <p>Zonal employment estimates in VisionEval are made for retail, service, and total employment categories. The delineation of retail and service employment is typically by the two-digit sectors in the North American Industrial Classification System (NAICS), data available from the U.S. Census, which is also used in employment classification in the regional travel models. This employment helps to determine if the area is mixed use, and provides work locations for modeled households.</p>
-<p>Table : RSPM Demographic and Land Use Inputs</p>
+<p><strong>Table 4: RSPM Demographic and Land Use Inputs</strong></p>
 <div class="inline-table"><table class="table table-sm">
 <colgroup>
 <col width="63%">
@@ -143,9 +135,9 @@
 <col width="17%">
 </colgroup>
 <thead><tr class="header">
-<th>Description Error! Reference source not found.</th>
+<th>Description</th>
 <th>File</th>
-<th>module used</th>
+<th>Module Used</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
@@ -225,15 +217,15 @@
 </tr>
 </tbody>
 </table></div>
-<p>Source: <a href="https://github.com/VisionEval/VisionEval/wiki/VERSPM-Training/VE-RSPM_File_Summary_20190226.xlsx" class="uri">https://github.com/VisionEval/VisionEval/wiki/VERSPM-Training/VE-RSPM_File_Summary_20190226.xlsx</a></p>
-<div id="input-calculation-example-azone_per_cap_inc.csv" class="section level4" number="3.2.1.1">
+<p><em><font size="1">Source: <a href="https://github.com/VisionEval/VisionEval/wiki/VERSPM-Training/VE-RSPM_File_Summary_20190226.xlsx" class="uri">https://github.com/VisionEval/VisionEval/wiki/VERSPM-Training/VE-RSPM_File_Summary_20190226.xlsx</a></font></em></p>
+<div id="input-calculation-example-azone_per_cap_inc.csv" class="section level4">
 <h4>
-<span class="header-section-number">3.2.1.1</span> Input Calculation Example: azone_per_cap_inc.csv<a class="anchor" aria-label="anchor" href="#input-calculation-example-azone_per_cap_inc.csv"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.2.1.1</span> <em>Input Calculation Example: azone_per_cap_inc.csv</em><a class="anchor" aria-label="anchor" href="#input-calculation-example-azone_per_cap_inc.csv"><i class="fas fa-link"></i></a>
 </h4>
 <p>Used in the PredictIncome step of the VESimHouseholds module.</p>
 <p>This file contains information on regional average per capita household (HHIncomePC) and group quarters (GQIncomePC) income by forecast year in year 2010 dollars. The data can be obtained from the U.S. Department of Commerce Bureau of Economic Analysis for the current year or from regional or state sources for forecast years. In order to use current year dollars just replace 2010 in column labels with current year.</p>
 <p>For example, if the data is obtained in year 2015 dollars then the column labels in the file shown below will become HHIncomePC.2015 and GQIncomePC.2015 (as opposed to 2010).</p>
-<p>Table : AZONE_PER_CAP_INC.cSV Layout</p>
+<p><strong>Table 5: azone_per_cap_inc.csv Layout</strong></p>
 <div class="inline-table"><table class="table table-sm">
 <thead><tr class="header">
 <th>Geo</th>
@@ -258,7 +250,7 @@
 </table></div>
 <p>The Oregon VE-State model assumed per capita income by county. For metropolitan VisionEval models, locals first estimate base year per capita income for their area using census data. It is recommended that the forecast percent future income growth be consistent with the state (the same regardless of starting value), unless there are local assumptions to use in its place.</p>
 <p>Table 6 shows the statewide income growth index to convert the input values for “azone_per_cap_inc.csv”, based on their base year calculated values.</p>
-<p>Table : Oregon Income Index (confirm with ODOT)</p>
+<p><strong>Table 6: Oregon Income Index</strong></p>
 <div class="inline-table"><table class="table table-sm">
 <thead><tr class="header">
 <th>Index relative to 2010 for use in VisionEval</th>
@@ -305,7 +297,7 @@
 </table></div>
 </div>
 </div>
-<div id="transportation-data" class="section level3" number="3.2.2">
+<div id="transportation-data" class="section level3">
 <h3>
 <span class="header-section-number">3.2.2</span> Transportation Data<a class="anchor" aria-label="anchor" href="#transportation-data"><i class="fas fa-link"></i></a>
 </h3>
@@ -328,16 +320,239 @@
 <li><p>Marketing/ ITS-Operations management (Workplace TDM programs, individualized marketing program, eco driving practices for autos and trucks, low rolling resistance tires, car sharing, ITS-Ops degree of deployment, household vehicle use optimization)</p></li>
 <li><p>Many of these values can be obtain for both base and future year from the region’s travel demand model, or pulled for the specific region from the Statewide VisionEval scenarios.</p></li>
 </ul>
-<div id="inputs" class="section level4" number="3.2.2.1">
+<div id="inputs" class="section level4">
 <h4>
 <span class="header-section-number">3.2.2.1</span> Inputs<a class="anchor" aria-label="anchor" href="#inputs"><i class="fas fa-link"></i></a>
 </h4>
 <p>VisionEval inputs are shown in Table 7. In Oregon, since a statewide model is maintained, starter values for the region can be pulled form the statewide VisionEval scenarios, both a reference “Plans &amp; Trends” scenario, and a “STS Vision” scenario. As such Table 7 notes inputs for both the state and regional VisionEval models (VE-State file name is given in parenthesis). Since the B-zones are simulated in the statewide VisionEval model the geography is often different geography.</p>
-<p>Table : RSPM and VE-State Transportation INputs</p>
-<p>[TABLE]</p>
+<p><strong>Table 7: RSPM and VE-State Transportation Inputs</strong></p>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="43%">
+<col width="18%">
+<col width="37%">
+</colgroup>
+<thead><tr class="header">
+<th></th>
+<th>RSPM File (VE-State File)</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><strong>Actions</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Single occupancy vehicle (SOV) diversion</td>
+<td>azone_prop_sov_dvmt_diverted.csv</td>
+<td>Bike, Personal Electric Vehicle, etc diversion of Single Occupancy vehicle tours by year by A-zone(In VE-State, applies to “urban” and “town” but not “rural” loc types within the A-zone).</td>
+</tr>
+<tr class="odd">
+<td>Car service characteristics</td>
+<td>azone_carsvc_characteristics.csv</td>
+<td>Car Service Rate (dollars/mile) by level (high, low, ave), average Car service vehicle age, and limits on shifting to car service (LtTruck, Auto) by Year by A-zone</td>
+</tr>
+<tr class="even">
+<td>Car service availability</td>
+<td>bzone_carsvc_availability.csv (azone_carsvc_availability.csv)</td>
+<td>Car Service Level of service (High, Low) by Year by B-zone for RSPM (A-zone by Area Type for VE-State)</td>
+</tr>
+<tr class="odd">
+<td>Car service access times</td>
+<td>azone_vehicle_access_times.csv</td>
+<td>Minutes to call-up vehicles by type (owned, High/Low CarSvc) by year by A-zone</td>
+</tr>
+<tr class="even">
+<td>ITS operations</td>
+<td>marea_operations_deployment.csv</td>
+<td>Deployment (0-1,1=100%VMT coverage) of operations programs on Fwy (Ramp metering, Incident Response) and Arterials (Signal Coordination, Access Mgmt) programs by year by M-area</td>
+</tr>
+<tr class="odd">
+<td>% VMT covered by Drivers in Eco-Drive programs</td>
+<td>marea_speed_smooth_ecodrive.csv</td>
+<td>Deployment (0-1,1=100%VMT coverage) of Speed Smoothing (Fwys, Arterials) and Eco-Driving (LDV, HD Trucks) programs by year by M-area</td>
+</tr>
+<tr class="even">
+<td>ITS speed smoothing (Freeway ATM, Art Signal optimization) (optional)</td>
+<td>other_ops_effectiveness.csv</td>
+<td>Delay reduction (0-1) anticipated with full deployment of user-defined other operations program by road type (Fwy, Art), congestion type (Reoccurring, non-recurring) by 5 congestion levels by year by A-zone</td>
+</tr>
+<tr class="odd">
+<td>Parking restrictions</td>
+<td>bzone_parking.csv (marea_parking-avail_by_area_type.csv &amp; marea_parking-cost_by_area_type.csv )</td>
+<td>Parking restrictions: Free spaces per dwelling unit type (SF, MF, GQ), share of workers paying for parking and in cashout program, and average parking fee by Year by B-zone (M-area by Area Type for VE-State)</td>
+</tr>
+<tr class="even">
+<td>Road lane-miles</td>
+<td>marea_lane_miles.csv</td>
+<td>Freeway and arterial lane-miles by Year and metropolitan area</td>
+</tr>
+<tr class="odd">
+<td>Demand management</td>
+<td>bzone_travel_demand_mgt.csv (azone_travel_demand_mgt.csv &amp; marea_travel_demand_mgt_by_area_type.csv)</td>
+<td>Share of participants in home Individualized Marketing programs (HHs) and work-based Transportation Demand Management programs (workers) by year by B-zone (A-zone and M-area by Area Type for VE-State)</td>
+</tr>
+<tr class="even">
+<td>Transit service (1)</td>
+<td>marea_transit_service.csv</td>
+<td>Annual Transit Service revenue-miles by service mode (demand responsive, bus, rail, etc) by year, and M-area.</td>
+</tr>
+<tr class="odd">
+<td>Transit service (2)</td>
+<td>bzone_transit_service.csv (NA for VE-State)</td>
+<td>Transit D (D4c, accessible hourly PM peak service frequency as defined by EPA Smart Location Database) by year and B-zone</td>
+</tr>
+<tr class="even">
+<td>Transit fuels and powertrains (1)</td>
+<td>marea_transit_fuel.csv</td>
+<td>Option 1(mix) 1of2: Fuel mix (share of GGE) for Transit Vehicles (Van, Bus, Rail) for ICE/HEV(diesel, gas, CNG – no rail CNG) by stock year</td>
+</tr>
+<tr class="odd">
+<td>Transit fuels and powertrains (2)</td>
+<td>marea_transit_biofuel_mix.csv</td>
+<td>Option 1(mix) 2of2: Biofuels share of Transit fuels (ethanol, biodiesel, RNG) by stock year and M-area</td>
+</tr>
+<tr class="even">
+<td>Transit fuels and powertrains (3)</td>
+<td>marea_transit_powertrain_prop.csv</td>
+<td>Powertrain mix (share of ICE, HEV, EV DVMT) for Transit Veh (Van, Bus, Rail) by stock year and M-area</td>
+</tr>
+<tr class="odd">
+<td>Transit fuels carbon intensity</td>
+<td>marea_transit_ave_fuel_carbon_intensity.csv</td>
+<td>Option2(CI direct): Carbon Intensity of composite Transit Fuel (g/MJ) by stock year and M-area</td>
+</tr>
+<tr class="even">
+<td><strong>Pricing</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Congestion charges</td>
+<td>marea_congestion_charges.csv</td>
+<td>Congestion Charges ($/mile) by road type (Fwy, Arterial) by 5 congestion levels by year by M-area</td>
+</tr>
+<tr class="even">
+<td>Proportion of external costs paid</td>
+<td>region_prop_externalities_paid.csv</td>
+<td>Share of Social Externalities covered in household fees (carbon, other) by year modelwide</td>
+</tr>
+<tr class="odd">
+<td>Carbon pricing (social recovery cost) (optional)</td>
+<td>region_co2e_cost.csv</td>
+<td>Environmental and social cost of CO2e emissions per metric ton carbon by year model wide.</td>
+</tr>
+<tr class="even">
+<td>PAYD insurance participation</td>
+<td>azone_payd_insurance_prop.csv</td>
+<td>Share of HHs in Pay-as-you-Drive Auto Insurance programs by Year by A-zone</td>
+</tr>
+<tr class="odd">
+<td>Vehicle related taxes</td>
+<td>azone_hh_veh_own_taxes.csv</td>
+<td>Annual auto ownership fees (fixed and sales tax rate) by Year by A-zone</td>
+</tr>
+<tr class="even">
+<td>VMT tax or road usage charge</td>
+<td>azone_veh_use_taxes.csv</td>
+<td>Mileage Based Fee by type (fuel tax, VMT fee, Ev surcharge) by year by A-zone</td>
+</tr>
+<tr class="odd">
+<td>Retail costs for fuel</td>
+<td>azone_fuel_power_cost.csv</td>
+<td>Vehicle energy costs for fuel (dollars/gallon), electricity (dollars/kwhr) by year by A-zone (exclusive of taxes)</td>
+</tr>
+<tr class="even">
+<td>Road costs</td>
+<td>region_road_cost.csv</td>
+<td>Infrastructure costs (BaseModernization, PreservationOpsMtncc, Other, Arteraial per LnMi, Fwy per LnMi) used to estimate LDV VMT fee to fully recover road costs.</td>
+</tr>
+<tr class="odd">
+<td><strong>Vehicles and fuels</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Charging infrastructure</td>
+<td>azone_charging_availability.csv</td>
+<td>Availability (0-1) of vehicle charging by dwelling typ (SF, MF, GQ) by stock year by A-zone</td>
+</tr>
+<tr class="odd">
+<td>Electricity carbon intensity</td>
+<td>azone_electricity_carbon_intensity.csv</td>
+<td>Carbon Intensity of Electricity (g/MJ) by stock year by A-zone</td>
+</tr>
+<tr class="even">
+<td>Car service powertrains</td>
+<td>region_carsvc_powertrain_prop.csv</td>
+<td>LDV-Carservice Vehicle (Auto/LightTruck) powertrain (Ice/Hev/Phev/Bev) shares by stock year by M-area.</td>
+</tr>
+<tr class="odd">
+<td>Commercial service powertrains</td>
+<td>region_comsvc_powertrain_prop.csv</td>
+<td>LDV-ComSvc Vehicle (Auto/LightTruck) powertrain (Ice/Hev/Bev) shares by stock year by M-area.</td>
+</tr>
+<tr class="even">
+<td>Heavy truck powertrains</td>
+<td>region_hvytrk_powertrain_prop.csv</td>
+<td>HD Truck powertrain (ICE, HEV, EV) shares by stock year</td>
+</tr>
+<tr class="odd">
+<td>% of light trucks in household fleet</td>
+<td>azone_hh_lttrk_prop.csv</td>
+<td>Share of household LDV that are Light Trucks by year by A-zone</td>
+</tr>
+<tr class="even">
+<td>% of light trucks in car service fleet</td>
+<td>region_carsvc_lttrk_prop.csv</td>
+<td>Share of CarSvc LDV that are Light Trucksby year by A-zone</td>
+</tr>
+<tr class="odd">
+<td>% of light trucks in commercial service fleet</td>
+<td>region_comsvc_lttrk_prop.csv</td>
+<td>LDV-ComSvc share of vehicles that are Light Truck by stock year by A-zone</td>
+</tr>
+<tr class="even">
+<td>Mean age of household vehicles</td>
+<td>azone_hh_veh_mean_age.csv</td>
+<td>Mean Age of household vehicles by type (auto, light truck) by year by A-zone. (NOTE: CarSvc age is in A-zone_carsvc_characteristics.csv)</td>
+</tr>
+<tr class="odd">
+<td>Mean age of commercial service vehicles</td>
+<td>region_comsvc_veh_mean_age.csv</td>
+<td>Mean Age of household vehicles by type (auto, light truck) by year by A-zone</td>
+</tr>
+<tr class="even">
+<td>Average fuel carbon intensity</td>
+<td>region_ave_fuel_carbon_intensity.csv</td>
+<td>LDV (HH, CarSvc, ComSvc, Van) + HD (Truck, Bus, Rail) composite carbon Intensity of Fuel (g/MJ) by stock year by M-area</td>
+</tr>
+<tr class="odd">
+<td><strong>Base year set up</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Base year urban VMT</td>
+<td>marea_base_year_dmvt.csv</td>
+<td>M-area DVMT by type (LDV, HD Truck) overwrite of base year 2010 Hwy Statistics default (NA recommended for VE-RSPM) and urbanized area name</td>
+</tr>
+<tr class="odd">
+<td>Base year DVMT split by functional class</td>
+<td>marea_dvmt_split_by_road_class.csv</td>
+<td>Starting share of DVMT by type (LDV, HvyTrk, Bus) by road type (Fwy,Arterial, other), LDV share is adjusted by congestion model.</td>
+</tr>
+<tr class="even">
+<td>Base year VMT</td>
+<td>region_base_year_dvmt.csv</td>
+<td>Region Freight Vehicle DVMT growth rates-basis (ComSvc-Pop or Inc, HHdvmt; HvyTrk-Pop or Inc) and overwrite of base year 2010 Hwy Statistics default of region Heavy Truck DVMT (NA recommended for VE-RSPM) and state name.</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 </div>
-<div id="base-year-run-script-and-ve-packages" class="section level3" number="3.2.3">
+<div id="base-year-run-script-and-ve-packages" class="section level3">
 <h3>
 <span class="header-section-number">3.2.3</span> Base Year Run Script and VE Packages<a class="anchor" aria-label="anchor" href="#base-year-run-script-and-ve-packages"><i class="fas fa-link"></i></a>
 </h3>
@@ -351,7 +566,7 @@
 <p>Appendix B includes additional information on these packages and updating inputs within them.</p>
 </div>
 </div>
-<div id="model-calibration-and-validation" class="section level2" number="3.3">
+<div id="model-calibration-and-validation" class="section level2">
 <h2>
 <span class="header-section-number">3.3</span> Model Calibration and Validation<a class="anchor" aria-label="anchor" href="#model-calibration-and-validation"><i class="fas fa-link"></i></a>
 </h2>
@@ -364,7 +579,7 @@
 </ul>
 <p>In all cases, the historical years provide the opportunity to use observed data to inform the VE model inputs and evaluate the VE model outputs to empirical observations.</p>
 <p>Validation of the VE-RSPM is documented on VisionEval GitHub website, based on March 2019 VE Training notes (see <a href="https://github.com/gregorbj/Archive-VisionEval/blob/develop/api/VE_Training_March_13-14_2019/VE_Training.md#10-calibration-and-validation"><em>here</em></a>).</p>
-<div id="ve-rspm-validation-process" class="section level3" number="3.3.1">
+<div id="ve-rspm-validation-process" class="section level3">
 <h3>
 <span class="header-section-number">3.3.1</span> VE-RSPM Validation Process<a class="anchor" aria-label="anchor" href="#ve-rspm-validation-process"><i class="fas fa-link"></i></a>
 </h3>
@@ -387,35 +602,26 @@
 <li><p><strong>Comparable communities</strong>: VE output results can be compared to prior VE scenario results in the same or other Oregon locations. Reports for all Oregon Strategic Assessment/Scenario Planning efforts can be found on this <a href="https://www.oregon.gov/ODOT/Planning/Pages/Strategic-Assessment.aspx"><em>OSTI website</em></a>. CAMPO &amp; RVMPO Strategic Assessment reports include Reference Case (typically early report table) and sensitivity test results (typically in appendices) that provide good comparable estimates.</p></li>
 </ul>
 </div>
-<div id="sample-mpo-validation-targets-for-ve" class="section level3" number="3.3.2">
+<div id="calibration-variables-and-sources-of-data" class="section level3">
 <h3>
-<span class="header-section-number">3.3.2</span> Sample MPO Validation Targets for VE<a class="anchor" aria-label="anchor" href="#sample-mpo-validation-targets-for-ve"><i class="fas fa-link"></i></a>
-</h3>
-</div>
-<div id="calibration-variables-and-sources-of-data" class="section level3" number="3.3.3">
-<h3>
-<span class="header-section-number">3.3.3</span> Calibration variables and sources of data<a class="anchor" aria-label="anchor" href="#calibration-variables-and-sources-of-data"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.3.2</span> Calibration variables and sources of data<a class="anchor" aria-label="anchor" href="#calibration-variables-and-sources-of-data"><i class="fas fa-link"></i></a>
 </h3>
 <p>The following Validation Target Datasets are provided by ODOT for use in Albany (AAMPO). Note that some come from the VE-State model, with most from outside datasets:</p>
-<div id="vmt" class="section level4" number="3.3.3.1">
+<div id="vmt" class="section level4">
 <h4>
-<span class="header-section-number">3.3.3.1</span> VMT<a class="anchor" aria-label="anchor" href="#vmt"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.3.2.1</span> VMT<a class="anchor" aria-label="anchor" href="#vmt"><i class="fas fa-link"></i></a>
 </h4>
 <p>The table below shows the HPMS data available from ODOT (and from FHWA) with link volumes for the AAMPO metro region. Each metro region can be selected from the data to obtain a link by link analysis. Mindful that VE uses Freeway (Interstate, Other Freeways &amp; Expressways), and Arterials (Other Principal Arterial) as the key inputs. The other lane miles can be ignored in the VE model given the models were estimated only with those two inputs.</p>
-<p>Figure 5: HPMS VMT (miles of all modes on roads within MPO boundary)</p>
-<blockquote>
-<div class="float">
-<img src="media/image3.png" alt="A screenshot of a computer Description automatically generated"><div class="figcaption">A screenshot of a computer Description automatically generated</div>
+<p><strong>Figure 5: HPMS VMT (miles of all modes on roads within MPO boundary)</strong></p>
+<div class="inline-figure"><img src="../media/ch3_HPMSMiles_2016.png"></div>
+<p><em><font size="1"> Source: 1999-2016 VMT_Miles history.xlsx (\\s6000e\6420only\Statewide\Tools\GreenSTEP\ModelBuild\_Data\Local_Plans\Roads\HPMS_data)</font></em></p>
 </div>
-</blockquote>
-<p>Source: 1999-2016 VMT_Miles history.xlsx (\\s6000e\6420only\Statewide\Tools\GreenSTEP\ModelBuild\_Data\Local_Plans\Roads\HPMS_data)</p>
-</div>
-<div id="light-duty-vehicles" class="section level4" number="3.3.3.2">
+<div id="light-duty-vehicles" class="section level4">
 <h4>
-<span class="header-section-number">3.3.3.2</span> Light Duty Vehicles<a class="anchor" aria-label="anchor" href="#light-duty-vehicles"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.3.2.2</span> Light Duty Vehicles<a class="anchor" aria-label="anchor" href="#light-duty-vehicles"><i class="fas fa-link"></i></a>
 </h4>
 <p>The following data light duty vehicle data is collected from the DMV. Light Duty DMV vehicles are classified as follows:</p>
-<p>Table : light duty vehicles</p>
+<p><strong>Table 8: Light Duty Vehicles</strong></p>
 <div class="inline-table"><table class="table table-sm">
 <colgroup>
 <col width="27%">
@@ -450,43 +656,28 @@
 </tr>
 </tbody>
 </table></div>
-<p>Source: STS-Monitoring_DMV2016.xlsx</p>
-<p>\\s6000e\6420only\Statewide\Tools\GreenSTEP\ModelBuild\_Data\Vehicles_Fuels\DMV\</p>
-<p>Table : 2016 Oregon DMV Registered Vehicles by MPO</p>
-<div class="float">
-<img src="media/image4.png" alt="A screenshot of a computer Description automatically generated"><div class="figcaption">A screenshot of a computer Description automatically generated</div>
+<p><em><font size="1">Source: STS-Monitoring_DMV2016.xlsx\\s6000e\6420only\Statewide\Tools\GreenSTEP\ModelBuild\_Data\Vehicles_Fuels\DMV\</font></em></p>
+<p><strong>Table 9: 2016 Oregon DMV Registered Vehicles by MPO</strong></p>
+<div class="inline-figure"><img src="../media/ch3_DMVvehiclesbyMPO.png"></div>
+<p><strong>Table 10: 2016 Oregon DMV Registered Vehicle Average Age by MPO</strong></p>
+<div class="inline-figure"><img src="../media/ch3_DVM_vehbyagebyMPO.png"></div>
+<p><strong>Table 11: 2016 Oregon DMV Registered Vehicle Powertrains by MPO (All LDV)</strong></p>
+<div class="inline-figure"><img src="../media/ch3_DMVvehiclesbypowertrainbyMPO.png"></div>
+<p><strong>Table 12: 2016 Oregon DMV Registered Vehicle MPG (Statewide, All LDV)</strong></p>
+<div class="inline-figure"><img src="../media/ch3_vehicleMPG.png"></div>
 </div>
-<p>Table : 2016 Oregon DMV Registered Vehicle Average Age by MPO</p>
-<div class="float">
-<img src="media/image5.png" alt="A screenshot of a computer Description automatically generated"><div class="figcaption">A screenshot of a computer Description automatically generated</div>
-</div>
-<p>Table : 2016 Oregon DMV Registered Vehicle Powertrains by MPO (All LDV)</p>
-<div class="float">
-<img src="media/image6.png" alt="A screenshot of a data Description automatically generated"><div class="figcaption">A screenshot of a data Description automatically generated</div>
-</div>
-<p>Table : 2016 Oregon DMV Registered Vehicle MPG (Statewide, All LDV)</p>
-<div class="float">
-<img src="media/image7.png" alt="A screenshot of a computer Description automatically generated"><div class="figcaption">A screenshot of a computer Description automatically generated</div>
-</div>
-</div>
-<div id="population-households" class="section level4" number="3.3.3.3">
+<div id="population-households" class="section level4">
 <h4>
-<span class="header-section-number">3.3.3.3</span> Population &amp; Households<a class="anchor" aria-label="anchor" href="#population-households"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.3.2.3</span> Population &amp; Households<a class="anchor" aria-label="anchor" href="#population-households"><i class="fas fa-link"></i></a>
 </h4>
-<dl>
-<dt>VE outputs were confirmed to match MPO total population inputs (<em>bzone_household_pop_by_age.csv, bzone_group_quarters_pop_by_age.csv).</em> No Group Quarters were assumed. Population by Location Types (Metropolitan, Town, Rural) matches official forecasts (except for Portland Metro) for the Urban Growth Boundary and overall County. VisionEval models create households from input population, aided by input household size (<em>azone_hhsize_targets.csv</em>).</dt>
-<dd>
-<p>ve-state historic validation – LDV fuel gallons</p>
-</dd>
-</dl>
-<div class="float">
-<img src="media/image8.png" alt="A screenshot of a spreadsheet Description automatically generated"><div class="figcaption">A screenshot of a spreadsheet Description automatically generated</div>
+<p>VE outputs were confirmed to match MPO total population inputs (<em>bzone_household_pop_by_age.csv, bzone_group_quarters_pop_by_age.csv).</em> No Group Quarters were assumed. Population by Location Types (Metropolitan, Town, Rural) matches official forecasts (except for Portland Metro) for the Urban Growth Boundary and overall County. VisionEval models create households from input population, aided by input household size (<em>azone_hhsize_targets.csv</em>).</p>
+<p><strong>Figure 6: VE-State Historic Validation – LDV fuel gallons</strong></p>
+<div class="inline-figure"><img src="../media/Ch3_VE_fuelconsumption.png"></div>
 </div>
 </div>
-</div>
-<div id="base-year-outputs" class="section level3" number="3.3.4">
+<div id="base-year-outputs" class="section level3">
 <h3>
-<span class="header-section-number">3.3.4</span> Base Year Outputs<a class="anchor" aria-label="anchor" href="#base-year-outputs"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.3.3</span> Base Year Outputs<a class="anchor" aria-label="anchor" href="#base-year-outputs"><i class="fas fa-link"></i></a>
 </h3>
 <p>The primary outputs of the VisionEval model used to evaluate the calibration and validation of the model include the following:</p>
 <ul>
@@ -526,10 +717,7 @@
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#chapter3"><span class="header-section-number">3</span> Visioneval – Developing a Model</a></li>
 <li>
-<a class="nav-link" href="#model-geography-and-inputs"><span class="header-section-number">3.1</span> Model Geography and Inputs</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#location-types"><span class="header-section-number">3.1.1</span> Location Types</a></li>
-<li><a class="nav-link" href="#place-types"><span class="header-section-number">3.1.2</span> Place Types</a></li>
-</ul>
+<a class="nav-link" href="#model-geography-and-inputs"><span class="header-section-number">3.1</span> Model Geography and Inputs</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#location-types"><span class="header-section-number">3.1.1</span> Location Types</a></li></ul>
 </li>
 <li>
 <a class="nav-link" href="#set-up-base-model"><span class="header-section-number">3.2</span> Set up Base Model</a><ul class="nav navbar-nav">
@@ -541,9 +729,8 @@
 <li>
 <a class="nav-link" href="#model-calibration-and-validation"><span class="header-section-number">3.3</span> Model Calibration and Validation</a><ul class="nav navbar-nav">
 <li><a class="nav-link" href="#ve-rspm-validation-process"><span class="header-section-number">3.3.1</span> VE-RSPM Validation Process</a></li>
-<li><a class="nav-link" href="#sample-mpo-validation-targets-for-ve"><span class="header-section-number">3.3.2</span> Sample MPO Validation Targets for VE</a></li>
-<li><a class="nav-link" href="#calibration-variables-and-sources-of-data"><span class="header-section-number">3.3.3</span> Calibration variables and sources of data</a></li>
-<li><a class="nav-link" href="#base-year-outputs"><span class="header-section-number">3.3.4</span> Base Year Outputs</a></li>
+<li><a class="nav-link" href="#calibration-variables-and-sources-of-data"><span class="header-section-number">3.3.2</span> Calibration variables and sources of data</a></li>
+<li><a class="nav-link" href="#base-year-outputs"><span class="header-section-number">3.3.3</span> Base Year Outputs</a></li>
 </ul>
 </li>
 </ul>

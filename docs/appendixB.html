@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>10 Appendix B: Customizing VE Model Packages | VEWiki</title>
+<meta name="author" content="">
+<meta name="description" content="10.1 working with model packages Setting up a new VE-RSPM or VE-State model involves developing the set of input files, but also re-estimating and reinstalling certain modules and packages. This...">
+<meta name="generator" content="bookdown 0.35 with bs4_book()">
+<meta property="og:title" content="10 Appendix B: Customizing VE Model Packages | VEWiki">
+<meta property="og:type" content="book">
+<meta property="og:description" content="10.1 working with model packages Setting up a new VE-RSPM or VE-State model involves developing the set of input files, but also re-estimating and reinstalling certain modules and packages. This...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="10 Appendix B: Customizing VE Model Packages | VEWiki">
+<meta name="twitter:description" content="10.1 working with model packages Setting up a new VE-RSPM or VE-State model involves developing the set of input files, but also re-estimating and reinstalling certain modules and packages. This...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.1/transition.js"></script><script src="libs/bs3compat-0.5.1/tabs.js"></script><script src="libs/bs3compat-0.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="bs4_style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">VEWiki</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="chapter2.html"><span class="header-section-number">2</span> Scenario Planning Process</a></li>
+<li><a class="" href="chapter3.html"><span class="header-section-number">3</span> Visioneval – Developing a Model</a></li>
+<li><a class="" href="chapter4.html"><span class="header-section-number">4</span> Future Models to Evaluate Progress to the region’s GHG Reduction Target</a></li>
+<li><a class="" href="chapter5.html"><span class="header-section-number">5</span> Future Scenario – Baseline Reference</a></li>
+<li><a class="" href="chapter6.html"><span class="header-section-number">6</span> Future Scenario – Tracking progress to the GHG Target Rule</a></li>
+<li><a class="" href="chapter7.html"><span class="header-section-number">7</span> Review Scenario Inputs and Outputs</a></li>
+<li><a class="" href="chapter8.html"><span class="header-section-number">8</span> Implementing Results</a></li>
+<li><a class="" href="appendixA.html"><span class="header-section-number">9</span> Appendix A: VE-State Validation</a></li>
+<li><a class="active" href="appendixB.html"><span class="header-section-number">10</span> Appendix B: Customizing VE Model Packages</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="appendixB" class="section level1">
+<h1>
+<span class="header-section-number">10</span> Appendix B: Customizing VE Model Packages<a class="anchor" aria-label="anchor" href="#appendixB"><i class="fas fa-link"></i></a>
+</h1>
+<div id="working-with-model-packages" class="section level2">
+<h2>
+<span class="header-section-number">10.1</span> working with model packages<a class="anchor" aria-label="anchor" href="#working-with-model-packages"><i class="fas fa-link"></i></a>
+</h2>
+<p>Setting up a new VE-RSPM or VE-State model involves developing the set of input files, but also re-estimating and reinstalling certain modules and packages. This is an important step because the default model downloaded in installer folder has packages that were built with data specific to the state of Oregon.</p>
+<p>The VisionEval framework is modular. Each package is independently installed in the “ve-lib” directory. In general, if any changes are made to a module (e.g., edits to an R script), the package that includes the module needs to be re-installed for the changes to be uploaded to the model. A full list of modules and packages in VE-RSPM can be found on GitHub.</p>
+<p>Only two packages generally need to be re-estimated and re-installed with a new VE-State model:</p>
+<ul>
+<li><p>VESimHouseholds: This package creates household estimations using Census PUMS data.</p></li>
+<li><p>VEPowertrainsAndFuels: This package was needs to be rebuilt to change the proportions of household vehicle powertrains, or the numbers of battery electric vehicles (BEV), plug-in hybrid electric vehicles (PHEV), and hybrid electric vehicles (HEV).</p></li>
+</ul>
+<div id="updating-key-packages" class="section level3">
+<h3>
+<span class="header-section-number">10.1.1</span> Updating Key Packages<a class="anchor" aria-label="anchor" href="#updating-key-packages"><i class="fas fa-link"></i></a>
+</h3>
+<p>VESimHouseholds package, new estimation datasets have to be created using local ACS PUMS data. The steps to re-estimate this package are the following:</p>
+<ol style="list-style-type: decimal">
+<li><p>Download the Process_2000_PUMS repository on GitHub and use it to create household and persons datasets to use in the VESimHouseholds package. Comments in the Process_2000_PUMS.R script describe how to use the script and where to download the state PUMS data from the Census.</p></li>
+<li><p>Place new household and persons datasets in the “extdata” directory in the VESimHouseholds package, overwriting existing datasets. Set the working directory as the package folder (i.e., “~/modules/VSimHouseholds”) and run the CreateEstimationDatasets.R script in the “R” directory. Verify that new RDA files have been generated in the “data” directory.</p></li>
+<li><p>Re-install the package using devtools.</p></li>
+</ol>
+</div>
+<div id="vepowertrainsandfuels" class="section level3">
+<h3>
+<span class="header-section-number">10.1.2</span> VEPowertrainsAndFuels<a class="anchor" aria-label="anchor" href="#vepowertrainsandfuels"><i class="fas fa-link"></i></a>
+</h3>
+<p>There are two important variations of the VEPowertrainsandFuels to be mindful of. These are the Adopted Plans (referred to as AP) and the Statewide Transportation Strategy (STS).</p>
+<p>A new VEPowertrainsAndFuels package was installed during the calibration process to match model outputs of electric vehicles (EVs) to the validation data. Creating new versions of this package will be an important step to run scenarios with different levels of EV adoption.</p>
+<p>The “extdata” directory in the package contains several datasets that control the powertrain proportions and characteristics for different vehicle classes and categories (e.g., household vehicles). The only file altered in calibration was the hh_powertrain_prop.csv. The steps for re-estimating this package are the following:</p>
+<ol style="list-style-type: decimal">
+<li><p>Make desired changes to datasets in the “extdata” directory in the VEPowertrainsAndFuels package, overwriting existing datasets.</p></li>
+<li><p>Set the working directory as the package folder (i.e., “~/modules/VEPowertrainsAndFuels”) and run the LoadDefaultValues.R script in the “R” directory. Verify that new RDA files have been generated in the “data” directory.</p></li>
+</ol>
+<p>Re-install the package or install a new package by renaming the module folder (e.g., VEPowertrainsAndFuels – High EV) before running devtools. To run different scenarios, new packages should be created rather than overwriting the existing one. Note that the new packages also need to be called in the run_model.R script in the “VE-State” directory.</p>
+</div>
+</div>
+<div id="steps-for-installing-a-package" class="section level2">
+<h2>
+<span class="header-section-number">10.2</span> Steps for Installing a Package<a class="anchor" aria-label="anchor" href="#steps-for-installing-a-package"><i class="fas fa-link"></i></a>
+</h2>
+<p>The steps for re-installing a package are relatively straightforward once the desired changes have been made.</p>
+<p>The first step is to download the developer version of the packages, or the source code. The source code is available for download on the release page of each version of VisionEval. The source code has each of the VisionEval module packages in a format intended for editing; direct edits to the packages within the “ve-lib” directory should be avoided. It is recommended a separate directory is created for the source code files called “modules”. Below is an example of how to reinstall the package in the “ve-lib” directory using the source code:</p>
+<ol style="list-style-type: decimal">
+<li><p>Start a fresh R session with the visioneval package loaded by opening the VisionEval R Project. Use the .libPaths function to ensure that one of the library trees points to the “ve-lib” directory.</p></li>
+<li><p>Set the working directory as the source code directory of the package that needs to be reinstalled (e.g., “~/modules/VEPowertrainsAndFuels”).</p></li>
+<li><p>Run devtools::check() to check for any warnings and errors. If none are reported, run devtools::install().</p></li>
+</ol>
+<p>In some cases, devtools may have difficulty removing the old installation of a package, causing an error during the devtools::install() step. The easiest workaround is to manually delete the existing version of the package in the “ve-lib” directory so the new version can be installed.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="appendixA.html"><span class="header-section-number">9</span> Appendix A: VE-State Validation</a></div>
+<div class="empty"></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#appendixB"><span class="header-section-number">10</span> Appendix B: Customizing VE Model Packages</a></li>
+<li>
+<a class="nav-link" href="#working-with-model-packages"><span class="header-section-number">10.1</span> working with model packages</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#updating-key-packages"><span class="header-section-number">10.1.1</span> Updating Key Packages</a></li>
+<li><a class="nav-link" href="#vepowertrainsandfuels"><span class="header-section-number">10.1.2</span> VEPowertrainsAndFuels</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#steps-for-installing-a-package"><span class="header-section-number">10.2</span> Steps for Installing a Package</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>VEWiki</strong>" was written by . It was last built on 2023-10-29.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

@@ -6,7 +6,7 @@ VisionEval is the preferred strategic planning model for scenario planning. It e
 
 All VisionEval models share a standard geography framework. Although models are applied at different scales, sharing a common geographic definition enables modules to be more readily shared between models and will inform the required input data. The standard geography framework specifies levels of geographical units, their names, their relative sizes, and the hierarchical relationships between them. It is flexible in that it allows geographical boundaries to be determined by the user.
 
-VisionEval operates with a zonal geography, using zones or districts at the most granular level..
+VisionEval operates with a zonal geography, using zones or districts at the most granular level.
 
 Following is the definition of the geographic structure of the VisionEval model system:
 
@@ -22,9 +22,9 @@ Geographical relationships for a model are described in the "geo.csv" file conta
 
 Figure 3 shows examples of the "geography.csv" file where only A-zones are specified and where A-zones and B-zones are specified. It should be noted that there are no naming conventions for individual zones. The user is free to choose what conventions they will use.
 
-Figure : geographic levels
+**Figure 3: Geographic Levels**
 
- ![A map of a neighborhood Description automatically generated](images/ch3_ccrpc_zones.jpg)
+![](../media/ch3_ccrpc_zones.jpg)
 
 ### Location Types
 
@@ -36,9 +36,9 @@ Location Type is not a geography level but a categorical level that identifies w
 
 -   The "rural" development type includes all remaining lands. These less developed lands located outside, often located outside of urban growth boundaries, ranging from resource lands to undeveloped urban land. “Fringe” area types are included in this category.
 
-Figure : Land Development Types Example
+**Figure 4: Land Development Types Example**
 
-![A map of a city Description automatically generated](images/ch3_eugene.png)
+![](../media/ch3_eugene.png)
 
 Geography is important in VisionEval and treated differently than in traditional urban travel models. Importantly, different model inputs are developed at different geography levels. A list of VE-RSPM inputs by geography level can be found on [GitHub](https://github.com/VisionEval/VisionEval/wiki/VERSPM-Training/VE-RSPM_Inputs_by_Geo.pdf). Geography is also a significant factor in how the model calculates travel supply and travel behavior or demand:
 
@@ -49,12 +49,6 @@ Geography is important in VisionEval and treated differently than in traditional
 -   By measuring land use details at the zonal level, VE-RSPM captures the relationship of each household to the land use characteristics in the whole neighborhood around it (i.e., local land use influences and informs household travel behavior).
 
 -   By altering the mix of development types within a B-zone, the effects of different population and activity densities around the metropolitan area can be assessed in VisionEval. For example, modeling a scenario which allocates a larger proportion of households to lower density districts will produce higher VMT forecasts than modeling a scenario which allocates more households to higher density urban districts.
-
-### Place Types
-
-\[ placeholder for adding more information for the Oregon place types and the latest tool update \]
-
-\[ include instructions on how the Place Type tool can help inform elements of VisionEval models \]
 
 ## Set up Base Model
 
@@ -88,9 +82,9 @@ A mixed use development or neighborhood is one that includes residential and non
 
 Zonal employment estimates in VisionEval are made for retail, service, and total employment categories. The delineation of retail and service employment is typically by the two-digit sectors in the North American Industrial Classification System (NAICS), data available from the U.S. Census, which is also used in employment classification in the regional travel models. This employment helps to determine if the area is mixed use, and provides work locations for modeled households.
 
-Table : RSPM Demographic and Land Use Inputs
+**Table 4: RSPM Demographic and Land Use Inputs**
 
-| Description Error! Reference source not found.                                                                                 | File                                 | module used                        |
+| Description                                                                                  | File                                 | Module Used                        |
 |--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|------------------------------------|
 | **Demographics**                                                                                                               |                                      |                                    |
 | Number of Household persons within 6 age groups by year by A-zone                                                              | azone\_hh\_pop\_by\_age.csv          | VESimHouseholds, CreateHouseholds  |
@@ -108,9 +102,9 @@ Table : RSPM Demographic and Land Use Inputs
 | Land Area (water and large protected lands removed) by location type (Urban, Town, Rural) by year by B-zone                    | bzone\_unprotected\_area.csv         | VELandUse, Calculate4DMeasures     |
 | B-zone Centroid Latitute/Longitude by year by Bzone                                                                            | bzone\_lat\_lon.csv                  | VELandUse, LocateEmployment        |
 
-Source: <https://github.com/VisionEval/VisionEval/wiki/VERSPM-Training/VE-RSPM_File_Summary_20190226.xlsx>
+*<font size="1">Source: <https://github.com/VisionEval/VisionEval/wiki/VERSPM-Training/VE-RSPM_File_Summary_20190226.xlsx></font>*
 
-#### Input Calculation Example: azone\_per\_cap\_inc.csv
+#### *Input Calculation Example: azone\_per\_cap\_inc.csv*
 
 Used in the PredictIncome step of the VESimHouseholds module.
 
@@ -118,7 +112,7 @@ This file contains information on regional average per capita household (HHIncom
 
 For example, if the data is obtained in year 2015 dollars then the column labels in the file shown below will become HHIncomePC.2015 and GQIncomePC.2015 (as opposed to 2010).
 
-Table : AZONE\_PER\_CAP\_INC.cSV Layout
+**Table 5: azone\_per\_cap\_inc.csv Layout**
 
 | Geo   | Year | HHIncomePC.2010 | GQIncomePC.2010 |
 |-------|------|-----------------|-----------------|
@@ -129,7 +123,7 @@ The Oregon VE-State model assumed per capita income by county. For metropolitan 
 
 Table 6 shows the statewide income growth index to convert the input values for "azone\_per\_cap\_inc.csv", based on their base year calculated values.
 
-Table : Oregon Income Index (confirm with ODOT)
+**Table 6: Oregon Income Index**
 
 | Index relative to 2010 for use in VisionEval |          |
 |----------------------------------------------|----------|
@@ -179,9 +173,52 @@ Other transportation input data includes:
 
 VisionEval inputs are shown in Table 7. In Oregon, since a statewide model is maintained, starter values for the region can be pulled form the statewide VisionEval scenarios, both a reference “Plans & Trends” scenario, and a “STS Vision” scenario. As such Table 7 notes inputs for both the state and regional VisionEval models (VE-State file name is given in parenthesis). Since the B-zones are simulated in the statewide VisionEval model the geography is often different geography.
 
-Table : RSPM and VE-State Transportation INputs
+**Table 7: RSPM and VE-State Transportation Inputs**
 
-[TABLE]
+|| RSPM File (VE-State File) | Description |
+|----------------------------------------------------------------------------------------|--------------------------------------|----------------------------------------------------------------------------|
+| **Actions** |||
+| Single occupancy vehicle (SOV) diversion   | azone\_prop\_sov\_dvmt\_diverted.csv | Bike, Personal Electric Vehicle, etc diversion of Single Occupancy vehicle tours by year by A-zone(In VE-State, applies to "urban" and "town" but not "rural" loc types within the A-zone).  |
+| Car service characteristics | azone\_carsvc\_characteristics.csv | Car Service Rate (dollars/mile) by level (high, low, ave), average Car service vehicle age, and limits on shifting to car service (LtTruck, Auto) by Year by A-zone  |
+| Car service availability | bzone\_carsvc\_availability.csv (azone\_carsvc\_availability.csv) | Car Service Level of service (High, Low) by Year by B-zone for RSPM (A-zone by Area Type for VE-State)  |
+| Car service access times | azone\_vehicle\_access\_times.csv | Minutes to call-up vehicles by type (owned, High/Low CarSvc) by year by A-zone |
+| ITS operations | marea\_operations\_deployment.csv | Deployment (0-1,1=100%VMT coverage) of operations programs on Fwy (Ramp metering, Incident Response) and Arterials (Signal Coordination, Access Mgmt) programs by year by M-area |
+| % VMT covered by Drivers in Eco-Drive programs | marea\_speed\_smooth\_ecodrive.csv | Deployment (0-1,1=100%VMT coverage) of Speed Smoothing (Fwys, Arterials) and Eco-Driving (LDV, HD Trucks) programs by year by M-area |
+| ITS speed smoothing (Freeway ATM, Art Signal optimization) (optional) | other\_ops\_effectiveness.csv | Delay reduction (0-1) anticipated with full deployment of user-defined other operations program by road type (Fwy, Art), congestion type (Reoccurring, non-recurring) by 5 congestion levels by year by A-zone |
+| Parking restrictions | bzone\_parking.csv (marea\_parking-avail\_by\_area\_type.csv & marea\_parking-cost\_by\_area\_type.csv ) | Parking restrictions: Free spaces per dwelling unit type (SF, MF, GQ), share of workers paying for parking and in cashout program, and average parking fee by Year by B-zone (M-area by Area Type for VE-State) |
+| Road lane-miles | marea\_lane\_miles.csv | Freeway and arterial lane-miles by Year and metropolitan area |
+| Demand management | bzone\_travel\_demand\_mgt.csv (azone\_travel\_demand\_mgt.csv & marea\_travel\_demand\_mgt\_by\_area\_type.csv) | Share of participants in home Individualized Marketing programs (HHs) and work-based Transportation Demand Management programs (workers) by year by B-zone (A-zone and M-area by Area Type for VE-State) |
+| Transit service (1) | marea\_transit\_service.csv | Annual Transit Service revenue-miles by service mode (demand responsive, bus, rail, etc) by year, and M-area. |
+| Transit service (2) | bzone\_transit\_service.csv (NA for VE-State) | Transit D (D4c, accessible hourly PM peak service frequency as defined by EPA Smart Location Database) by year and B-zone |
+| Transit fuels and powertrains (1) | marea\_transit\_fuel.csv | Option 1(mix) 1of2: Fuel mix (share of GGE) for Transit Vehicles (Van, Bus, Rail) for ICE/HEV(diesel, gas, CNG -- no rail CNG) by stock year |
+| Transit fuels and powertrains (2) | marea\_transit\_biofuel\_mix.csv | Option 1(mix) 2of2: Biofuels share of Transit fuels (ethanol, biodiesel, RNG) by stock year and M-area |
+| Transit fuels and powertrains (3) | marea\_transit\_powertrain\_prop.csv | Powertrain mix (share of ICE, HEV, EV DVMT) for Transit Veh (Van, Bus, Rail) by stock year and M-area |
+| Transit fuels carbon intensity | marea\_transit\_ave\_fuel\_carbon\_intensity.csv | Option2(CI direct): Carbon Intensity of composite Transit Fuel (g/MJ) by stock year and M-area |
+| **Pricing**                                                                                                                   |                                      |                                    |
+| Congestion charges | marea\_congestion\_charges.csv | Congestion Charges ($/mile) by road type (Fwy, Arterial) by 5 congestion levels by year by M-area |
+| Proportion of external costs paid | region\_prop\_externalities\_paid.csv | Share of Social Externalities covered in household fees (carbon, other) by year modelwide  |
+| Carbon pricing (social recovery cost) (optional) | region\_co2e\_cost.csv | Environmental and social cost of CO2e emissions per metric ton carbon by year model wide. |
+| PAYD insurance participation | azone\_payd\_insurance\_prop.csv | Share of HHs in Pay-as-you-Drive Auto Insurance programs by Year by A-zone |
+| Vehicle related taxes | azone\_hh\_veh\_own\_taxes.csv | Annual auto ownership fees (fixed and sales tax rate) by Year by A-zone |
+| VMT tax or road usage charge | azone\_veh\_use\_taxes.csv | Mileage Based Fee by type (fuel tax, VMT fee, Ev surcharge) by year by A-zone |
+| Retail costs for fuel | azone\_fuel\_power\_cost.csv | Vehicle energy costs for fuel (dollars/gallon), electricity (dollars/kwhr) by year by A-zone (exclusive of taxes) |
+| Road costs | region\_road\_cost.csv | Infrastructure costs (BaseModernization, PreservationOpsMtncc, Other, Arteraial per LnMi, Fwy per LnMi) used to estimate LDV VMT fee to fully recover road costs. |
+| **Vehicles and fuels**                                                                                                                   |                                      |                                    |
+| Charging infrastructure | azone\_charging\_availability.csv | Availability (0-1) of vehicle charging by dwelling typ (SF, MF, GQ) by stock year by A-zone |
+| Electricity carbon intensity | azone\_electricity\_carbon\_intensity.csv | Carbon Intensity of Electricity (g/MJ) by stock year by A-zone |
+| Car service powertrains | region\_carsvc\_powertrain\_prop.csv | LDV-Carservice Vehicle (Auto/LightTruck) powertrain (Ice/Hev/Phev/Bev) shares by stock year by M-area. |
+| Commercial service powertrains | region\_comsvc\_powertrain\_prop.csv | LDV-ComSvc Vehicle (Auto/LightTruck) powertrain (Ice/Hev/Bev) shares by stock year by M-area. |
+| Heavy truck powertrains | region\_hvytrk\_powertrain\_prop.csv | HD Truck powertrain (ICE, HEV, EV) shares by stock year |
+| % of light trucks in household fleet | azone\_hh\_lttrk\_prop.csv | Share of household LDV that are Light Trucks by year by A-zone |
+| % of light trucks in car service fleet | region\_carsvc\_lttrk\_prop.csv | Share of CarSvc LDV that are Light Trucksby year by A-zone |
+| % of light trucks in commercial service fleet | region\_comsvc\_lttrk\_prop.csv | LDV-ComSvc share of vehicles that are Light Truck by stock year by A-zone |
+| Mean age of household vehicles | azone\_hh\_veh\_mean\_age.csv | Mean Age of household vehicles by type (auto, light truck) by year by A-zone. (NOTE: CarSvc age is in A-zone_carsvc_characteristics.csv) |
+| Mean age of commercial service vehicles | region\_comsvc\_veh\_mean\_age.csv | Mean Age of household vehicles by type (auto, light truck) by year by A-zone |
+| Average fuel carbon intensity | region\_ave\_fuel\_carbon\_intensity.csv | LDV (HH, CarSvc, ComSvc, Van) + HD (Truck, Bus, Rail) composite carbon Intensity of Fuel (g/MJ) by stock year by M-area |
+| **Base year set up**                                                                                                                   |                                      |                                    |
+| Base year urban VMT | marea\_base\_year\_dmvt.csv | M-area DVMT by type (LDV, HD Truck) overwrite of base year 2010 Hwy Statistics default (NA recommended for VE-RSPM) and urbanized area name |
+| Base year DVMT split by functional class | marea\_dvmt\_split\_by\_road\_class.csv | Starting share of DVMT by type (LDV, HvyTrk, Bus) by road type (Fwy,Arterial, other), LDV share is adjusted by congestion model. |
+| Base year VMT | region\_base\_year\_dvmt.csv | Region Freight Vehicle DVMT growth rates-basis (ComSvc-Pop or Inc, HHdvmt; HvyTrk-Pop or Inc) and overwrite of base year 2010 Hwy Statistics default of region Heavy Truck DVMT (NA recommended for VE-RSPM) and state name. |
 
 ### Base Year Run Script and VE Packages
 
@@ -239,8 +276,6 @@ The validation targets should be checked in the order listed, as changes to earl
 
 -   **Comparable communities**: VE output results can be compared to prior VE scenario results in the same or other Oregon locations. Reports for all Oregon Strategic Assessment/Scenario Planning efforts can be found on this [*OSTI website*](https://www.oregon.gov/ODOT/Planning/Pages/Strategic-Assessment.aspx). CAMPO & RVMPO Strategic Assessment reports include Reference Case (typically early report table) and sensitivity test results (typically in appendices) that provide good comparable estimates.
 
-### Sample MPO Validation Targets for VE
-
 ### Calibration variables and sources of data
 
 The following Validation Target Datasets are provided by ODOT for use in Albany (AAMPO). Note that some come from the VE-State model, with most from outside datasets:
@@ -249,17 +284,17 @@ The following Validation Target Datasets are provided by ODOT for use in Albany 
 
 The table below shows the HPMS data available from ODOT (and from FHWA) with link volumes for the AAMPO metro region. Each metro region can be selected from the data to obtain a link by link analysis. Mindful that VE uses Freeway (Interstate, Other Freeways & Expressways), and Arterials (Other Principal Arterial) as the key inputs. The other lane miles can be ignored in the VE model given the models were estimated only with those two inputs.
 
-Figure 5: HPMS VMT (miles of all modes on roads within MPO boundary)
+**Figure 5: HPMS VMT (miles of all modes on roads within MPO boundary)**
 
-> ![A screenshot of a computer Description automatically generated](media/image3.png)
+![](../media/ch3_HPMSMiles_2016.png)
 
-Source: 1999-2016 VMT\_Miles history.xlsx (\\\\s6000e\\6420only\\Statewide\\Tools\\GreenSTEP\\ModelBuild\\\_Data\\Local\_Plans\\Roads\\HPMS\_data)
+*<font size="1"> Source: 1999-2016 VMT\_Miles history.xlsx (\\\\s6000e\\6420only\\Statewide\\Tools\\GreenSTEP\\ModelBuild\\\_Data\\Local\_Plans\\Roads\\HPMS\_data)</font>*
 
 #### Light Duty Vehicles
 
 The following data light duty vehicle data is collected from the DMV. Light Duty DMV vehicles are classified as follows:
 
-Table : light duty vehicles
+**Table 8: Light Duty Vehicles**
 
 | vehicle groups                   | vehicle types                    | powertrains                                           |
 |----------------------------------|----------------------------------|-------------------------------------------------------|
@@ -268,33 +303,31 @@ Table : light duty vehicles
 |                                  |                                  | PHEV: Plug-in Hybrid Electric Vehicle                 |
 |                                  |                                  | EV: Full Battery Electric Vehicle (also known as BEV) |
 
-Source: STS-Monitoring\_DMV2016.xlsx
+*<font size="1">Source: STS-Monitoring\_DMV2016.xlsx\\\\s6000e\\6420only\\Statewide\\Tools\\GreenSTEP\\ModelBuild\\\_Data\\Vehicles\_Fuels\\DMV\\</font>*
 
-\\\\s6000e\\6420only\\Statewide\\Tools\\GreenSTEP\\ModelBuild\\\_Data\\Vehicles\_Fuels\\DMV\\
+**Table 9: 2016 Oregon DMV Registered Vehicles by MPO**
 
-Table : 2016 Oregon DMV Registered Vehicles by MPO
+![](../media/ch3_DMVvehiclesbyMPO.png)
 
-![A screenshot of a computer Description automatically generated](media/image4.png)
+**Table 10: 2016 Oregon DMV Registered Vehicle Average Age by MPO**
 
-Table : 2016 Oregon DMV Registered Vehicle Average Age by MPO
+![](../media/ch3_DVM_vehbyagebyMPO.png)
 
-![A screenshot of a computer Description automatically generated](media/image5.png)
+**Table 11: 2016 Oregon DMV Registered Vehicle Powertrains by MPO (All LDV)**
 
-Table : 2016 Oregon DMV Registered Vehicle Powertrains by MPO (All LDV)
+![](../media/ch3_DMVvehiclesbypowertrainbyMPO.png)
 
-![A screenshot of a data Description automatically generated](media/image6.png)
+**Table 12: 2016 Oregon DMV Registered Vehicle MPG (Statewide, All LDV)**
 
-Table : 2016 Oregon DMV Registered Vehicle MPG (Statewide, All LDV)
-
-![A screenshot of a computer Description automatically generated](media/image7.png)
+![](../media/ch3_vehicleMPG.png)
 
 #### Population & Households
 
 VE outputs were confirmed to match MPO total population inputs (*bzone\_household\_pop\_by\_age.csv, bzone\_group\_quarters\_pop\_by\_age.csv).* No Group Quarters were assumed. Population by Location Types (Metropolitan, Town, Rural) matches official forecasts (except for Portland Metro) for the Urban Growth Boundary and overall County. VisionEval models create households from input population, aided by input household size (*azone\_hhsize\_targets.csv*).
 
-: ve-state historic validation – LDV fuel gallons
+**Figure 6: VE-State Historic Validation – LDV fuel gallons**
 
-![A screenshot of a spreadsheet Description automatically generated](media/image8.png)
+![](../media/Ch3_VE_fuelconsumption.png)
 
 ### Base Year Outputs
 

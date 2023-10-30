@@ -20,53 +20,41 @@ Key elements to be reviewed varies by scenario:
 
 ## Outputs
 
-### Tools and Methods to Evaluate Scenarios
-
-#### Individual Model Runs
-
--   Queries
-
--   Tableau visualizer \[ Federal government repo – Salah has installed this \]
-
-    -   <https://github.com/VisionEval/VisionEval-Extras>
-
-    -   
-
-#### Expanded Scenario Exploration Using TMIP-EMAT
+### Expanded Scenario Exploration Using TMIP-EMAT
 
 *The TMIP-EMAT repository can be found here: <https://github.com/RSGInc/EMAT_VE>*
 
-TMIP-EMAT (Travel Model Improvement Program Exploratory Modeling and Analysis Tool) was developed by FHWA with assistance from several consulting partners to identify uncertainties and interactions between transportation supply (e.g., network investments) and demand through an exploratory modeling and simulation package. Scenario planning has established methods for identifying futures and evaluating how those futures perform. A relatively new approach to scenario planning is a quantitative exploratory method known as EMA. EMA, or exploratory modeling and analysis, embraces the examination of uncertainty by explicitly treating computational experiments (i.e., models) as a set of assumptions and hypotheses and aims to explore the impacts of the assumptions on the analysis of interest. TMIP-EMAT was developed using the EMA Workbench, a tool for performing modeling and analysis, but also leveraging the ‘deep uncertainty’ framework developed by RAND.
+TMIP-EMAT (Travel Model Improvement Program Exploratory Modeling and Analysis Tool) was developed by FHWA with assistance from several consulting partners to identify uncertainties and interactions between transportation supply (e.g., network investments) and demand through an exploratory modeling and simulation package. Scenario planning has established methods for identifying futures and evaluating how those futures perform. A relatively new approach to scenario planning is a quantitative exploratory method known as EMA. EMA, or exploratory modeling and analysis, embraces the examination of uncertainty by explicitly treating computational experiments (i.e., models) as a set of assumptions and hypotheses and aims to explore the impacts of the assumptions on the analysis of interest. TMIP-EMAT was developed using the EMA Workbench, a tool for performing modeling and analysis, but also leveraging the ‘deep uncertainty’ framework developed by RAND.
 
 The July 2022 publication, Transportation Planning for Uncertain Times: A Practical Guide to Decision Making Under Deep Uncertainty for MPOs provides additional insights on how TMIP-EMAT can be used with existing tools such as VisionEval. This connection between TMIP-EMAT and VisionEval leverages the strength of both tools to explore a wide range possible solutions to answer many “what if” questions. Figure 17 explains a connection between the two tools.
 
-Figure : DEEP UNCERTAINTY USING TMIP-EMAT AND VISIONEVAL
+**Figure 17: Deep Uncertainty Using TMIP-EMAT and VisionEval**
 
-![A diagram of a running process Description automatically generated](media/image1.png)
+![](../media/ch7_tmipFramework.png)
 
 
 
-VisionEval is the core model called within the TMIP-EMAT interface. The inputs to the VisionEval model are designed in a way to leverage the EMAT approach with inputs being a continuous interpolation between two values or whether specific VisionEval runs use a categorical (e.g., low, med, high) set of inputs. A scoping file is designed to direct the TMIP-EMAT tool in how to design the model runs and sample from the input files. 
+VisionEval is the core model called within the TMIP-EMAT interface. The inputs to the VisionEval model are designed in a way to leverage the EMAT approach with inputs being a continuous interpolation between two values or whether specific VisionEval runs use a categorical (e.g., low, med, high) set of inputs. A scoping file is designed to direct the TMIP-EMAT tool in how to design the model runs and sample from the input files.
 
 Figure 18 shows the connection between the VisionEval inputs and the scoping file which both are called by the TMIP-EMAT application. VisionEval is then run, with the number of runs dependent on the number of input dimensions and number of variables, or measures, that are being evaluated. Ideally, there should be at least three runs for each measure being evaluated in the scoping file. The VisionEval model is run 500 times to explore the range of inputs being considered.
 
-Figure : tmip-emat approach
+**Figure 18: TMIP-EMAT Approach**
 
-![Diagram Description automatically generated](media/image2.png)
+![](../media/ch7_tmipApproach.png)
 
 The 500 runs can be referred to as ‘experiments’ that form the ‘design’ which TMIP-EMAT uses the EMA Workbench to analyze using machine learning algorithms. A metamodel is produced using a set of specified output measures, which can then be used to test changes in input values without needing to run the full VisionEval model. Metamodels are regression models that estimate the VisionEval model outputs that can run quickly (seconds vs a full model run of 15 minutes).
 
 Figure 19 shows a conceptual arrangement where VisionEval is run across the various uncertainties and levers to produce a metamodel that can explore a wide range of possible outcomes. Visually, the metamodel can produce thousands of possible scenarios to provide a wide range of uncertain futures.
 
-Figure : concept tmip-emat and visioneval metamodel
+**Figure 19: Concept TMIP-EMAT and VisionEval Metamodel**
 
-![Graphical user interface, website Description automatically generated](media/image3.png)
+![](../media/ch7_tmipConcept.png)
 
 The TMIP-EMAT / VisionEval process enables a unique approach to scenario planning that uses outcomes to guide the investment and input process. The quantitatively rich analysis allows a wide range of possible investments to be tested in thousands of unique combinations which would have been otherwise computationally impossible. The outputs from these combinations of inputs can be evaluated and queried to identify preferable futures (as well as futures to avoid) to better understand what investments are essential to reach our goals, as well as what investment decisions may jeopardize that possibility.
 
 The application of the TMIP-EMAT for the region will enable a faster and more far ranging exploration of various relationships between key inputs (policies, investments) and specific outputs (VMT per capita, GHG, equity measures, mode shares).
 
-#### Interacting with Many Scenarios Using a Scenario Viewer
+### Interacting with Many Scenarios Using a Scenario Viewer
 
 VsionEval has a built-in scenario viewer, which allows for assessing a large numbers of previously-run future scenarios. The VEScenarios module provides the capability to quickly set up, run, and visualize large numbers of VisionEval scenarios using a baseline scenario combined with multiple changes to model inputs. The scenario viewer will open automatically after a multi-scenario run of VisionEval is complete.
 
@@ -74,13 +62,13 @@ Each directory is a copy of VisionEval base model, with inputs modified as speci
 
 The VisionEval Scenario Viewer approach combines a set of inputs to produce hundreds or thousands of possible futures. Selected inputs are chosen to have multiple options, such as a high, medium or low transit service levels.
 
-Specifying alternative values for more than one input, can quickly lead to a large number of scenarios when modeling all possible combination of the inputs. , which would take days to run. A user usually does not need all the possible combinations of scenarios. As such, VisionEval Scenarios are grouped in 5 different categories which you can modify in the category\_config.json file.
+Specifying alternative values for more than one input, can quickly lead to a large number of scenarios when modeling all possible combination of the inputs. , which would take days to run. A user usually does not need all the possible combinations of scenarios. As such, VisionEval Scenarios are grouped in 5 different categories which you can modify in the category\_config.json file.
 
 -   **Community Design**: Policies that seek to enable shorter trips and alternate modes such as promotion of mixed use land use, transit service, bicycling, and parking management.
 
 -   **Marketing/Incentive**: Policies that improve driving efficiency such as ecodriving, and Intelligent Transportation System efforts, as well as programs that reduce auto demand such as carsharing, and home or work-based transportation demand management.
 
--   **Pricing:** Policies that move towards true cost pricing such as road user fees to pay for the cost of operating, maintaining and improving roads, pay-as-you-drive (PAYD) insurance, and environmental impact fees such as a carbon tax.
+-   **Pricing:** Policies that move towards true cost pricing such as road user fees to pay for the cost of operating, maintaining and improving roads, pay-as-you-drive (PAYD) insurance, and environmental impact fees such as a carbon tax.
 
 -   **Vehicles/Fuels**: Factors representing changes to future vehicles and fuels
 
@@ -88,9 +76,9 @@ Specifying alternative values for more than one input, can quickly lead to a lar
 
 With the inputs set up as correctly, the model will create the specified combination scenarios, run them, and produce a resulting dataset that drives an interactive viewer like those shown in Figure 20,
 
-Figure . Visioneval Scenario Viewer
+**Figure 20: Visioneval Scenario Viewer**
 
-![A picture containing chart, bar chart Description automatically generated](media/image4.PNG)
+![](../media/verspm_scen_viewer.png)
 
 ##### Scenario Input Levels
 
@@ -122,25 +110,25 @@ The default settings for the scenario viewer define several levels for each of t
 
 The levels are displayed in category bar charts, one for each Category, as shown in Figure 20. Note that the scenario viewer is also interactive. The user can select on or multiple of the scenario input levels to filter out their corresponding scenarios and data.
 
-##### Model Outputs
+### Model Outputs
 
 Given the chosen category inputs, the web page also shows future year outcomes for the several performance measures. Unlike the scenario level inputs, these performance measures are hard-coded into the scenario viewer and cannot be easily changed. The performance measures in the scenario viewer are the following:
 
 -   GHG Target Reduction: 2005-2038 percentage reduction in light-duty vehicle GHG emissions (beyond what is anticipated to occur due to baseline assumptions regarding improvements to vehicles and fuels). RVMPO has a 2005 – 2035 state-set GHG reduction target of 19%
 
--   DVMT Per Capita: daily vehicle miles of travel of residents divided by population.
+-   DVMT Per Capita: Daily vehicle miles of travel of residents divided by population.
 
--   Bike Travel Per Capita: annual miles of resident bike travel (not including recreational travel) divided by population.
+-   Bike Travel Per Capita: Annual miles of resident bike travel (not including recreational travel) divided by population.
 
--   Walk Travel Per Capita: annual residents’ walk trips (not including recreation or walk to transit) divided by population.
+-   Walk Travel Per Capita: Annual residents’ walk trips (not including recreation or walk to transit) divided by population.
 
--   Air Pollution Emissions: daily metric tons of pollutants emitted from all light-duty vehicle travel (including hydrocarbons, carbon monoxide, nitrogen dioxide, and particulates).
+-   Air Pollution Emissions: Daily metric tons of pollutants emitted from all light-duty vehicle travel (including hydrocarbons, carbon monoxide, nitrogen dioxide, and particulates).
 
--   Annual Fuel Use: annual million gallons of gasoline and other fuels consumed by all light-duty vehicle travel.
+-   Annual Fuel Use: Annual million gallons of gasoline and other fuels consumed by all light-duty vehicle travel.
 
--   Annual Household Vehicle Cost: average annual household cost (thousand dollars) for owning and operating light-duty vehicles (including gas, taxes, parking, registration, depreciation, maintenance, and financing).
+-   Annual Household Vehicle Cost: Average annual household cost (thousand dollars) for owning and operating light-duty vehicles (including gas, taxes, parking, registration, depreciation, maintenance, and financing).
 
--   Truck Delay: daily vehicle-hours of delay for heavy truck travel on area roads.
+-   Truck Delay: Daily vehicle-hours of delay for heavy truck travel on area roads.
 
 Each performance measure is illustrated in a bar chart showing the range of outcome values for the selected scenarios. The bar height indicates the number of selected scenarios with that outcome value.
 
@@ -148,11 +136,11 @@ The model output bar charts are also interactive, and the user can select a rang
 
 The scenario data table at the bottom (not shown) also updates to show only the scenarios resulting in the selected outcome.
 
-Figure : Selecting MOdel OUtputs in the Scenario Viewer
+**Figure 21: Selecting Model OUtputs in the Scenario Viewer**
 
-![A picture containing graphical user interface Description automatically generated](media/image5.png)
+![A picture containing graphical user interface Description automatically generated](../media/VERPAT_ScenarioViewer_selectoutput.jpg)
 
-## **Analyzing & Visualizing Outputs**
+## Analyzing & Visualizing Outputs
 
 The alternative scenarios can be evaluated using the evaluation criteria, VisionEval model, as well as other tools if available. The recommended approach is to begin with the assessment using VisionEval, then link to other desired tools that may be of interest to the region. Each alternative scenario should be evaluated based on the same evaluation criteria used in the reference case evaluation for easy comparison.
 
@@ -208,10 +196,10 @@ Visualizing the preferred scenarios and alternative scenarios can be produced by
 
 Outputs can be visualized with the help of a vision document that captures the community goals expressed during the planning process, and describes the anticipated outcomes based on the selected scenario. Outputs can also be visualized through an online interactive scenario viewer if resources and capacity are available to support the effort as part of the planning process.
 
-Figure 22: Example Graphic of Scenario Evaluation Results
+**Figure 22: Example Graphic of Scenario Evaluation Results**
 
-![A close-up of a graph Description automatically generated](media/image6.png)
+![](../media/ch7_scenEvalResults.png)
 
-Figure : Example of scenario viewer
+**Figure 23: Example of Scenario Viewer**
 
-![A screenshot of a graph Description automatically generated](media/image7.jpeg)
+![](../media/ch7_scenViewExample.jpg)

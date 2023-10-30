@@ -1,13 +1,13 @@
 ---
 title: "VEWiki"
-author: ""
-date: "2023-10-29"
+author: ''
+date: '2023-10-29'
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
-description:
+bibliography:
+- book.bib
+- packages.bib
+description: null
 csl: chicago-fullnote-bibliography.csl
 ---
 
@@ -153,10 +153,10 @@ VE-RPAT operates primarily at the region level and therefore requires inputs at 
 
 VE-RSPM models the region in zones (in a manner similar to traditional travel model zones), which results in improved spatial resolution of outputs, but which also increases the data development burden. The selection of the right tool therefore depends on a number of factors – available data, project resources, desired spatial output detail, etc.
 
-Figure : Vision Eval Model (PDF Handout)
+**Figure 1: Vision Eval Model (PDF Handout)**
 
-![A close-up of a blue and white brochure Description automatically generated](media/image1.png)  
-Source: <https://www.oregon.gov/odot/Planning/Documents/RSPM_v4VE_FINAL%20Print%20View.pdf>
+![](../media/ch1_VisionEvalModel.png)  
+*<font size="0.5>Source: <https://www.oregon.gov/odot/Planning/Documents/RSPM_v4VE_FINAL%20Print%20View.pdf></font>*
 
 ## Visioneval Modeling Framework
 
@@ -166,22 +166,22 @@ The model framework disaggregates travel demand impacts at an individual househo
 
 The model iterates through the last couple of steps to balance household travel with costs. The iterative process to balance the VMT with travel costs allows congestion and other costs introduced at this step to influence the amount of travel. This step balances the amount of household travel with the cost of travel and recalculates household VMT, fuel use, and GHG emissions in the process. The primary outputs of VisionEval are household travel, fuel and power consumption, and GHG emissions calculations, but other information is produced for households and commercial vehicles as well. The amount of commercial (light‐duty) and freight (heavy duty) travel is calculated as well as associated fuel, power consumption and GHG emissions for those vehicles.
 
-Figure . VisionEval Model Framework schematic
+**Figure 2: VisionEval Model Framework schematic**
 
-![Diagram Description automatically generated](media/image2.png)
+![](../media/ch1_VE_packages.png)
 
 Figure 2 shows how the basic model steps can be grouped into broader concepts. More information on each of these concepts are detailed in the VisionEval wiki, linked in Table 1.
 
-Table . Base Model Concept wiki links
+Table 1: Base Model Concept Wiki Links
 
-| **Base Concept**                  |                                                                                                                     |                                                                                                         |     |     |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|-----|-----|
-| 1: Household Synthesis & Land Use | [Concepts](https://visioneval.org/docs/conceptprimer.html?q=household%20synthesis#household-synthesis-and-land-use) | [Inputs](https://visioneval.org/docs/model-inputs.html?q=household%20synthe#household-synthesis-inputs) |     |     |
-| 2: Household Multi-modal Travel   | [Concepts](https://visioneval.org/docs/conceptprimer.html?q=multimo#household-multimodal-travel)                    | [Inputs](https://visioneval.org/docs/model-inputs.html#travel-behavior-inputs)                          |     |     |
-| 3: Vehicles, Fuels & Emissions    | [Concepts](https://visioneval.org/docs/conceptprimer.html?q=vehicles,%20fu#vehicles-fuels-and-emissions)            | [Inputs](https://visioneval.org/docs/model-inputs.html?q=vehicles,%20fuel#vehicle-inputs)               |     |     |
-| **Adjustments**                   |                                                                                                                     |                                                                                                         |     |     |
-| Congestion                        | [Concepts](https://visioneval.org/docs/conceptprimer.html?q=congestion#congestion-adjustments)                      | [Inputs](https://visioneval.org/docs/model-inputs.html?q=congestion#congestion-inputs)                  |     |     |
-| Household Costs & Budgets         | [Concepts](https://visioneval.org/docs/conceptprimer.html?q=household%20co#household-costs-and-budgets)             | [Inputs](https://visioneval.org/docs/model-inputs.html?q=pricing#pricing-inputs)                        |     |     |
+| **Base Concept**                  |                                                                                                                     |                                                                                                         |     
+|-----------------------------------|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| 1: Household Synthesis & Land Use | [Concepts](https://visioneval.org/docs/conceptprimer.html?q=household%20synthesis#household-synthesis-and-land-use) | [Inputs](https://visioneval.org/docs/model-inputs.html?q=household%20synthe#household-synthesis-inputs) |     
+| 2: Household Multi-modal Travel   | [Concepts](https://visioneval.org/docs/conceptprimer.html?q=multimo#household-multimodal-travel)                    | [Inputs](https://visioneval.org/docs/model-inputs.html#travel-behavior-inputs)                          |     
+| 3: Vehicles, Fuels & Emissions    | [Concepts](https://visioneval.org/docs/conceptprimer.html?q=vehicles,%20fu#vehicles-fuels-and-emissions)            | [Inputs](https://visioneval.org/docs/model-inputs.html?q=vehicles,%20fuel#vehicle-inputs)               |     
+| **Adjustments**                   |                                                                                                                     |                                                                                                         |     
+| Congestion                        | [Concepts](https://visioneval.org/docs/conceptprimer.html?q=congestion#congestion-adjustments)                      | [Inputs](https://visioneval.org/docs/model-inputs.html?q=congestion#congestion-inputs)                  |     
+| Household Costs & Budgets         | [Concepts](https://visioneval.org/docs/conceptprimer.html?q=household%20co#household-costs-and-budgets)             | [Inputs](https://visioneval.org/docs/model-inputs.html?q=pricing#pricing-inputs)                        |     
 
 VisionEval models, particularly the more robust VE-RSPM and VE-State models, consider a large number of factors which affect the performance of transportation systems and their effects on people and the environment. The models were made with the intention of estimating and forecasting the effects of various policies and other influences on the amount of vehicle travel, the types of vehicles and fuels used, and the resulting GHG emissions among other outcomes.
 
