@@ -9,7 +9,6 @@ language:
     chapter_name: ""
 rmd_files:
   - index.Rmd
-  - 01-Introduction.Rmd
   - 02-Chapter.Rmd
   - 03-Chapter.Rmd
   - 04-Chapter.Rmd
