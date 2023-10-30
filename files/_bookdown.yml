@@ -16,3 +16,5 @@ rmd_files:
   - 06-Chapter.Rmd
   - 07-Chapter.Rmd
   - 08-Chapter.Rmd
+  - 09-AppendixA.Rmd
+  - 10-AppendixB.Rmd

@@ -78,7 +78,7 @@ It is important to describe scenario planning in terms of community benefits and
 
 Strategies – or actions and investment methods – are employed at multiple levels to achieve specific outcomes. Strategies can be at any geographic scope or scale, such as overarching, targeted but general, or specific. For instance, an overarching strategy is regional, a targeted but general may be citywide and specific could refer to a neighborhood.
 
-Table 2: Strategies based on geographical scope and scale
+**Table 2: Strategies based on geographical scope and scale**
 
 | **Strategy 1**                                                                                                                     |                                                                                                                                                                   |                                                                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -117,7 +117,7 @@ One of the keys to scenario planning is clearly defining the outcomes that will 
 
 The process of comparing multiple future scenarios should employ a set of criteria that addresses the full range of needs and desires expressed through the guiding principles. The best practice is to select evaluation criteria based on the guiding principles to prioritize what is important to the community. The final set of evaluation criteria should be drawn from measures established in existing plans, and calculated by the Regional Strategic Planning Model. ODOT currently uses the Place Types tool (<https://www.oregon.gov/lcd/CL/Pages/Place-Types.aspx>) to evaluate impacts based on several land use and housing attributes. Users can also defer to land use from their Regional Travel Model. The accompanying table presents a suggested set of criteria likely to support many guiding principles.
 
-Table 3: Evaluation criteria, unit of measure, and source
+**Table 3: Evaluation criteria, unit of measure, and source**
 
 | **EVALUATION CRITERIA**                                     | **UNIT OF MEASURE**                |
 | ----------------------------------------------------------- | ---------------------------------- |
@@ -161,9 +161,9 @@ Table 3: Evaluation criteria, unit of measure, and source
 | Building energy consumption                                  | btu/ housing unit or employee |
 | GHG emissions (building and transportation emissions)        | tons CO2/ year                |
 
-Source: Oregon Scenario Planning Guidelines
+*<font size="1">Source: Oregon Scenario Planning Guidelines</font>*
 
-## Set Up Scenario Modeling (see Section 3.5)
+## Set Up Scenario Modeling
 
 This step of the scenario planning process begins by a geographic scale for analysis, compiling data and other information needed to create scenarios, and setting up the tools for scenario building.
 
@@ -227,7 +227,7 @@ The performance of the alternative scenarios is measured using the evaluation cr
 
 A meaningful process will draw connections to the characteristics of the scenarios. After scenario development, it is important to organize the evaluation criteria to provide context and discuss the significance of the data. A good strategy is to highlight the differences between the scenarios, not the absolute numbers. A review of the evaluation results and alternative scenarios should show what the future could look like based on the scenarios stakeholders played a role in designing.
 
-##### Sensitivity Testing
+*Sensitivity Testing*
 
 Sensitivity testing is done to inform the Preferred Scenario and evaluate how changes in policies and trends at the metropolitan and state levels could influence GHG emissions from light-duty vehicle travel in metropolitan areas, as well as other indicators. Sensitivity tests are ‘what if’ analyses to help planners understand what the relative effect of changes to policy, investments, and programs could be. Depending on the variables used, sensitivity testing allows metropolitan areas to determine how large an effect potential actions that can be quite different in scope are likely to have on the desired outcomes. Sensitivity testing can be used to evaluate a wide range of variables such as the impact of increasing downtown density, doubling transit service, or promoting eco-driving, and compare those to the GHG effects of ITS policies, electrification, and pricing policies. ODOT has identified the following set of sensitivity tests. A recommended set will be customized for the local area, and reviewed with participants and other partners.
 

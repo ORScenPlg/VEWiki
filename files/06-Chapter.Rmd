@@ -6,7 +6,7 @@ A Preferred Scenario is an agreed-to set of transportation policies and investme
 
 In tracking whether the preferred or any alternative scenario meets the Target Rule there are special things to consider related to VisionEval inputs:
 
--   State-led inputs
+-   State-led inputs:
 
     -   STS Vehicles-Fuels. The set of inputs around the types of vehicles, the powertrains and fuels of those vehicles.
 
@@ -26,145 +26,168 @@ Absent local support for these state-led actions, metropolitan areas are allowed
 
 Files denoted by (TR) are target rule specific versions of the input file, reflecting model inputs assumed at the time the target was set, such as fuel price and income forecasts.. For tracking progress on the GHG target, the region is allowed to assume either current assumptions or these ”TR” model assumptions.
 
-Table : VisionEval Input files of state-led policies and actions
+**Table 14: VisionEval Input files of state-led policies and actions**
 
-[TABLE]
+| **State-led Actions** |||
+|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|------------------------------------|
+| **Policy or Action**                                                                                  | **RSPM File (VE-State File)**                                 | **Description**                        |
+| ***Vehicles and Fuels***                                                                                                               |                                      |                                    |
+| Household vehicle characteristics   | Age, fuel type, powertrain, % light truck | PowertrainsAndFuelsxSTSRecOnRoad package, azone\_hh\_veh\_mean\_age.csv, azone\_hh\_lttrk\_prop.csv |
+| Commercial service vehicle characteristics | Age, fuel type, powertrain, % light truck, CNG/RNG | region\_hvyrk\_powertrain\_prop.csv, region\_comsvc\_powertrain\_prop.csv, region\_comsvc\_veh\_mean\_age.csv, region\_comsvc\_lttrk\_prop.csv  |
+| Car service/TNC Vehicle attributes, Service Quality | Rates, vehicles, fleet age, access times, local restrictions | region\_carsvc\_powertrain\_prop.csv, azone\_carsvc\_characteristics.csv, azone\_vehicle\_access\_times.csv |
+| Fuel | Carbon intensity standards and prices | (TR)region\_ave\_fuel\_carbon\_intensity.csv, (TR)azone\_fuel\_power\_cost.csv |
+| Electricity | Carbon intensity standards and prices | azone\_electricity\_carbon\_intensity.csv |
+| ***Pricing***                                                                                                                   |                                      |                                    |
+| Pricing and fee programs | State & federal gas tax/OreGo, VMT fee, vehicle registration fees, congestion charges, PAYD insurance, Social and Carbon cost recovery pricing | azone\_veh\_use\_taxes.csv, azone\_hh\_veh\_own\_taxes.csv, marea\_congestion\_charges.csv, region\_prop\_externalities\_paid.csv, region\_co2e\_costs.csv |
+| ***System Operations/Fuel Efficiency Programs*** | | |
+| Freeway & Arterial Operations programs | Freeways: incident response, ramp metering, active traffic management. Arterials: signal coordination, access management, active traffic management | marea\_operations\_deployment.csv, marea\_speed\_smooth\_ecodrive.csv |
+| EcoDrive programs | Personal and commercial vehicle participation | marea\_speed\_smooth\_ecodrive.csv |
+| ***Model Set Up***                                                                                                                   |                                      |                                    |
+|  | other\_ops\_effectiveness.csv, region\_road\_cost.csv, region\_hh\_ave\_driver\_per\_capita.csv, azone\_hh\_ave\_veh\_per\_driver.csv, azone\_relative\_employment.csv | region\_base\_year\_dvmt.csv, marea\_base\_year\_dvmt.csv, marea\_dvmt\_split\_by\_road\_class.csv, deflators.csv, units.csv, model\_parameters.json, run\_model.R |
 
 ### Vehicles and Fuels
 
-##### PowertrainsAndFuelsSTSRecOnRoad package
+***PowertrainsAndFuelsSTSRecOnRoad package***
 
 This package must be called in the run\_model.R script, defs, and model\_parameters.json input file.
 
-##### Azone\_hh\_veh\_mean\_age
+***Azone\_hh\_veh\_mean\_age***
 
 Provides information on average vehicle age for light-duty vehicles including autos and light-trucks.
 
-##### Azone\_hh\_lttrk\_prop
+***Azone\_hh\_lttrk\_prop***
 
 Specifies the proportion of vehicles that are light-trucks within the light-duty vehicle fleet.
 
-##### Region\_hvytrk\_powertrain\_prop
+***Region\_hvytrk\_powertrain\_prop***
 
 This optional file is used to specify the powertrain proportion of heavy duty trucks.
 
-##### Region\_comsvc\_powertrain\_prop
+***Region\_comsvc\_powertrain\_prop***
 
 An optional file that specifies the powertrain proportion of commercial vehicles.
 
-##### Region\_comsvc\_veh\_mean\_age
+***Region\_comsvc\_veh\_mean\_age***
 
 Average age of commercial service vehicles.
 
-##### Region\_comsvc\_lttrk\_prop
+***Region\_comsvc\_lttrk\_prop***
 
 Light truck proportion of commercial service vehicles.
 
-##### Region\_carsvc\_powertrain\_prop
+***Region\_carsvc\_powertrain\_prop***
 
 Proportion of powertrains for car service vehicles. This is an optional file.
 
-##### Azone\_carsvc\_characteristics
+***Azone\_carsvc\_characteristics***
 
 Specifies characteristics for high and low levels of car service.
 
-##### Azone\_vehicle\_access\_times
+***Azone\_vehicle\_access\_times***
 
 Provides information on vehicle access and egress times.
 
-##### Region\_ave\_fuel\_carbon\_intensity
+***Region\_ave\_fuel\_carbon\_intensity***
 
 Specifies the average carbon intensity by vehicle type. This is an optional file.
 
-##### Azone\_fuel\_power\_cost
+***Azone\_fuel\_power\_cost***
 
 Provides data on cost of retail fuel and electricity used in vehicles.
 
-##### Azone\_electricity\_carbon\_intensity
+***Azone\_electricity\_carbon\_intensity***
 
 Specifies the carbon intensity of electricity. This is an optional file.
 
 ### Pricing
 
-##### azone\_veh\_use\_taxes
+***azone\_veh\_use\_taxes***
 
 Provides information on vehicle-related taxes.
 
-##### Azone\_hh\_veh\_own\_taxes
+***Azone\_hh\_veh\_own\_taxes***
 
 Provides data on flat fees, taxes, or ad valorem taxes on vehicles.
 
-##### Marea\_congestion\_charges
+***Marea\_congestion\_charges***
 
 Specifies the charges on vehicle travel for different levels of congestion.
 
-##### Azone\_payd\_insurance\_prop
+***Azone\_payd\_insurance\_prop***
 
 Specifies proportion of households using PAYD (pay-as-you-drive) insurance.
 
-##### Region\_prop\_externalities\_paid
+***Region\_prop\_externalities\_paid***
 
 Accounts for costs due to climate change and social costs.
 
-##### Region\_co2e\_costs
+***Region\_co2e\_costs***
 
 Accounts for the environmental and social costs of CO2e emissions in USD per metric ton. This is an optional file.
 
 ### System Operations and Fuel Efficiency Programs
 
-##### marea\_operations\_deployment
+***marea\_operations\_deployment***
 
 Specifies the proportion of DVMT that is affected by operations on different road classes. This is an optional file.
 
-##### Marea\_speed\_smooth\_ecodrive
+***Marea\_speed\_smooth\_ecodrive***
 
 Provides data on speed smoothing and ecodriving by both road class and vehicle type.
 
 ### Model Set-up
 
-##### other\_ops\_effectiveness
+***other\_ops\_effectiveness***
 
 Specifies the delay effects of operations in different road classes. This is an optional file.
 
-##### Region\_road\_cost
+***Region\_road\_cost***
 
 Supplies data for road costs by type.
 
-##### azone\_relative\_employment
+***azone\_relative\_employment***
 
 Provides information on ratio of workers to persons by age.
 
-##### Region\_base\_year\_dvmt
+***Region\_base\_year\_dvmt***
 
 Provides data on base year DVMT for heavy trucks in the model region. This file may need to be adjusted if the model uses a base year that is not 2010.
 
-##### Marea\_base\_year\_dvmt
+***Marea\_base\_year\_dvmt***
 
 Specifies adjustments to DVMT growth factors. This is an optional file.
 
-##### Marea\_dvmt\_split\_by\_road\_class
+***Marea\_dvmt\_split\_by\_road\_class***
 
 Specifies the DVMT split for different road types. This is an optional file.
 
-##### Deflators
+***deflators***
 
 Defines annual deflator values. This includes CPI, which is used to convert currency values between years.
 
-##### Units
+***units***
 
 Defines the default units used in the model. This file should not be modified by the user.
 
-##### Model\_parameters.json
+***model\_parameters.json***
 
 A json file that contains parameters for the following: AnnVmtInflator, BaseCostPerMile, DvmtBudgetProp, FuelCost, KwhCost, GasTax, LtTruckPrp, TranRevMiAdjFactor, TruckVmtGrowthMultiplier, and WorkVmtProp.
 
-## Regionally Led Target Rule INPUTS
+## Regionally Led Target Rule Inputs
 
 Beyond the state-led input noted above, future scenarios include the following regionally-led policy inputs for use in the VisionEval model, there are no target-rule considerations on these inputs. Table 15 shows files that should be specified by MPOs and local jurisdictions. Files denoted “TR” use Target Rule files have the option of using the assumptions at the time the rule was set, as noted in the prior section. ODOT and DLCD will review these regionally led input files for consistency with other plans, state assumptions, and alignment with regional plans in the Preferred Scenario to be adopted by the region.
 
-Table : visioneval sts – monitoring policies and actions
+**Table 15: VisionEval STS – Monitoring Policies and Actions**
 
-[TABLE]
+| **Local Actions & Assumptions** |||
+|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|-----------------|
+| **Policy or Action**                                                                                  | **Description**                                 | **File name**                        |
+| Residential EV Charging | Electric vehicle charging availability by dwelling unit type | azone\_charging\_availability.csv |
+| Transit | Assumed funding for vehicles and service, funding-service miles relationships | bzone\_transit\_service.csv, marea\_transit\_ave\_fuel\_carbon\_intensity.csv  |
+| Car service/TNC Service Quality | Rates, access times, local restrictions | bzone\_carsvc\_availability.csv |
+| Financial constraint | Roadway lane miles and TDM programs | marea\_lane\_miles.csv, bzone\_travel\_demand\_mgt.csv |
+| Land use | Place type files | bzone\_network\_design.csv, bzone\_transit\_service.csv, bzone\_unprotected\_area.csv |
+| Demographics | Population, employment, and income forecasts | azone\_hh\_pop\_by\_age.csv, azone\_gq\_pop_\_by\_age.csv, azone\_hhsize\_targets.csv, (TR)azone\_per\_cap\_inc.csv, bzone\_employment.csv, bzone\_urban\_mixed\_use\_prop.csv |
 
 ## Target Rule Calculation – Technical Detail
 
@@ -172,9 +195,9 @@ The Target Rule establishes a metric for calculating local GHG reductions beyond
 
 Figure 14 illustrates how the metropolitan area GHG reduction TARGET is calculated from the per capita emissions reduction GOAL and the forecast for reduction in the light vehicle emissions RATE.
 
-Figure : Calculating Metropolitan Area Target from the Goal from all sources.
+**Figure 14: Calculating Metropolitan Area Target from the Goal from all sources**
 
-![A graph showing the cost of gas reduction Description automatically generated with medium confidence](media/image1.jpg)
+![](../media/Chp6_TargetAreaMpo.png)
 
 It uses the Portland Metro 2050 target reductions from Figure 16, as an example. The circle represents total metropolitan area per capita emissions from light duty vehicles in 2005 while the grey slice shows per capita emissions that still remain in 2050 after reductions.
 
@@ -228,24 +251,14 @@ After that, the 2005-2050 reductions are calculated and compared to the Target R
 
 In this example the region does not meet the 2050 target rule values of Figure 16. The model-estimated 85.4% combined or 18.8% beyond vehicles and fuels GHG reduction per capita, are below the Rule’s 88% GOAL or equivalent 30% TARGET (Figure 16).
 
-Figure : ghg targets over time
+**Figure 15: GHG Targets Over Time**
 
-![A close-up of a graph Description automatically generated](media/image2.jpg)
+![](../media/chp6_TargetsOverTime.jpg)
 
 However local actions e.g., transit service and electric buses, bike diversion, CNG fueling options) and the region’s endorsement of state-led policies (e.g., PAYD insurance, carbon tax, VMT fee to cover road costs, ITS/Operations and eco-driving programs) are significant, as reflected in the reduction of daily VMT per capita from 24.6 to 20.0 between 2005 and 2050.
 
-Figure : example target rule calculation
+**Figure 16: Example Target Rule Calculation**
 
-![A screenshot of a computer Description automatically generated](media/image3.png)
-
-¹Population includes persons in households and university group quarters
-
-²LDV GHG and VMT include “household-based” light duty vehicle travel from residents ad locally-based commercial vehicles to all locations
-
-³RSPM VMT is not comparable to VMT from regional travel demand models. For instance, household based travel in RSPM differs from a travel demand model that captures all VMT within the MPO boundary. RSPM also captures different policy actions and uses a more aggreaget representation of roadway capacity and congestion which avoids the network details of a travel demand model.
-
-⁴Vehcle and Fuel Policies that reduce emission rates, includes “Default” using Rule’s 2050 RATE, and added reduction due to “local” policies.
-
-⁵Policies beyond vehicles and fuels that reduce VMT per capita, including local and allowed state actions
+![](../media/chp6_SampleTRCalc.png)
 
 Note: 1 metric ton = 1,000,000 grams of CO2e; 1 year = 365 days; LDV = Light Duty Vehicles (autos and light trucks less than 10,000 lbs); GHG = Caron Dioxide-equivalent (CO2e) emissions.
