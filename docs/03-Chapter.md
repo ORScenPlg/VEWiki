@@ -38,7 +38,7 @@ Location Type is not a geography level but a categorical level that identifies w
 
 **Figure 4: Land Development Types Example**
 
-![](/ch3_eugene.png)
+![](media/ch3_eugene.png)
 
 Geography is important in VisionEval and treated differently than in traditional urban travel models. Importantly, different model inputs are developed at different geography levels. A list of VE-RSPM inputs by geography level can be found on [GitHub](https://github.com/VisionEval/VisionEval/wiki/VERSPM-Training/VE-RSPM_Inputs_by_Geo.pdf). Geography is also a significant factor in how the model calculates travel supply and travel behavior or demand:
 
