@@ -156,6 +156,7 @@ VE-RSPM models the region in zones (in a manner similar to traditional travel mo
 **Figure 1: Vision Eval Model (PDF Handout)**
 
 ![](media/ch1_VisionEvalModel.png)  
+
 *<font size="1">Source: <https://www.oregon.gov/odot/Planning/Documents/RSPM_v4VE_FINAL%20Print%20View.pdf></font>*
 
 ## Visioneval Modeling Framework
@@ -172,7 +173,7 @@ The model iterates through the last couple of steps to balance household travel 
 
 Figure 2 shows how the basic model steps can be grouped into broader concepts. More information on each of these concepts are detailed in the VisionEval wiki, linked in Table 1.
 
-Table 1: Base Model Concept Wiki Links
+**Table 1: Base Model Concept Wiki Links**
 
 | **Base Concept**                  |                                                                                                                     |                                                                                                         |     
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
