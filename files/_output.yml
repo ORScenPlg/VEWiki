@@ -1,5 +1,5 @@
 bookdown::bs4_book:
-  #template: "bs4_book.html"
+  template: "bs4_book.html"
   css: bs4_style.css
   theme:
     primary: "#2b3890"
