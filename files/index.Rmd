@@ -7,6 +7,7 @@ documentclass: book
 bibliography:
 - book.bib
 - packages.bib
+cover-image: "media/flag.png"
 description: null
 csl: chicago-fullnote-bibliography.csl
 ---
@@ -111,11 +112,13 @@ One central outcome of this rulemaking is an increased emphasis on equity. Equit
 
 The rules define traditionally underserved populations to include Black and African American people, Indigenous people, People of Color, people with limited English proficiency, people with disabilities, low-income Oregonians, youth and seniors, and more. They require engagement with traditionally underserved populations, local consideration of anti-displacement actions should decisions contribute toward displacement, centering the voices of underserved populations in decision-making, and regular reporting on efforts to engage traditionally underserved populations.
 
-What is VisionevalVisionEval is Oregon’s preferred strategic planning tool at the state and local level. It is also the updated version of Oregon’s statewide GreenSTEP model, which was developed by the Oregon Department of Transportation (ODOT) to conduct long- range strategic planning. This tool was used to develop the STS and the metropolitan region GHG targets and the 2023 Oregon Transportation Plan. VisionEval’s attention to pricing policies, fleet electrification, and the ability to examine many possible futures is especially important today in an environment of limited funding and future uncertainties.
+**What is Visioneval** 
+
+VisionEval is Oregon’s preferred strategic planning tool at the state and local level. It is also the updated version of Oregon’s statewide GreenSTEP model, which was developed by the Oregon Department of Transportation (ODOT) to conduct long- range strategic planning. This tool was used to develop the STS and the metropolitan region GHG targets and the 2023 Oregon Transportation Plan. VisionEval’s attention to pricing policies, fleet electrification, and the ability to examine many possible futures is especially important today in an environment of limited funding and future uncertainties.
 
 VisionEval demonstrates how community development and transportation investment choices could influence planning goals, land use goals, and other community livability factors. The model forecasts how different factors interact, such as the effect that parking policies may have on transit use, or how different development types could affect trip lengths.
 
-Using Vision Eval, planners can determine key paths to reaching community goals including greenhouse gas emissions reduction targets, test the resilience of current plans under alternative conditions, determine total household vehicle travel, energy consumption, and greenhouse gas emissions regardless of where the travel occurs, analyze the effects of dozens of different factors on vehicle travel and greenhouse gas emissions levels, calculate household walking trips, bicycling potential, total household vehicle travel expenses, and road user fee revenues.
+Using VisionEval, planners can determine key paths to reaching community goals including greenhouse gas emissions reduction targets, test the resilience of current plans under alternative conditions, determine total household vehicle travel, energy consumption, and greenhouse gas emissions regardless of where the travel occurs, analyze the effects of dozens of different factors on vehicle travel and greenhouse gas emissions levels, calculate household walking trips, bicycling potential, total household vehicle travel expenses, and road user fee revenues.
 
 #### VisionEval’s comparison to traditional travel demand models:
 
@@ -159,7 +162,7 @@ VE-RSPM models the region in zones (in a manner similar to traditional travel mo
 
 *<font size="1">Source: <https://www.oregon.gov/odot/Planning/Documents/RSPM_v4VE_FINAL%20Print%20View.pdf></font>*
 
-## Visioneval Modeling Framework
+## VisionEval Modeling Framework
 
 All VisionEval models share a common framework composed of eight modeling steps (Figure 2). Each step includes several calculations, each determined through the statistical analysis of several data sources such as the National Household Travel Survey and the Census, that operate on the input data and the results of the previous calculation step. The steps define households and associated policies, characterize vehicle ownership of those households, calculate vehicle miles traveled (VMT) and emissions, balance VMT with travel costs, and finally estimate non-household travel and emissions (e.g., from commercial trucks or rail).
 
