@@ -57,6 +57,8 @@ The resulting validation files are a mix of A-zone (county) and region (statewid
 ![](media/validation_workers.png)
 
 -   **Drivers:** Number of drivers (by age group) was obtained from DMV by county and national datasources were also consulted VE drivers licensing rate by age group was adjusted to match historic DMV statewide trends over time, prompting adjustments to the VE parameter files to enable drivers per vehicle by county differences across the state, pulled from the DMV data. The units of the driver adjustment were also changed to more intuitively align with the target data. VE tended to underestimate drivers, and most age groups were pushed to nearly 100% licensure rates. However following the data trends, young/millennials rates were dropped in 2010 and fully restored by 2020. Drivers per vehicle by county was a simple DMV calculation of all LDV from 2016Q4, boosted by 10% to reduce and better match VE vehicles. (*region_hh_ave_driver_per_capita.csv, azone_hh_ave_veh_per_driver.csv*).
+    -   Source of data include: https://www.oregon.gov/odot/dmv/pages/news/driver_stats.aspx There are some data providing numbers of drivers per county across different age cohorts.
+
 
 **Figure 28: VE-State Historic Validation - Drivers**
 
@@ -64,7 +66,7 @@ The resulting validation files are a mix of A-zone (county) and region (statewid
 
 -   **Light duty vehicles:** DMV provides records of light duty vehicles registered in the state. VE-State was significantly high, driver per vehicle was increased (see above) to assist. VE ends up to be roughly 10-12% higher than DMV consistent over historic years.
 
-**Figure 28: VE-State Historic Validation - Drivers**
+**Figure 28: VE-State Historic Validation - Light Duty Vehicles**
 
 ![](media/validation_vehicles.png)
 
